@@ -31,11 +31,16 @@ The uploaded photos and live demonstration document the team setup. They do not 
 
 | Asset | Format |
 | --- | --- |
-| [Ghost Arm robotic arm assembly](media/ghost-arm.jpg) | JPG |
-| [Ghost Arm support frame and demonstration setup](media/support-frame.jpg) | JPG |
 | [Cardboard arm-sleeve prototype with electronics](media/arm-sleeve.jpg) | JPG |
+| [Ghost Arm robotic arm assembly](media/ghost-arm.jpg) | JPG |
+| [live demo poster](media/live-demo-poster.jpg) | JPG |
 | [Ghost Arm live demonstration](media/live-demo-web.mp4) | MP4 |
+| [Ghost Arm support frame and demonstration setup](media/support-frame.jpg) | JPG |
 
 ## Source Files
 
-Summary and role descriptions follow the existing portfolio. Uploaded media are preserved in `media/`; no native CAD files were supplied. The [original demonstration video](source/live-demo-original.mp4) is retained alongside the browser version, which applies rotation to the frames and removes extra metadata tracks.
+The project narrative and retained media document this work. No separate source files remain in this repository.
+
+The browser demonstration applies rotation directly to the frames and omits extra metadata tracks. The original recording was removed; the complete demonstration remains available.
+
+Redundant copies and generated exports were removed in the repository size cleanup. See [the cleanup manifest](../cleanup-manifest.json) for the removal inventory and retained replacements.

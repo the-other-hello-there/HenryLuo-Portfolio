@@ -31,23 +31,17 @@ Versioned CAD and installed-prototype photos document iteration; retention and d
 | --- | --- |
 | [v0 / v1 bottom](media/v0--v1-bottom.jpg) | JPG |
 | [v0 / v1 top](media/v0--v1-top.jpg) | JPG |
-| [v1 / clip](media/v1--clip.png) | PNG |
-| [v1 / housing](media/v1--housing.png) | PNG |
+| [Attachment clip CAD](media/v1--clip.png) | PNG |
+| [Sunglasses housing CAD](media/v1--housing.png) | PNG |
 | [v1 / v1 bottom](media/v1--v1-bottom.jpg) | JPG |
 | [v1 / v1 installed](media/v1--v1-installed.jpg) | JPG |
 | [v1 / v1 problem](media/v1--v1-problem.jpg) | JPG |
-| [v1 / v2 bottom](media/v1--v2-bottom.jpg) | JPG |
-| [v1 / v2 installed](media/v1--v2-installed.jpg) | JPG |
-| [v2 / v2 attached](media/v2--v2-attached.jpg) | JPG |
-| [v2 / v2](media/v2--v2.jpg) | JPG |
-| [v2](media/v2.jpg) | JPG |
+| [Holder attached to a car door pocket](media/v2--v2-attached.jpg) | JPG |
+| [Clip-on sunglasses holder](media/v2.jpg) | JPG |
 
 ## Source Files
 
 - [CAD](source/CAD/)
 - [Summary - ClipOn Sunglasses Holder.txt](source/Summary%20-%20ClipOn%20Sunglasses%20Holder.txt)
-- [V0](source/V0/)
-- [V1](source/V1/)
-- [V2](source/V2/)
 
-Original notes, native CAD filenames, and source subdirectories are preserved as supplied. Summary statements use the supplied project notes and existing portfolio; design intentions are distinguished from documented results.
+Redundant copies and generated exports were removed in the repository size cleanup. See [the cleanup manifest](../cleanup-manifest.json) for the removal inventory and retained replacements.

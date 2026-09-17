@@ -1,0 +1,18 @@
+# Local verification tools and temporary artifacts
+.tmp-*/
+.project-check.html
+__pycache__/
+*.pyc
+
+# Regenerable SOLIDWORKS simulation results and caches
+*.CWR
+*.cwr
+*.MFC
+*.mfc
+*.gsz
+Core-Static*.LOG
+
+# Keep newly added original recordings outside this website repository;
+# retain the browser-ready copies used by the project catalog.
+*-original.mov
+*-original.mp4

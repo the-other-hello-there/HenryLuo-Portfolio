@@ -1,14 +1,16 @@
 # Project Descriptions
 
-Each project uses a `YYYY-project-name` folder and the same README sections: Summary, Objective, Design Constraints, Engineering Work, Outcome and Evidence, Media, and Source Files.
+Each displayed project has a `YYYY-project-name` folder with a consistent README, a `media/` folder, and supporting `source/` files where available.
 
-- `README.md`: revised project narrative, constraints, evidence, and linked asset inventory.
-- `media/`: images and videos with lowercase, hyphen-separated names. Double hyphens separate original subdirectory names for nested assets.
-- `source/`: original notes, documents, CAD, analysis, and supporting directories. Native filenames and internal folder relationships are retained to avoid disrupting CAD references.
-- Nested source images/videos also have presentation copies in `media/`; originals remain alongside their source files. Existing duplicate assets are preserved.
-- `file-map.json`: original paths, current paths, and SHA-256 hashes for checking preservation and locating renamed files.
+- `README.md`: summary, objective, constraints, engineering work, outcomes, and linked media/source inventories.
+- `media/`: website assets and distinct documentation images/videos. Identical copies are consolidated.
+- `source/`: retained reports, experimental data, analysis, native CAD, and compressed design archives. Generated simulation caches and redundant manufacturing exports are omitted.
+- `file-map.json`: original-file hashes and retained locations, archive entries, or cleanup status.
+- `cleanup-manifest.json`: files removed by the size-cleanup pass, with reasons and replacements where available.
 
-Project years follow the supplied folder names. Team awards and additional course constraints come from the existing portfolio. Missing test results are identified rather than inferred. The website catalog is maintained in `assets/data/projects.json`. Run `python scripts/build_projects.py` from the repository root after editing it to rebuild the project cards and case-study data in `index.html`. The HRC L2 leg is one project; both design archives are consolidated under `2025-hrc-l2-humanoid-leg/source/`, with shared presentation media in its `media/` folder.
+The site catalog is `assets/data/projects.json`. Run `python scripts/build_projects.py` after editing it. Project years follow the supplied folders and reports. Team results are distinguished from individual contributions, and limitations are stated alongside the outcomes.
+
+The HRC L2 leg is one project. Its two source ZIPs preserve the design iterations under `2025-hrc-l2-humanoid-leg/source/`.
 
 | Year | Project | Context |
 | --- | --- | --- |
@@ -25,3 +27,5 @@ Project years follow the supplied folder names. Team awards and additional cours
 | 2026 | [Felon the Freestylin’ Feline](2026-skateboard-cat/README.md) | ME 444 · Interactive Toy Design |
 | 2026 | [Tipping Hat Battle Bot](2026-tipping-hat-battle-bot/README.md) | ME 444 · Battle Bot Competition |
 | 2026 | [Ghost Arm](2026-ghost-arm/README.md) | StarkHacks |
+| 2026 | [Infill and Thermal Conduction](2026-infill-thermal-conduction/README.md) | ME 315 · Self-chosen team experiment |
+| 2026 | [Headwind Safety: Hip-Bend Experiment](2026-headwind-safety/README.md) | ME 30801 · Self-chosen team experiment |

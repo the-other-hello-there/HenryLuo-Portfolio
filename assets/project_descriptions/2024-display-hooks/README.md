@@ -29,11 +29,11 @@ A CAD file and display photo are available; load capacity is not specified.
 
 | Asset | Format |
 | --- | --- |
-| [display hooks](media/display-hooks.jpg) | JPG |
+| [Freestanding memorabilia display hooks](media/display-hooks.jpg) | JPG |
 
 ## Source Files
 
 - [DisplayHooks.f3d](source/DisplayHooks.f3d)
 - [Summary - Display Hooks.txt](source/Summary%20-%20Display%20Hooks.txt)
 
-Original notes, native CAD filenames, and source subdirectories are preserved as supplied. Summary statements use the supplied project notes and existing portfolio; design intentions are distinguished from documented results.
+Redundant copies and generated exports were removed in the repository size cleanup. See [the cleanup manifest](../cleanup-manifest.json) for the removal inventory and retained replacements.

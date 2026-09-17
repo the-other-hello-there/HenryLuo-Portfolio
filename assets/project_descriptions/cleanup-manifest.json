@@ -1,0 +1,461 @@
+{
+  "before_bytes": 984810582,
+  "removed_bytes": 348613227,
+  "entries": [
+    {
+      "path": "2023-pine-display-shelf/media/design-steps--cad.png",
+      "bytes": 490497,
+      "sha256": "e33d16d2aad1838bfcb5790404eab306545381c2a953fe842156ae1e0926dce1",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2023-pine-display-shelf/media/cad.png"
+    },
+    {
+      "path": "2023-pine-display-shelf/source/Construction Steps/step0.jpg",
+      "bytes": 2634309,
+      "sha256": "df62624689ce4bd1245645e4e050a823c3c5e395f09eaa43f740c2b26d6fd8bb",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2023-pine-display-shelf/media/construction-steps--step0.jpg"
+    },
+    {
+      "path": "2023-pine-display-shelf/source/Construction Steps/step1.jpg",
+      "bytes": 1057538,
+      "sha256": "044a83fed901cf9d17419b99155c7dd8b945a15234fe4793b52f71e697aeb66a",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2023-pine-display-shelf/media/construction-steps--step1.jpg"
+    },
+    {
+      "path": "2023-pine-display-shelf/source/Construction Steps/step2.jpg",
+      "bytes": 114316,
+      "sha256": "5c497b99f595df5c2c077da95ce2e2e32d53a65224bac6315c68b00a319fe893",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2023-pine-display-shelf/media/construction-steps--step2.jpg"
+    },
+    {
+      "path": "2023-pine-display-shelf/source/Construction Steps/step3.jpg",
+      "bytes": 118316,
+      "sha256": "75da375b89d6dc96bd9e2b29d9c40ece92ca9b5b9d2539781f3eaf1d33ccde18",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2023-pine-display-shelf/media/construction-steps--step3.jpg"
+    },
+    {
+      "path": "2023-pine-display-shelf/source/Construction Steps/step4.jpg",
+      "bytes": 3136109,
+      "sha256": "aa2d55a81ac2d63c8ee4a1d80311d39340d2f79af7b23c16b8500134f0db920e",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2023-pine-display-shelf/media/construction-steps--step4.jpg"
+    },
+    {
+      "path": "2023-pine-display-shelf/source/Design Steps/CAD.png",
+      "bytes": 490497,
+      "sha256": "e33d16d2aad1838bfcb5790404eab306545381c2a953fe842156ae1e0926dce1",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2023-pine-display-shelf/media/cad.png"
+    },
+    {
+      "path": "2023-pine-display-shelf/source/Design Steps/Cut Layout.png",
+      "bytes": 83901,
+      "sha256": "d8a10d93226741799d0e5501f4a274ca31f8e21059ec5f5660152127f84d5636",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2023-pine-display-shelf/media/design-steps--cut-layout.png"
+    },
+    {
+      "path": "2023-pine-display-shelf/source/Design Steps/Frame.png",
+      "bytes": 101092,
+      "sha256": "9ef6a6ad4a590529642bee91d8e8e3dbcbef2566f2587882ae28cf8c66834078",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2023-pine-display-shelf/media/design-steps--frame.png"
+    },
+    {
+      "path": "2023-pine-display-shelf/source/Design Steps/Room Layout.png",
+      "bytes": 214887,
+      "sha256": "2308d241d2f01384c70e481b797bf2cfb85e8fe56416f8de380b851f4795a295",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2023-pine-display-shelf/media/design-steps--room-layout.png"
+    },
+    {
+      "path": "2023-pine-display-shelf/source/Materials/AmazonReceiptExcerpt.png",
+      "bytes": 27017,
+      "sha256": "a83319fa6cc6865c54d19da6fcf6f4981b7b1331125334e0b8372ce3a71bf3e4",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2023-pine-display-shelf/media/materials--amazon-receipt-excerpt.png"
+    },
+    {
+      "path": "2023-pine-display-shelf/source/Materials/LowesReceiptExcerpt.jpg",
+      "bytes": 706757,
+      "sha256": "5392b1491107582e556e010c66b9a827a75d2f55e734a4ef87e7af6d5ba2af51",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2023-pine-display-shelf/media/materials--lowes-receipt-excerpt.jpg"
+    },
+    {
+      "path": "2024-asme-mini-rc-car/media/performance--fullrace.mp4",
+      "bytes": 86379586,
+      "sha256": "a5d7f14373a9dfad2c62830c9d60d604d17442f249d1c5450dc06405d100f78a",
+      "reason": "Large original replaced by a complete, compressed video; all footage retained.",
+      "retained": "2024-asme-mini-rc-car/media/full-race-documentation.mp4"
+    },
+    {
+      "path": "2024-bachelor-payload-capsule/source/Bachelor mk2/MESys_Payload_Body_v2_hl.STL",
+      "bytes": 1128884,
+      "sha256": "0defd687a87feeb0a5e0b98b163d38c036899b73118c2751495bfdd1c2422334",
+      "reason": "Manufacturing/slicer export; native CAD or STEP geometry retained.",
+      "retained": null
+    },
+    {
+      "path": "2024-bachelor-payload-capsule/source/Bachelor mk2/MESys_Payload_Flapper_v2_hl.STL",
+      "bytes": 932384,
+      "sha256": "b3c10055ec3c86e9c2f5a9abd59ca5fb5e88d65de93ed38afd80662eecf7b43e",
+      "reason": "Manufacturing/slicer export; native CAD or STEP geometry retained.",
+      "retained": null
+    },
+    {
+      "path": "2024-bachelor-payload-capsule/source/Bachelor mk2/MESys_Payload_Lockball_v2_hl.STL",
+      "bytes": 292684,
+      "sha256": "b13e8ee522882f73767f88a9c4520af7a178cef0cad876f0fcebde2f0bc7eb02",
+      "reason": "Manufacturing/slicer export; native CAD or STEP geometry retained.",
+      "retained": null
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/media/v1--v2-bottom.jpg",
+      "bytes": 4495938,
+      "sha256": "b82a32a5a72ffc357029a41248849f1ce1b11f400cab42ff265d341ef0cbf4b8",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-clip-on-sunglasses-holder/media/v1--v1-bottom.jpg"
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/media/v1--v2-installed.jpg",
+      "bytes": 2693081,
+      "sha256": "86efe5821ec83fb9a2c62560562fa5d1fa268c3bfd472cc1022985b9f5374da2",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-clip-on-sunglasses-holder/media/v1--v1-installed.jpg"
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/media/v2--v2.jpg",
+      "bytes": 2183634,
+      "sha256": "0335cecab028e0ff37e3642c8bba79ef213bf47b3c1dc487f6f94be9452b5f45",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-clip-on-sunglasses-holder/media/v2.jpg"
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/CAD/V1/clip.stl",
+      "bytes": 135984,
+      "sha256": "5d76a39a4fa0ff62fb54e00ab416fa430167bfedbd32221151242294c7f4da65",
+      "reason": "Manufacturing/slicer export; native CAD or STEP geometry retained.",
+      "retained": null
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/CAD/V1/housing.stl",
+      "bytes": 339384,
+      "sha256": "5790133a34a3ea86eb4a6a904435dfafccbd117c49d130681d2d4f722fecfb16",
+      "reason": "Manufacturing/slicer export; native CAD or STEP geometry retained.",
+      "retained": null
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/CAD/V2/Assy_bracket_4.stl",
+      "bytes": 890184,
+      "sha256": "47d15b101a65f38b1c04b087ebd39960e3bfbf1946a2a09fcb7c9537265d3774",
+      "reason": "Manufacturing/slicer export; native CAD or STEP geometry retained.",
+      "retained": null
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/CAD/V2/Assy_bracket_5.3mf",
+      "bytes": 1104013,
+      "sha256": "3493c02c49e09d80bec7ee559750bd6569dc691f2307bf0c549bff3729352153",
+      "reason": "Manufacturing/slicer export; native CAD or STEP geometry retained.",
+      "retained": null
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/CAD/V2/Assy_bracket_5.stl",
+      "bytes": 890184,
+      "sha256": "646e313b17e2141a253c7b27008f8254404f0fa4521de2b13f48ac0788b8b97a",
+      "reason": "Manufacturing/slicer export; native CAD or STEP geometry retained.",
+      "retained": null
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/CAD/V2/Assy_clip_3.stl",
+      "bytes": 2157584,
+      "sha256": "4ee854a2fc533944789011378eb40039a6ef14fcf01b644569a8408fb9dc8184",
+      "reason": "Manufacturing/slicer export; native CAD or STEP geometry retained.",
+      "retained": null
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/CAD/V2/Assy_housing_1.stl",
+      "bytes": 3312684,
+      "sha256": "feea80990d8ed4a5439b66ef68a81420be048e7ef24237ef378e1012de212e24",
+      "reason": "Manufacturing/slicer export; native CAD or STEP geometry retained.",
+      "retained": null
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/CAD/V2/Assy_housing_2.stl",
+      "bytes": 3312684,
+      "sha256": "a9c4efcf0c8643e8235c163d504d0f378dc0395e847f65cdf0821d92b8f160f2",
+      "reason": "Manufacturing/slicer export; native CAD or STEP geometry retained.",
+      "retained": null
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/V0/v1_bottom.jpg",
+      "bytes": 5503488,
+      "sha256": "5c9d77b6688f66b94c1a3172eac56b4739e9fb3e0b0472263d9978ef8a1523b6",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-clip-on-sunglasses-holder/media/v0--v1-bottom.jpg"
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/V0/v1_top.jpg",
+      "bytes": 4706697,
+      "sha256": "25178737148f92b90f025898c81b9ba41fa645c22688e918d177729c6e0c889d",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-clip-on-sunglasses-holder/media/v0--v1-top.jpg"
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/V1/Clip.png",
+      "bytes": 309192,
+      "sha256": "39d449243627a4943cb28b300a3cb631a89b183405e1feab48d4f124d27e4e13",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-clip-on-sunglasses-holder/media/v1--clip.png"
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/V1/Housing.png",
+      "bytes": 172493,
+      "sha256": "502e6251fe714882c40e6bd661f7b8b422e9e5f8d99e65ca28def9a04704e9d7",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-clip-on-sunglasses-holder/media/v1--housing.png"
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/V1/v1_bottom.jpg",
+      "bytes": 4495938,
+      "sha256": "b82a32a5a72ffc357029a41248849f1ce1b11f400cab42ff265d341ef0cbf4b8",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-clip-on-sunglasses-holder/media/v1--v1-bottom.jpg"
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/V1/v1_installed.jpg",
+      "bytes": 2693081,
+      "sha256": "86efe5821ec83fb9a2c62560562fa5d1fa268c3bfd472cc1022985b9f5374da2",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-clip-on-sunglasses-holder/media/v1--v1-installed.jpg"
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/V1/V1_Problem.jpg",
+      "bytes": 3605274,
+      "sha256": "628bf03958bb23853c246d90a7e4bed56f63e5e3d71d092fcc49ab749899deb1",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-clip-on-sunglasses-holder/media/v1--v1-problem.jpg"
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/V1/v2_bottom.jpg",
+      "bytes": 4495938,
+      "sha256": "b82a32a5a72ffc357029a41248849f1ce1b11f400cab42ff265d341ef0cbf4b8",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-clip-on-sunglasses-holder/media/v1--v1-bottom.jpg"
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/V1/v2_installed.jpg",
+      "bytes": 2693081,
+      "sha256": "86efe5821ec83fb9a2c62560562fa5d1fa268c3bfd472cc1022985b9f5374da2",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-clip-on-sunglasses-holder/media/v1--v1-installed.jpg"
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/V2/v2.jpg",
+      "bytes": 2183634,
+      "sha256": "0335cecab028e0ff37e3642c8bba79ef213bf47b3c1dc487f6f94be9452b5f45",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-clip-on-sunglasses-holder/media/v2.jpg"
+    },
+    {
+      "path": "2024-clip-on-sunglasses-holder/source/V2/v2_attached.jpg",
+      "bytes": 1046404,
+      "sha256": "25c7955b8e5e357889e1a94981073b60c8147ec46c33354111d67741590ffd96",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-clip-on-sunglasses-holder/media/v2--v2-attached.jpg"
+    },
+    {
+      "path": "2024-dodo-rear-motor-mount/media/v3-2-exploded.png",
+      "bytes": 239524,
+      "sha256": "cbfb6807ae1f40b16709a4d3896428105a1c6e7d6b96d4c356d3b480052e9c3c",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-dodo-rear-motor-mount/media/v3-1-hl--exploded.png"
+    },
+    {
+      "path": "2024-dodo-rear-motor-mount/media/v3-2-hl--exploded.png",
+      "bytes": 239524,
+      "sha256": "cbfb6807ae1f40b16709a4d3896428105a1c6e7d6b96d4c356d3b480052e9c3c",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-dodo-rear-motor-mount/media/v3-1-hl--exploded.png"
+    },
+    {
+      "path": "2024-dodo-rear-motor-mount/media/v3-3-hl--exploded.png",
+      "bytes": 239524,
+      "sha256": "cbfb6807ae1f40b16709a4d3896428105a1c6e7d6b96d4c356d3b480052e9c3c",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-dodo-rear-motor-mount/media/v3-1-hl--exploded.png"
+    },
+    {
+      "path": "2024-dodo-rear-motor-mount/source/V3.3_HL/exploded.png",
+      "bytes": 239524,
+      "sha256": "cbfb6807ae1f40b16709a4d3896428105a1c6e7d6b96d4c356d3b480052e9c3c",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2024-dodo-rear-motor-mount/media/v3-1-hl--exploded.png"
+    },
+    {
+      "path": "2024-dodo-rear-motor-mount/source/V3.3_HL/STLs/MeSys_RearMotor_Mount_HL_LeftSplit.STL",
+      "bytes": 41215084,
+      "sha256": "b163fcea46276a94ad1728c82e97a342c24969e4785f064280e9811ca97257d9",
+      "reason": "Manufacturing/slicer export; native CAD or STEP geometry retained.",
+      "retained": null
+    },
+    {
+      "path": "2024-dodo-rear-motor-mount/source/V3.3_HL/STLs/MeSys_RearMotor_Mount_HL_RightSplit.STL",
+      "bytes": 29203084,
+      "sha256": "5c35c7e3389af1e0989f6edba823d1c6d2a7dddde06f7fbb4143ae47f8fd2780",
+      "reason": "Manufacturing/slicer export; native CAD or STEP geometry retained.",
+      "retained": null
+    },
+    {
+      "path": "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-core-vmstress.png",
+      "bytes": 65927,
+      "sha256": "d2fbf7fe6c560eca201b2de56478ab105fe67fe1e9c351e880763000afa34641",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core-vmstress.png"
+    },
+    {
+      "path": "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-core.png",
+      "bytes": 34482,
+      "sha256": "1b65d89394f663fc51697693342794d21b795e0f946133a11cd2b5ddc681d56c",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core.png"
+    },
+    {
+      "path": "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--i-beam.jpg",
+      "bytes": 7467,
+      "sha256": "4089f0dd91bd542190cff4d1abe3b55c583741651021943d89a9539bd97fe0fa",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--i-beam.jpg"
+    },
+    {
+      "path": "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core-deformation-fs8.png",
+      "bytes": 34880,
+      "sha256": "a5d9b353fdcb538dfeef3030fa23f97ad321140c62a292ffe87d33cb4af645ca",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-core-deformation-fs8.png"
+    },
+    {
+      "path": "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-foot.png",
+      "bytes": 100238,
+      "sha256": "0d17e86bf28051fa8ed8fd23ee2ed6fc979b8939ac6f7f177a287c16c6898e37",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-foot.png"
+    },
+    {
+      "path": "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--i-beam.jpg",
+      "bytes": 7467,
+      "sha256": "4089f0dd91bd542190cff4d1abe3b55c583741651021943d89a9539bd97fe0fa",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--i-beam.jpg"
+    },
+    {
+      "path": "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--shin-core-deformation-fs8.png",
+      "bytes": 34880,
+      "sha256": "a5d9b353fdcb538dfeef3030fa23f97ad321140c62a292ffe87d33cb4af645ca",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-core-deformation-fs8.png"
+    },
+    {
+      "path": "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--shin-core-vmstress.png",
+      "bytes": 65927,
+      "sha256": "d2fbf7fe6c560eca201b2de56478ab105fe67fe1e9c351e880763000afa34641",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core-vmstress.png"
+    },
+    {
+      "path": "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--shin-core.png",
+      "bytes": 34482,
+      "sha256": "1b65d89394f663fc51697693342794d21b795e0f946133a11cd2b5ddc681d56c",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core.png"
+    },
+    {
+      "path": "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--shin-foot.png",
+      "bytes": 100238,
+      "sha256": "0d17e86bf28051fa8ed8fd23ee2ed6fc979b8939ac6f7f177a287c16c6898e37",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-foot.png"
+    },
+    {
+      "path": "2026-headwind-safety/source/Open Lab/150degassydwg.jpg",
+      "bytes": 186567,
+      "sha256": "a146671270ee72214fb80e9def97657a770fddeefe82b7e68046bde8f794875f",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2026-headwind-safety/media/model-150-deg-assembly.jpg"
+    },
+    {
+      "path": "2026-headwind-safety/source/Open Lab/165deg model setup.jpg",
+      "bytes": 3287360,
+      "sha256": "bea7a46ff6f290d68adf94e762474e35c4b314f09899c8ddc5b31099d4004ed1",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2026-headwind-safety/media/model-165-deg-setup.jpg"
+    },
+    {
+      "path": "2026-headwind-safety/source/Open Lab/165degassydwg.jpg",
+      "bytes": 223197,
+      "sha256": "db9a2788b9529bd9a79ff229d0357cf1225cfa2cd35a1f9beae416456aafb69e",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2026-headwind-safety/media/model-165-deg-assembly.jpg"
+    },
+    {
+      "path": "2026-headwind-safety/source/Open Lab/180degassydwg.jpg",
+      "bytes": 203846,
+      "sha256": "d67b5275b169b6087ac55c88c48857ca09a98fcdc65734744a67d1ce347c9091",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2026-headwind-safety/media/model-180-deg-assembly.jpg"
+    },
+    {
+      "path": "2026-headwind-safety/source/Open Lab/betterimageofgroundeffect.jpeg",
+      "bytes": 3321370,
+      "sha256": "a88df56f287d4316b0e308354668f6aa8b252358e2a50610bf6b440ff2555ab6",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2026-headwind-safety/media/ground-clearance.jpeg"
+    },
+    {
+      "path": "2026-headwind-safety/source/Open Lab/CAD/human-2.snapshot.5.zip",
+      "bytes": 22725200,
+      "sha256": "c6e7b3d02754913c0d77a231eec51e978a3a5f3294032e82dad33f5d2b6ad208",
+      "reason": "Exact archive of files already extracted beside it.",
+      "retained": null
+    },
+    {
+      "path": "2026-headwind-safety/source/Open Lab/CAD/SCALEDHUMI.3mf",
+      "bytes": 37637492,
+      "sha256": "4d870bb818ec5ba7ec82ebee4267d8889c2e577436cefe110b75b52003e5301e",
+      "reason": "Manufacturing/slicer export; native CAD or STEP geometry retained.",
+      "retained": null
+    },
+    {
+      "path": "2026-headwind-safety/source/Open Lab/ME30801_S26_OpenLab_Report_T065.docx",
+      "bytes": 17340278,
+      "sha256": "de3812496fa2a8279ec505517d0e4a507cce64ad17d282beaabe2e18112be3c6",
+      "reason": "Editable duplicate of the retained final PDF report.",
+      "retained": "2026-headwind-safety/source/Open Lab/ME30801_S26_OpenLab_Report_T065.pdf"
+    },
+    {
+      "path": "2026-headwind-safety/source/Open Lab/windtunnelsetup_annotated.png",
+      "bytes": 13340201,
+      "sha256": "5aab649154f83ceb507acf14e297c9243a64cb58957f331161eba15b15c30259",
+      "reason": "Byte-identical duplicate consolidated into the retained copy.",
+      "retained": "2026-headwind-safety/media/wind-tunnel-setup.png"
+    },
+    {
+      "path": "2026-infill-thermal-conduction/source/CAD/315block.gcode.3mf",
+      "bytes": 559612,
+      "sha256": "41b6f215ed39216ce55c8c03936954ca051e47465c1753fe3f2185790f50dc9e",
+      "reason": "Manufacturing/slicer export; native CAD or STEP geometry retained.",
+      "retained": null
+    },
+    {
+      "path": "Introduction.pptx",
+      "bytes": 26596504,
+      "sha256": "8a704bcb4b037c0c2d0581a54f1ca1b95d0ae6b6004c824e0f1b73fd7f3fa4d7",
+      "reason": "Presentation also available as the retained Introduction PDF.",
+      "retained": "Introduction.pdf"
+    }
+  ]
+}

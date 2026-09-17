@@ -16,6 +16,8 @@ embedded = json.loads(re.search(r'<script type="application/json" id="project-da
 assert embedded == {p['id']: p for p in catalog}, 'Rebuild the page after editing the catalog.'
 assert len(embedded) == len(catalog)
 for p in catalog:
+    for document in p.get('documents', []):
+        assert (ROOT / document['src']).is_file(), document['src']
     for asset in p['media']:
         assert (ROOT / asset['src']).is_file(), asset['src']
 
@@ -81,6 +83,9 @@ window.addEventListener('load', async () => {
       if (!modal.open || modal.querySelector('h2').textContent !== p.title) failures.push('Dialog: ' + p.id);
       if (p.outcome && !modal.textContent.includes(p.outcome)) failures.push('Outcome: ' + p.id);
       if (modal.querySelectorAll('figure').length !== p.media.length) failures.push('Gallery: ' + p.id);
+      for (const document of p.documents || []) {
+        if (![...modal.querySelectorAll('a')].some(link => link.textContent === document.label)) failures.push('Report link: ' + p.id);
+      }
       if (p.id === 'motor-mount') {
         const video = modal.querySelector('video');
         if (!video || !video.controls || !video.src.endsWith('vertical-hover.mp4')) failures.push('Dodo video controls');

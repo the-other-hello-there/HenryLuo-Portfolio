@@ -29,12 +29,12 @@ Connection prototypes and CAD files are documented; a complete loaded assembly t
 
 | Asset | Format |
 | --- | --- |
-| [midsects](media/midsects.jpg) | JPG |
-| [pole midsects](media/pole-midsects.png) | PNG |
+| [Printed clothing-tree section prototypes](media/midsects.jpg) | JPG |
+| [Modular pole section CAD](media/pole-midsects.png) | PNG |
 
 ## Source Files
 
 - [Fusion360 Cache Files](source/Fusion360%20Cache%20Files/)
 - [Summary - Clothes Hanger.txt](source/Summary%20-%20Clothes%20Hanger.txt)
 
-Original notes, native CAD filenames, and source subdirectories are preserved as supplied. Summary statements use the supplied project notes and existing portfolio; design intentions are distinguished from documented results.
+Redundant copies and generated exports were removed in the repository size cleanup. See [the cleanup manifest](../cleanup-manifest.json) for the removal inventory and retained replacements.

@@ -29,12 +29,12 @@ The capsule was tested by dropping it from a tall balcony; it was not tested in 
 
 | Asset | Format |
 | --- | --- |
-| [bachelor exploded](media/bachelor-exploded.png) | PNG |
+| [Exploded payload capsule CAD](media/bachelor-exploded.png) | PNG |
 | [bachelor iso](media/bachelor-iso.png) | PNG |
 | [bachelor mk1](media/bachelor-mk1.png) | PNG |
-| [joint](media/joint.png) | PNG |
-| [mk1](media/mk1.jpg) | JPG |
-| [mk2](media/mk2.jpg) | JPG |
+| [Payload capsule joint detail](media/joint.png) | PNG |
+| [Bachelor payload capsule first prototype](media/mk1.jpg) | JPG |
+| [Bachelor payload capsule second prototype](media/mk2.jpg) | JPG |
 
 ## Source Files
 
@@ -42,4 +42,4 @@ The capsule was tested by dropping it from a tall balcony; it was not tested in 
 - [Bachelor_TechDocExcerpt.docx](source/Bachelor_TechDocExcerpt.docx)
 - [Summary - Bachelor Payload Capsule.txt](source/Summary%20-%20Bachelor%20Payload%20Capsule.txt)
 
-Original notes, native CAD filenames, and source subdirectories are preserved as supplied. Summary statements use the supplied project notes and existing portfolio; design intentions are distinguished from documented results.
+Redundant copies and generated exports were removed in the repository size cleanup. See [the cleanup manifest](../cleanup-manifest.json) for the removal inventory and retained replacements.

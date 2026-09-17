@@ -141,6 +141,114 @@
     ]
   },
   {
+    "id": "infill-thermal-conduction",
+    "year": 2026,
+    "title": "Infill and Thermal Conduction",
+    "context": "ME 315 · Self-chosen team experiment",
+    "tags": [
+      "Heat Transfer",
+      "Experimental Design",
+      "FDM"
+    ],
+    "summary": "Led concept development and coordinated a team-designed experiment on how infill percentage affects one-dimensional heat transfer through FDM-printed PETG blocks. Equipment limitations made the results inconclusive; the project produced a test method, data analysis, and a final report.",
+    "objective": "Investigate how 15%, 50%, and 100% cubic infill affect the equivalent thermal conductivity and resistance of otherwise comparable PETG blocks.",
+    "challenges": [
+      "Hold block geometry, material, wall thickness, and layer height consistent while varying infill.",
+      "Approximate one-dimensional, steady-state heat transfer with insulated side walls and controlled top-surface airflow.",
+      "Measure heater power and surface temperatures despite instrument noise and uncertainty.",
+      "Distinguish conduction from heat leakage, internal air effects, and temperature-dependent material behavior."
+    ],
+    "contribution": "I led concept development and coordinated the team’s work on this self-chosen project. Together, we designed the experiment around three 2 × 2 × 1 inch FDM-printed PETG blocks, a patch heater, an insulated enclosure, and forced convection over the top surface. Thermocouples, heater-power measurements, and infrared imaging supported the analysis of equivalent thermal conductivity and resistance.",
+    "outcome": "The team completed the experimental design, testing, analysis, and final report. Results were inconclusive because of unreliable equipment and limitations in the experimental assumptions. The report identifies wattmeter uncertainty, thermocouple noise, heat leakage, nonuniform surface temperatures, and operation near PETG’s glass-transition range as limitations. It proposes better instrumentation, improved insulation, and a control test for a future iteration.",
+    "media": [
+      {
+        "src": "assets/project_descriptions/2026-infill-thermal-conduction/media/blocks.png",
+        "caption": "PETG test blocks with 15%, 50%, and 100% infill",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2026-infill-thermal-conduction/media/setup-diagram.png",
+        "caption": "Insulated block assembly and blower setup",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2026-infill-thermal-conduction/media/block-cavity.png",
+        "caption": "Block enclosure cavity",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2026-infill-thermal-conduction/media/heat-transfer-diagram.png",
+        "caption": "Heat-transfer model used in the experiment",
+        "type": "image"
+      }
+    ],
+    "documents": [
+      {
+        "label": "Read the ME 315 final report (PDF)",
+        "src": "assets/project_descriptions/2026-infill-thermal-conduction/source/ME315_Team04_FinalReport.pdf"
+      }
+    ]
+  },
+  {
+    "id": "headwind-safety",
+    "year": 2026,
+    "title": "Headwind Safety: Hip-Bend Experiment",
+    "context": "ME 30801 · Self-chosen team experiment",
+    "tags": [
+      "Fluid Mechanics",
+      "Wind Tunnel",
+      "Experimental Design"
+    ],
+    "summary": "Helped formulate and design a wind-tunnel experiment comparing lift and drag on human models at three hip-bend angles. The study explored headwind-related slipping and liftoff, with its report documenting measurement and scaling limitations.",
+    "objective": "Investigate how hip bend changes headwind-induced lift and drag, and explore their implications for slipping and liftoff using scaled human models.",
+    "challenges": [
+      "Compare 1:10-scale PLA human models at hip angles of 150°, 165°, and 180°.",
+      "Measure lift and drag across approximately 22.7–34.0 m/s wind-tunnel speeds.",
+      "Account for test-stand forces, mounting interference, and imperfect ground clearance.",
+      "Assess the limits of extrapolating quasi-static, small-scale results to a person exposed to real wind."
+    ],
+    "contribution": "I helped formulate the project idea and design the experiment with the team. We developed a wind-tunnel test using three printed human models, a dynamometer, and a ground plate, including test-stand baseline measurements. The team’s analysis compared lift and drag coefficients, uncertainty, and modeled full-scale forces. I contributed to the written report, including its introduction, objective, and method.",
+    "outcome": "The team designed and conducted the experiment and produced a final report. The findings did not establish a reliable ideal posture or real-world safety threshold. Mounting interference, incomplete dynamic similarity, ground-clearance effects, and the inability to reproduce gusts limited the conclusions. The report documents these limitations and recommends improvements to the mounting, model, and test conditions.",
+    "media": [
+      {
+        "src": "assets/project_descriptions/2026-headwind-safety/media/model-165-deg-setup.jpg",
+        "caption": "165-degree model mounted in the wind tunnel",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2026-headwind-safety/media/wind-tunnel-setup.png",
+        "caption": "Annotated wind-tunnel setup",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2026-headwind-safety/media/model-150-deg-assembly.jpg",
+        "caption": "150-degree model assembly drawing",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2026-headwind-safety/media/model-165-deg-assembly.jpg",
+        "caption": "165-degree model assembly drawing",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2026-headwind-safety/media/model-180-deg-assembly.jpg",
+        "caption": "180-degree model assembly drawing",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2026-headwind-safety/media/ground-clearance.jpeg",
+        "caption": "Model clearance above the ground plate",
+        "type": "image"
+      }
+    ],
+    "documents": [
+      {
+        "label": "Read the ME 30801 final report (PDF)",
+        "src": "assets/project_descriptions/2026-headwind-safety/source/Open Lab/ME30801_S26_OpenLab_Report_T065.pdf"
+      }
+    ]
+  },
+  {
     "id": "hrc-l2-leg",
     "year": 2025,
     "title": "HRC L2 Humanoid Leg",

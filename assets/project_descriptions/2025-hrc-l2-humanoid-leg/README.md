@@ -27,36 +27,26 @@ The HRC L2 team produced a complete, functional 3D-printed leg. It was never str
 
 ## Media
 
-The shared `media/` folder contains CAD and simulation images from both design archives. These are not photographs of the completed printed leg.
-
 | Asset | Format |
 | --- | --- |
-| [archive-1--notes-figs--i-beam](media/archive-1--notes-figs--i-beam.jpg) | JPG |
-| [archive-1--notes-figs--shin-core-deformation-fs8](media/archive-1--notes-figs--shin-core-deformation-fs8.png) | PNG |
-| [archive-1--notes-figs--shin-core-vmstress](media/archive-1--notes-figs--shin-core-vmstress.png) | PNG |
-| [archive-1--notes-figs--shin-core](media/archive-1--notes-figs--shin-core.png) | PNG |
-| [archive-1--notes-figs--shin-foot](media/archive-1--notes-figs--shin-foot.png) | PNG |
-| [archive-1--phase-1--linkage-sysytems--digit](media/archive-1--phase-1--linkage-sysytems--digit.png) | PNG |
-| [archive-1--phase-1--linkage-sysytems--g1-i-think](media/archive-1--phase-1--linkage-sysytems--g1-i-think.png) | PNG |
-| [archive-1--phase-1--linkage-sysytems--gr-1](media/archive-1--phase-1--linkage-sysytems--gr-1.png) | PNG |
-| [archive-1--phase-1--linkage-sysytems--gr-2](media/archive-1--phase-1--linkage-sysytems--gr-2.png) | PNG |
-| [archive-2--leg-3-30-2025-2](media/archive-2--leg-3-30-2025-2.png) | PNG |
-| [archive-2--notes-figs--i-beam](media/archive-2--notes-figs--i-beam.jpg) | JPG |
-| [archive-2--notes-figs--shin-core-deformation-fs8](media/archive-2--notes-figs--shin-core-deformation-fs8.png) | PNG |
-| [archive-2--notes-figs--shin-core-vmstress](media/archive-2--notes-figs--shin-core-vmstress.png) | PNG |
-| [archive-2--notes-figs--shin-core](media/archive-2--notes-figs--shin-core.png) | PNG |
-| [archive-2--notes-figs--shin-foot](media/archive-2--notes-figs--shin-foot.png) | PNG |
-| [archive-2--phase-2--knee--knee-3-30-2025](media/archive-2--phase-2--knee--knee-3-30-2025.png) | PNG |
-| [archive-2--phase-2--shin-calf--notes-figs--i-beam](media/archive-2--phase-2--shin-calf--notes-figs--i-beam.jpg) | JPG |
-| [archive-2--phase-2--shin-calf--notes-figs--shin-core-deformation-fs8](media/archive-2--phase-2--shin-calf--notes-figs--shin-core-deformation-fs8.png) | PNG |
-| [archive-2--phase-2--shin-calf--notes-figs--shin-core-vmstress](media/archive-2--phase-2--shin-calf--notes-figs--shin-core-vmstress.png) | PNG |
-| [archive-2--phase-2--shin-calf--notes-figs--shin-core](media/archive-2--phase-2--shin-calf--notes-figs--shin-core.png) | PNG |
-| [archive-2--phase-2--shin-calf--notes-figs--shin-foot-quad](media/archive-2--phase-2--shin-calf--notes-figs--shin-foot-quad.png) | PNG |
-| [archive-2--phase-2--shin-calf--notes-figs--shin-foot](media/archive-2--phase-2--shin-calf--notes-figs--shin-foot.png) | PNG |
+| [archive 1 / notes figs / i beam](media/archive-1--notes-figs--i-beam.jpg) | JPG |
+| [archive 1 / notes figs / shin core deformation fs8](media/archive-1--notes-figs--shin-core-deformation-fs8.png) | PNG |
+| [archive 1 / notes figs / shin foot](media/archive-1--notes-figs--shin-foot.png) | PNG |
+| [archive 1 / phase 1 / linkage sysytems / digit](media/archive-1--phase-1--linkage-sysytems--digit.png) | PNG |
+| [archive 1 / phase 1 / linkage sysytems / g1 i think](media/archive-1--phase-1--linkage-sysytems--g1-i-think.png) | PNG |
+| [archive 1 / phase 1 / linkage sysytems / gr 1](media/archive-1--phase-1--linkage-sysytems--gr-1.png) | PNG |
+| [archive 1 / phase 1 / linkage sysytems / gr 2](media/archive-1--phase-1--linkage-sysytems--gr-2.png) | PNG |
+| [HRC L2 leg CAD assembly](media/archive-2--leg-3-30-2025-2.png) | PNG |
+| [Shin core stress simulation](media/archive-2--notes-figs--shin-core-vmstress.png) | PNG |
+| [Shin core structural concept](media/archive-2--notes-figs--shin-core.png) | PNG |
+| [Knee assembly CAD](media/archive-2--phase-2--knee--knee-3-30-2025.png) | PNG |
+| [archive 2 / phase 2 / shin calf / notes figs / shin foot quad](media/archive-2--phase-2--shin-calf--notes-figs--shin-foot-quad.png) | PNG |
 
 ## Source Files
 
-- [Design archive 1](source/design-archive-1/README.md)
-- [Design archive 2](source/design-archive-2/README.md)
+- [design-archive-1.zip](source/design-archive-1.zip)
+- [design-archive-2.zip](source/design-archive-2.zip)
 
-Both archives belong to this single HRC L2 project. Native CAD filenames and directory relationships are preserved within each archive.
+The two ZIP archives document design iterations within one HRC L2 project. The media above are CAD and simulation images, not photographs of the completed printed leg.
+
+Redundant copies and generated exports were removed in the repository size cleanup. See [the cleanup manifest](../cleanup-manifest.json) for the removal inventory and retained replacements.

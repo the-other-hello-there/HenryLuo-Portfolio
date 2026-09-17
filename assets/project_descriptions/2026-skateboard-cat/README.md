@@ -29,14 +29,14 @@ The existing portfolio records a team Honorable Mention in the ME 444 Interactiv
 
 | Asset | Format |
 | --- | --- |
-| [drive system cad](media/drive-system-cad.png) | PNG |
-| [final build](media/final-build.jpg) | JPG |
-| [full creo assembly](media/full-creo-assembly.png) | PNG |
-| [shell securing assembly](media/shell-securing-assembly.png) | PNG |
+| [Drive system CAD](media/drive-system-cad.png) | PNG |
+| [Skateboard cat final build](media/final-build.jpg) | JPG |
+| [Complete skateboard cat Creo assembly](media/full-creo-assembly.png) | PNG |
 | [Skateboard cat team presentation booth](media/presentation-booth.jpg) | JPG |
+| [Shell-securing assembly](media/shell-securing-assembly.png) | PNG |
 
 ## Source Files
 
-No native CAD or original summary files were supplied. Summary and constraints are drawn from `index.html` and `assets/js/script.js`.
+The project narrative and retained media document this work. No separate source files remain in this repository.
 
-Original notes, native CAD filenames, and source subdirectories are preserved as supplied. Summary statements use the supplied project notes and existing portfolio; design intentions are distinguished from documented results.
+Redundant copies and generated exports were removed in the repository size cleanup. See [the cleanup manifest](../cleanup-manifest.json) for the removal inventory and retained replacements.

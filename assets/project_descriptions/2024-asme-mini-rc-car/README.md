@@ -32,20 +32,19 @@ The team earned first place in the ASME Mini RC Car competition. The existing ra
 | --- | --- |
 | [action shot](media/action-shot.png) | PNG |
 | [cad model](media/cad-model.png) | PNG |
-| [final build](media/final-build.jpg) | JPG |
-| [full onshape assembly](media/full-onshape-assembly.png) | PNG |
-| [performance / fullrace](media/performance--fullrace.mp4) | MP4 |
+| [ASME mini RC car final build](media/final-build.jpg) | JPG |
+| [Complete RC car Onshape assembly](media/full-onshape-assembly.png) | PNG |
+| [full race documentation](media/full-race-documentation.mp4) | MP4 |
 | [performance / halfthrottle](media/performance--halfthrottle.mp4) | MP4 |
 | [performance / mid jump](media/performance--mid-jump.png) | PNG |
-| [performance / raceclip](media/performance--raceclip.mp4) | MP4 |
-| [performance / successfuljump](media/performance--successfuljump.mp4) | MP4 |
-| [rear](media/rear.jpg) | JPG |
-| [top view](media/top-view.jpg) | JPG |
+| [RC car race footage](media/performance--raceclip.mp4) | MP4 |
+| [RC car jump demonstration](media/performance--successfuljump.mp4) | MP4 |
+| [Rear drivetrain assembly](media/rear.jpg) | JPG |
+| [RC car component layout from above](media/top-view.jpg) | JPG |
 
 ## Source Files
 
 - [(LRM) Car Assembly.stl](source/%28LRM%29%20Car%20Assembly.stl)
-- [Performance](source/Performance/)
 - [Summary - ASME Car.txt](source/Summary%20-%20ASME%20Car.txt)
 
-Original notes, native CAD filenames, and source subdirectories are preserved as supplied. Summary statements use the supplied project notes and existing portfolio; design intentions are distinguished from documented results.
+Redundant copies and generated exports were removed in the repository size cleanup. See [the cleanup manifest](../cleanup-manifest.json) for the removal inventory and retained replacements.

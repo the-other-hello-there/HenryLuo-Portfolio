@@ -41,26 +41,22 @@ Construction and installed-shelf photos document the completed build. Original n
 | [day 1 plywood cut](media/day-1-plywood-cut.jpg) | JPG |
 | [day 2 shelf assembled](media/day-2-shelf-assembled.jpg) | JPG |
 | [day 2 shelf assembly](media/day-2-shelf-assembly.jpg) | JPG |
-| [day 2 shelf installed](media/day-2-shelf-installed.jpg) | JPG |
-| [design steps / cad](media/design-steps--cad.png) | PNG |
+| [Pine display shelf installed in the room](media/day-2-shelf-installed.jpg) | JPG |
 | [design steps / cut layout](media/design-steps--cut-layout.png) | PNG |
 | [design steps / frame](media/design-steps--frame.png) | PNG |
 | [design steps / room layout](media/design-steps--room-layout.png) | PNG |
 | [display shelf](media/display-shelf.jpg) | JPG |
-| [frame cad](media/frame-cad.png) | PNG |
+| [Shelf frame CAD](media/frame-cad.png) | PNG |
 | [full shelf cad](media/full-shelf-cad.png) | PNG |
 | [master assy](media/master-assy.png) | PNG |
 | [materials / amazon receipt excerpt](media/materials--amazon-receipt-excerpt.png) | PNG |
 | [materials / lowes receipt excerpt](media/materials--lowes-receipt-excerpt.jpg) | JPG |
-| [shelf cutting schematic](media/shelf-cutting-schematic.png) | PNG |
-| [target room cad](media/target-room-cad.png) | PNG |
+| [Plywood cutting schematic](media/shelf-cutting-schematic.png) | PNG |
+| [Target room CAD layout](media/target-room-cad.png) | PNG |
 
 ## Source Files
 
-- [Construction Steps](source/Construction%20Steps/)
-- [Design Steps](source/Design%20Steps/)
 - [Fusion360 Cache Files](source/Fusion360%20Cache%20Files/)
-- [Materials](source/Materials/)
 - [Summary - Pine Display Shelf.txt](source/Summary%20-%20Pine%20Display%20Shelf.txt)
 
-Original notes, native CAD filenames, and source subdirectories are preserved as supplied. Summary statements use the supplied project notes and existing portfolio; design intentions are distinguished from documented results.
+Redundant copies and generated exports were removed in the repository size cleanup. See [the cleanup manifest](../cleanup-manifest.json) for the removal inventory and retained replacements.

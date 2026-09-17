@@ -1,0 +1,12 @@
+For ts, 165, 180
+Drag Scaling Factor: 12.52
+Lift Scaling Factor: 89.49
+T = 21degC
+uncorrected pressure: 751.7 mmHg
+
+
+For ts2, 150
+Drag Scaling Factor: 12.47
+Lift Scaling Factor: 72.48
+T = 19.9degC
+uncorrected pressure: 744.0 mmHg

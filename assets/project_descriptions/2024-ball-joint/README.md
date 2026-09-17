@@ -29,10 +29,10 @@ A printed assembly and motion video are available; load capacity and range of mo
 
 | Asset | Format |
 | --- | --- |
-| [balljoint](media/balljoint.mp4) | MP4 |
-| [cadballjoint](media/cadballjoint.png) | PNG |
-| [cadcalf](media/cadcalf.png) | PNG |
-| [printed balljoint](media/printed-balljoint.png) | PNG |
+| [Ball joint motion demonstration](media/balljoint.mp4) | MP4 |
+| [Ball-and-socket CAD assembly](media/cadballjoint.png) | PNG |
+| [Calf joint CAD](media/cadcalf.png) | PNG |
+| [Printed ball-and-socket prototype](media/printed-balljoint.png) | PNG |
 
 ## Source Files
 
@@ -41,4 +41,4 @@ A printed assembly and motion video are available; load capacity and range of mo
 - [HL_Socket.SLDPRT](source/HL_Socket.SLDPRT)
 - [Summary - Balljoint.txt](source/Summary%20-%20Balljoint.txt)
 
-Original notes, native CAD filenames, and source subdirectories are preserved as supplied. Summary statements use the supplied project notes and existing portfolio; design intentions are distinguished from documented results.
+Redundant copies and generated exports were removed in the repository size cleanup. See [the cleanup manifest](../cleanup-manifest.json) for the removal inventory and retained replacements.

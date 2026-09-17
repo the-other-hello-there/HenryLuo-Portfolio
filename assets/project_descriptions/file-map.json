@@ -72,8 +72,8 @@
   {
     "original": "2023 - Clothes Hanger/Fusion360 Cache Files/_PoleMidsects.31955451-4834-4899-854e-d41a11b8ef08.f3d",
     "current": [
-      "2023-clothes-hanger/source/Fusion360 Cache Files/_PoleMidsects.31955451-4834-4899-854e-d41a11b8ef08.f3d",
-      "2023-clothes-hanger/source/Fusion360 Cache Files/POC/_PoleMidsects.31955451-4834-4899-854e-d41a11b8ef08.f3d"
+      "2023-clothes-hanger/source/Fusion360 Cache Files/POC/_PoleMidsects.31955451-4834-4899-854e-d41a11b8ef08.f3d",
+      "2023-clothes-hanger/source/Fusion360 Cache Files/_PoleMidsects.31955451-4834-4899-854e-d41a11b8ef08.f3d"
     ],
     "sha256": "92fc07e3224ed08a8d9e5e1817c76d98f164c2aa087890adc2bee51a4197d5cf"
   },
@@ -129,8 +129,8 @@
   {
     "original": "2023 - Clothes Hanger/Fusion360 Cache Files/POC/_PoleMidsects.31955451-4834-4899-854e-d41a11b8ef08.f3d",
     "current": [
-      "2023-clothes-hanger/source/Fusion360 Cache Files/_PoleMidsects.31955451-4834-4899-854e-d41a11b8ef08.f3d",
-      "2023-clothes-hanger/source/Fusion360 Cache Files/POC/_PoleMidsects.31955451-4834-4899-854e-d41a11b8ef08.f3d"
+      "2023-clothes-hanger/source/Fusion360 Cache Files/POC/_PoleMidsects.31955451-4834-4899-854e-d41a11b8ef08.f3d",
+      "2023-clothes-hanger/source/Fusion360 Cache Files/_PoleMidsects.31955451-4834-4899-854e-d41a11b8ef08.f3d"
     ],
     "sha256": "92fc07e3224ed08a8d9e5e1817c76d98f164c2aa087890adc2bee51a4197d5cf"
   },
@@ -158,9 +158,7 @@
   {
     "original": "2023 - Pine Display Shelf (Personal)/CAD.png",
     "current": [
-      "2023-pine-display-shelf/media/cad.png",
-      "2023-pine-display-shelf/media/design-steps--cad.png",
-      "2023-pine-display-shelf/source/Design Steps/CAD.png"
+      "2023-pine-display-shelf/media/cad.png"
     ],
     "sha256": "e33d16d2aad1838bfcb5790404eab306545381c2a953fe842156ae1e0926dce1"
   },
@@ -258,73 +256,63 @@
   {
     "original": "2023 - Pine Display Shelf (Personal)/Construction Steps/step0.jpg",
     "current": [
-      "2023-pine-display-shelf/media/construction-steps--step0.jpg",
-      "2023-pine-display-shelf/source/Construction Steps/step0.jpg"
+      "2023-pine-display-shelf/media/construction-steps--step0.jpg"
     ],
     "sha256": "df62624689ce4bd1245645e4e050a823c3c5e395f09eaa43f740c2b26d6fd8bb"
   },
   {
     "original": "2023 - Pine Display Shelf (Personal)/Construction Steps/step1.jpg",
     "current": [
-      "2023-pine-display-shelf/media/construction-steps--step1.jpg",
-      "2023-pine-display-shelf/source/Construction Steps/step1.jpg"
+      "2023-pine-display-shelf/media/construction-steps--step1.jpg"
     ],
     "sha256": "044a83fed901cf9d17419b99155c7dd8b945a15234fe4793b52f71e697aeb66a"
   },
   {
     "original": "2023 - Pine Display Shelf (Personal)/Construction Steps/step2.jpg",
     "current": [
-      "2023-pine-display-shelf/media/construction-steps--step2.jpg",
-      "2023-pine-display-shelf/source/Construction Steps/step2.jpg"
+      "2023-pine-display-shelf/media/construction-steps--step2.jpg"
     ],
     "sha256": "5c497b99f595df5c2c077da95ce2e2e32d53a65224bac6315c68b00a319fe893"
   },
   {
     "original": "2023 - Pine Display Shelf (Personal)/Construction Steps/step3.jpg",
     "current": [
-      "2023-pine-display-shelf/media/construction-steps--step3.jpg",
-      "2023-pine-display-shelf/source/Construction Steps/step3.jpg"
+      "2023-pine-display-shelf/media/construction-steps--step3.jpg"
     ],
     "sha256": "75da375b89d6dc96bd9e2b29d9c40ece92ca9b5b9d2539781f3eaf1d33ccde18"
   },
   {
     "original": "2023 - Pine Display Shelf (Personal)/Construction Steps/step4.jpg",
     "current": [
-      "2023-pine-display-shelf/media/construction-steps--step4.jpg",
-      "2023-pine-display-shelf/source/Construction Steps/step4.jpg"
+      "2023-pine-display-shelf/media/construction-steps--step4.jpg"
     ],
     "sha256": "aa2d55a81ac2d63c8ee4a1d80311d39340d2f79af7b23c16b8500134f0db920e"
   },
   {
     "original": "2023 - Pine Display Shelf (Personal)/Design Steps/CAD.png",
     "current": [
-      "2023-pine-display-shelf/media/cad.png",
-      "2023-pine-display-shelf/media/design-steps--cad.png",
-      "2023-pine-display-shelf/source/Design Steps/CAD.png"
+      "2023-pine-display-shelf/media/cad.png"
     ],
     "sha256": "e33d16d2aad1838bfcb5790404eab306545381c2a953fe842156ae1e0926dce1"
   },
   {
     "original": "2023 - Pine Display Shelf (Personal)/Design Steps/Cut Layout.png",
     "current": [
-      "2023-pine-display-shelf/media/design-steps--cut-layout.png",
-      "2023-pine-display-shelf/source/Design Steps/Cut Layout.png"
+      "2023-pine-display-shelf/media/design-steps--cut-layout.png"
     ],
     "sha256": "d8a10d93226741799d0e5501f4a274ca31f8e21059ec5f5660152127f84d5636"
   },
   {
     "original": "2023 - Pine Display Shelf (Personal)/Design Steps/Frame.png",
     "current": [
-      "2023-pine-display-shelf/media/design-steps--frame.png",
-      "2023-pine-display-shelf/source/Design Steps/Frame.png"
+      "2023-pine-display-shelf/media/design-steps--frame.png"
     ],
     "sha256": "9ef6a6ad4a590529642bee91d8e8e3dbcbef2566f2587882ae28cf8c66834078"
   },
   {
     "original": "2023 - Pine Display Shelf (Personal)/Design Steps/Room Layout.png",
     "current": [
-      "2023-pine-display-shelf/media/design-steps--room-layout.png",
-      "2023-pine-display-shelf/source/Design Steps/Room Layout.png"
+      "2023-pine-display-shelf/media/design-steps--room-layout.png"
     ],
     "sha256": "2308d241d2f01384c70e481b797bf2cfb85e8fe56416f8de380b851f4795a295"
   },
@@ -422,16 +410,14 @@
   {
     "original": "2023 - Pine Display Shelf (Personal)/Materials/AmazonReceiptExcerpt.png",
     "current": [
-      "2023-pine-display-shelf/media/materials--amazon-receipt-excerpt.png",
-      "2023-pine-display-shelf/source/Materials/AmazonReceiptExcerpt.png"
+      "2023-pine-display-shelf/media/materials--amazon-receipt-excerpt.png"
     ],
     "sha256": "a83319fa6cc6865c54d19da6fcf6f4981b7b1331125334e0b8372ce3a71bf3e4"
   },
   {
     "original": "2023 - Pine Display Shelf (Personal)/Materials/LowesReceiptExcerpt.jpg",
     "current": [
-      "2023-pine-display-shelf/media/materials--lowes-receipt-excerpt.jpg",
-      "2023-pine-display-shelf/source/Materials/LowesReceiptExcerpt.jpg"
+      "2023-pine-display-shelf/media/materials--lowes-receipt-excerpt.jpg"
     ],
     "sha256": "5392b1491107582e556e010c66b9a827a75d2f55e734a4ef87e7af6d5ba2af51"
   },
@@ -493,41 +479,38 @@
   },
   {
     "original": "2024 - ASME Car (ASME - Small Projects)/Performance/fullrace.mp4",
-    "current": [
-      "2024-asme-mini-rc-car/media/performance--fullrace.mp4",
-      "2024-asme-mini-rc-car/source/Performance/fullrace.mp4"
+    "current": [],
+    "sha256": "e056be19ac104d457846891e5d4df8eb0c27a4d4e19033dac4c27c65c26fd1aa",
+    "replacement": [
+      "2024-asme-mini-rc-car/media/full-race-documentation.mp4"
     ],
-    "sha256": "e056be19ac104d457846891e5d4df8eb0c27a4d4e19033dac4c27c65c26fd1aa"
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2024 - ASME Car (ASME - Small Projects)/Performance/halfthrottle.mp4",
     "current": [
-      "2024-asme-mini-rc-car/media/performance--halfthrottle.mp4",
-      "2024-asme-mini-rc-car/source/Performance/halfthrottle.mp4"
+      "2024-asme-mini-rc-car/media/performance--halfthrottle.mp4"
     ],
     "sha256": "e521e4c70875690bd34311420c02129b75f452a630f2688732dc4c70c2ed081d"
   },
   {
     "original": "2024 - ASME Car (ASME - Small Projects)/Performance/Mid-Jump.png",
     "current": [
-      "2024-asme-mini-rc-car/media/performance--mid-jump.png",
-      "2024-asme-mini-rc-car/source/Performance/Mid-Jump.png"
+      "2024-asme-mini-rc-car/media/performance--mid-jump.png"
     ],
     "sha256": "96a53ed20af080c7fe7d2403513a711865458a6006622891918b0c746d016167"
   },
   {
     "original": "2024 - ASME Car (ASME - Small Projects)/Performance/raceclip.mp4",
     "current": [
-      "2024-asme-mini-rc-car/media/performance--raceclip.mp4",
-      "2024-asme-mini-rc-car/source/Performance/raceclip.mp4"
+      "2024-asme-mini-rc-car/media/performance--raceclip.mp4"
     ],
     "sha256": "85cecdaa7e5b896ac516825846a7b5c219df0384db8be5ad372a35270034cb31"
   },
   {
     "original": "2024 - ASME Car (ASME - Small Projects)/Performance/successfuljump.mp4",
     "current": [
-      "2024-asme-mini-rc-car/media/performance--successfuljump.mp4",
-      "2024-asme-mini-rc-car/source/Performance/successfuljump.mp4"
+      "2024-asme-mini-rc-car/media/performance--successfuljump.mp4"
     ],
     "sha256": "72f9c7cf675f77990c4fc4a540d04ab4078417ce7337cd124dd7f47b6743aaed"
   },
@@ -596,10 +579,9 @@
   },
   {
     "original": "2024 - Bachelor Payload Capsule (PART - R&D Mechanical Systems)/Bachelor mk2/MESys_Payload_Body_v2_hl.STL",
-    "current": [
-      "2024-bachelor-payload-capsule/source/Bachelor mk2/MESys_Payload_Body_v2_hl.STL"
-    ],
-    "sha256": "0defd687a87feeb0a5e0b98b163d38c036899b73118c2751495bfdd1c2422334"
+    "current": [],
+    "sha256": "0defd687a87feeb0a5e0b98b163d38c036899b73118c2751495bfdd1c2422334",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2024 - Bachelor Payload Capsule (PART - R&D Mechanical Systems)/Bachelor mk2/MESys_Payload_Bottle_v2_hl.SLDPRT",
@@ -617,10 +599,9 @@
   },
   {
     "original": "2024 - Bachelor Payload Capsule (PART - R&D Mechanical Systems)/Bachelor mk2/MESys_Payload_Flapper_v2_hl.STL",
-    "current": [
-      "2024-bachelor-payload-capsule/source/Bachelor mk2/MESys_Payload_Flapper_v2_hl.STL"
-    ],
-    "sha256": "b3c10055ec3c86e9c2f5a9abd59ca5fb5e88d65de93ed38afd80662eecf7b43e"
+    "current": [],
+    "sha256": "b3c10055ec3c86e9c2f5a9abd59ca5fb5e88d65de93ed38afd80662eecf7b43e",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2024 - Bachelor Payload Capsule (PART - R&D Mechanical Systems)/Bachelor mk2/MESys_Payload_Lidar_v2_mc.SLDPRT",
@@ -638,10 +619,9 @@
   },
   {
     "original": "2024 - Bachelor Payload Capsule (PART - R&D Mechanical Systems)/Bachelor mk2/MESys_Payload_Lockball_v2_hl.STL",
-    "current": [
-      "2024-bachelor-payload-capsule/source/Bachelor mk2/MESys_Payload_Lockball_v2_hl.STL"
-    ],
-    "sha256": "b13e8ee522882f73767f88a9c4520af7a178cef0cad876f0fcebde2f0bc7eb02"
+    "current": [],
+    "sha256": "b13e8ee522882f73767f88a9c4520af7a178cef0cad876f0fcebde2f0bc7eb02",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2024 - Bachelor Payload Capsule (PART - R&D Mechanical Systems)/Bachelor mk2/MESys_Payload_MainAssembly_v2_hl.SLDASM",
@@ -730,9 +710,7 @@
   {
     "original": "2024 - ClipOn Sunglasses Holder/v2.jpg",
     "current": [
-      "2024-clip-on-sunglasses-holder/media/v2--v2.jpg",
-      "2024-clip-on-sunglasses-holder/media/v2.jpg",
-      "2024-clip-on-sunglasses-holder/source/V2/v2.jpg"
+      "2024-clip-on-sunglasses-holder/media/v2.jpg"
     ],
     "sha256": "0335cecab028e0ff37e3642c8bba79ef213bf47b3c1dc487f6f94be9452b5f45"
   },
@@ -745,10 +723,9 @@
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/CAD/V1/clip.stl",
-    "current": [
-      "2024-clip-on-sunglasses-holder/source/CAD/V1/clip.stl"
-    ],
-    "sha256": "5d76a39a4fa0ff62fb54e00ab416fa430167bfedbd32221151242294c7f4da65"
+    "current": [],
+    "sha256": "5d76a39a4fa0ff62fb54e00ab416fa430167bfedbd32221151242294c7f4da65",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/CAD/V1/housing.ipt",
@@ -759,10 +736,9 @@
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/CAD/V1/housing.stl",
-    "current": [
-      "2024-clip-on-sunglasses-holder/source/CAD/V1/housing.stl"
-    ],
-    "sha256": "5790133a34a3ea86eb4a6a904435dfafccbd117c49d130681d2d4f722fecfb16"
+    "current": [],
+    "sha256": "5790133a34a3ea86eb4a6a904435dfafccbd117c49d130681d2d4f722fecfb16",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/CAD/V2/Assy.iam",
@@ -773,45 +749,39 @@
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/CAD/V2/Assy_bracket_4.stl",
-    "current": [
-      "2024-clip-on-sunglasses-holder/source/CAD/V2/Assy_bracket_4.stl"
-    ],
-    "sha256": "47d15b101a65f38b1c04b087ebd39960e3bfbf1946a2a09fcb7c9537265d3774"
+    "current": [],
+    "sha256": "47d15b101a65f38b1c04b087ebd39960e3bfbf1946a2a09fcb7c9537265d3774",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/CAD/V2/Assy_bracket_5.3mf",
-    "current": [
-      "2024-clip-on-sunglasses-holder/source/CAD/V2/Assy_bracket_5.3mf"
-    ],
-    "sha256": "3493c02c49e09d80bec7ee559750bd6569dc691f2307bf0c549bff3729352153"
+    "current": [],
+    "sha256": "3493c02c49e09d80bec7ee559750bd6569dc691f2307bf0c549bff3729352153",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/CAD/V2/Assy_bracket_5.stl",
-    "current": [
-      "2024-clip-on-sunglasses-holder/source/CAD/V2/Assy_bracket_5.stl"
-    ],
-    "sha256": "646e313b17e2141a253c7b27008f8254404f0fa4521de2b13f48ac0788b8b97a"
+    "current": [],
+    "sha256": "646e313b17e2141a253c7b27008f8254404f0fa4521de2b13f48ac0788b8b97a",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/CAD/V2/Assy_clip_3.stl",
-    "current": [
-      "2024-clip-on-sunglasses-holder/source/CAD/V2/Assy_clip_3.stl"
-    ],
-    "sha256": "4ee854a2fc533944789011378eb40039a6ef14fcf01b644569a8408fb9dc8184"
+    "current": [],
+    "sha256": "4ee854a2fc533944789011378eb40039a6ef14fcf01b644569a8408fb9dc8184",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/CAD/V2/Assy_housing_1.stl",
-    "current": [
-      "2024-clip-on-sunglasses-holder/source/CAD/V2/Assy_housing_1.stl"
-    ],
-    "sha256": "feea80990d8ed4a5439b66ef68a81420be048e7ef24237ef378e1012de212e24"
+    "current": [],
+    "sha256": "feea80990d8ed4a5439b66ef68a81420be048e7ef24237ef378e1012de212e24",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/CAD/V2/Assy_housing_2.stl",
-    "current": [
-      "2024-clip-on-sunglasses-holder/source/CAD/V2/Assy_housing_2.stl"
-    ],
-    "sha256": "a9c4efcf0c8643e8235c163d504d0f378dc0395e847f65cdf0821d92b8f160f2"
+    "current": [],
+    "sha256": "a9c4efcf0c8643e8235c163d504d0f378dc0395e847f65cdf0821d92b8f160f2",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/CAD/V2/bracket.ipt",
@@ -879,97 +849,77 @@
   {
     "original": "2024 - ClipOn Sunglasses Holder/V0/v1_bottom.jpg",
     "current": [
-      "2024-clip-on-sunglasses-holder/media/v0--v1-bottom.jpg",
-      "2024-clip-on-sunglasses-holder/source/V0/v1_bottom.jpg"
+      "2024-clip-on-sunglasses-holder/media/v0--v1-bottom.jpg"
     ],
     "sha256": "5c9d77b6688f66b94c1a3172eac56b4739e9fb3e0b0472263d9978ef8a1523b6"
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/V0/v1_top.jpg",
     "current": [
-      "2024-clip-on-sunglasses-holder/media/v0--v1-top.jpg",
-      "2024-clip-on-sunglasses-holder/source/V0/v1_top.jpg"
+      "2024-clip-on-sunglasses-holder/media/v0--v1-top.jpg"
     ],
     "sha256": "25178737148f92b90f025898c81b9ba41fa645c22688e918d177729c6e0c889d"
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/V1/Clip.png",
     "current": [
-      "2024-clip-on-sunglasses-holder/media/v1--clip.png",
-      "2024-clip-on-sunglasses-holder/source/V1/Clip.png"
+      "2024-clip-on-sunglasses-holder/media/v1--clip.png"
     ],
     "sha256": "39d449243627a4943cb28b300a3cb631a89b183405e1feab48d4f124d27e4e13"
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/V1/Housing.png",
     "current": [
-      "2024-clip-on-sunglasses-holder/media/v1--housing.png",
-      "2024-clip-on-sunglasses-holder/source/V1/Housing.png"
+      "2024-clip-on-sunglasses-holder/media/v1--housing.png"
     ],
     "sha256": "502e6251fe714882c40e6bd661f7b8b422e9e5f8d99e65ca28def9a04704e9d7"
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/V1/v1_bottom.jpg",
     "current": [
-      "2024-clip-on-sunglasses-holder/media/v1--v1-bottom.jpg",
-      "2024-clip-on-sunglasses-holder/media/v1--v2-bottom.jpg",
-      "2024-clip-on-sunglasses-holder/source/V1/v1_bottom.jpg",
-      "2024-clip-on-sunglasses-holder/source/V1/v2_bottom.jpg"
+      "2024-clip-on-sunglasses-holder/media/v1--v1-bottom.jpg"
     ],
     "sha256": "b82a32a5a72ffc357029a41248849f1ce1b11f400cab42ff265d341ef0cbf4b8"
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/V1/v1_installed.jpg",
     "current": [
-      "2024-clip-on-sunglasses-holder/media/v1--v1-installed.jpg",
-      "2024-clip-on-sunglasses-holder/media/v1--v2-installed.jpg",
-      "2024-clip-on-sunglasses-holder/source/V1/v1_installed.jpg",
-      "2024-clip-on-sunglasses-holder/source/V1/v2_installed.jpg"
+      "2024-clip-on-sunglasses-holder/media/v1--v1-installed.jpg"
     ],
     "sha256": "86efe5821ec83fb9a2c62560562fa5d1fa268c3bfd472cc1022985b9f5374da2"
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/V1/V1_Problem.jpg",
     "current": [
-      "2024-clip-on-sunglasses-holder/media/v1--v1-problem.jpg",
-      "2024-clip-on-sunglasses-holder/source/V1/V1_Problem.jpg"
+      "2024-clip-on-sunglasses-holder/media/v1--v1-problem.jpg"
     ],
     "sha256": "628bf03958bb23853c246d90a7e4bed56f63e5e3d71d092fcc49ab749899deb1"
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/V1/v2_bottom.jpg",
     "current": [
-      "2024-clip-on-sunglasses-holder/media/v1--v1-bottom.jpg",
-      "2024-clip-on-sunglasses-holder/media/v1--v2-bottom.jpg",
-      "2024-clip-on-sunglasses-holder/source/V1/v1_bottom.jpg",
-      "2024-clip-on-sunglasses-holder/source/V1/v2_bottom.jpg"
+      "2024-clip-on-sunglasses-holder/media/v1--v1-bottom.jpg"
     ],
     "sha256": "b82a32a5a72ffc357029a41248849f1ce1b11f400cab42ff265d341ef0cbf4b8"
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/V1/v2_installed.jpg",
     "current": [
-      "2024-clip-on-sunglasses-holder/media/v1--v1-installed.jpg",
-      "2024-clip-on-sunglasses-holder/media/v1--v2-installed.jpg",
-      "2024-clip-on-sunglasses-holder/source/V1/v1_installed.jpg",
-      "2024-clip-on-sunglasses-holder/source/V1/v2_installed.jpg"
+      "2024-clip-on-sunglasses-holder/media/v1--v1-installed.jpg"
     ],
     "sha256": "86efe5821ec83fb9a2c62560562fa5d1fa268c3bfd472cc1022985b9f5374da2"
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/V2/v2.jpg",
     "current": [
-      "2024-clip-on-sunglasses-holder/media/v2--v2.jpg",
-      "2024-clip-on-sunglasses-holder/media/v2.jpg",
-      "2024-clip-on-sunglasses-holder/source/V2/v2.jpg"
+      "2024-clip-on-sunglasses-holder/media/v2.jpg"
     ],
     "sha256": "0335cecab028e0ff37e3642c8bba79ef213bf47b3c1dc487f6f94be9452b5f45"
   },
   {
     "original": "2024 - ClipOn Sunglasses Holder/V2/v2_attached.jpg",
     "current": [
-      "2024-clip-on-sunglasses-holder/media/v2--v2-attached.jpg",
-      "2024-clip-on-sunglasses-holder/source/V2/v2_attached.jpg"
+      "2024-clip-on-sunglasses-holder/media/v2--v2-attached.jpg"
     ],
     "sha256": "25c7955b8e5e357889e1a94981073b60c8147ec46c33354111d67741590ffd96"
   },
@@ -1081,13 +1031,7 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_exploded.png",
     "current": [
-      "2024-dodo-rear-motor-mount/media/v3-1-hl--exploded.png",
-      "2024-dodo-rear-motor-mount/media/v3-2-exploded.png",
-      "2024-dodo-rear-motor-mount/media/v3-2-hl--exploded.png",
-      "2024-dodo-rear-motor-mount/media/v3-3-hl--exploded.png",
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/exploded.png",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/exploded.png",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/exploded.png"
+      "2024-dodo-rear-motor-mount/media/v3-1-hl--exploded.png"
     ],
     "sha256": "cbfb6807ae1f40b16709a4d3896428105a1c6e7d6b96d4c356d3b480052e9c3c"
   },
@@ -1100,10 +1044,9 @@
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/Verthover.mov",
-    "current": [
-      "2024-dodo-rear-motor-mount/media/vertical-hover.mov"
-    ],
-    "sha256": "92f66512fefade5cf1f39a8a116008952480ed991d62e3e66bfed0df6658037a"
+    "current": [],
+    "sha256": "92f66512fefade5cf1f39a8a116008952480ed991d62e3e66bfed0df6658037a",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V1_NM (Original)/MeSys_RearMotor_Mount_V1_NM.SLDPRT",
@@ -1115,61 +1058,85 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V2_HL/Derived_Motor.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V2_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3_HL/Derived_Motor.SLDPRT"
+      "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Motor.SLDPRT"
     ],
     "sha256": "9ec6141f21013fc4bb5cc16a0e5ef0e274085c36b334414f27eeafa80a907bf9"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V2_HL/MeSys_RearMotor_MountAssy_V2_HL.SLDASM",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V2_HL/MeSys_RearMotor_MountAssy_V2_HL.SLDASM"
-    ],
-    "sha256": "49bc931acae38025f69b86cdc90ed72f5fe856636eafd3c96c9d8856e5fb704b"
+    "current": [],
+    "sha256": "49bc931acae38025f69b86cdc90ed72f5fe856636eafd3c96c9d8856e5fb704b",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V2_HL/MeSys_RearMotor_MountAssy_V2_HL.SLDASM"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V2_HL/MeSys_RearMotor_Mount_V2_HL.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V2_HL/MeSys_RearMotor_Mount_V2_HL.SLDPRT"
-    ],
-    "sha256": "454f2337a7722e48b9bc6ea8b0ffa921e490ea56864d41122eb437c9b0f2cd22"
+    "current": [],
+    "sha256": "454f2337a7722e48b9bc6ea8b0ffa921e490ea56864d41122eb437c9b0f2cd22",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V2_HL/MeSys_RearMotor_Mount_V2_HL.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V2_HL/MeSys_RearMotor_Mount_V2_HL_GasketBottom.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V2_HL/MeSys_RearMotor_Mount_V2_HL_GasketBottom.SLDPRT"
-    ],
-    "sha256": "3dc6bb6e0b2903e447538bd69aef14fb2ecd8c37622491ee1934d39ffd8a8162"
+    "current": [],
+    "sha256": "3dc6bb6e0b2903e447538bd69aef14fb2ecd8c37622491ee1934d39ffd8a8162",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V2_HL/MeSys_RearMotor_Mount_V2_HL_GasketBottom.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V2_HL/MeSys_RearMotor_Mount_V2_HL_GasketTop.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V2_HL/MeSys_RearMotor_Mount_V2_HL_GasketTop.SLDPRT"
-    ],
-    "sha256": "ff73a48d66464bfcef05e62e19d4d18f4b984e7a6d9e65eb5a9eac272d57942c"
+    "current": [],
+    "sha256": "ff73a48d66464bfcef05e62e19d4d18f4b984e7a6d9e65eb5a9eac272d57942c",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V2_HL/MeSys_RearMotor_Mount_V2_HL_GasketTop.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V2_HL/MeSys_RearMotor_Mount_V2_HL_LeftSplit.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V2_HL/MeSys_RearMotor_Mount_V2_HL_LeftSplit.SLDPRT"
-    ],
-    "sha256": "d0025d2095b304337b9acd1152d8403210f79a5c5c33ba7229b3569e05d1541d"
+    "current": [],
+    "sha256": "d0025d2095b304337b9acd1152d8403210f79a5c5c33ba7229b3569e05d1541d",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V2_HL/MeSys_RearMotor_Mount_V2_HL_LeftSplit.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V2_HL/MeSys_RearMotor_Mount_V2_HL_RightSplit.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V2_HL/MeSys_RearMotor_Mount_V2_HL_RightSplit.SLDPRT"
-    ],
-    "sha256": "ff295bcaa3860a49de1ba838961301396958dd7d7fa467b2e17117ddcf895183"
+    "current": [],
+    "sha256": "ff295bcaa3860a49de1ba838961301396958dd7d7fa467b2e17117ddcf895183",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V2_HL/MeSys_RearMotor_Mount_V2_HL_RightSplit.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.1_HL/Derived_Bolt.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/Derived_Bolt.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/Derived_Bolt.SLDPRT",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Bolt.SLDPRT"
     ],
     "sha256": "5142129c2759ca87626d544693066551a0f156a72734c84f26417a68b0805a2b"
@@ -1177,8 +1144,6 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.1_HL/Derived_Locknut.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/Derived_Locknut.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/Derived_Locknut.SLDPRT",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Locknut.SLDPRT"
     ],
     "sha256": "3708234b78311384e8d6b3322efae079b26048430800aaaea10e05298cdc54b7"
@@ -1186,87 +1151,94 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.1_HL/Derived_Motor.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V2_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3_HL/Derived_Motor.SLDPRT"
+      "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Motor.SLDPRT"
     ],
     "sha256": "9ec6141f21013fc4bb5cc16a0e5ef0e274085c36b334414f27eeafa80a907bf9"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.1_HL/exploded.png",
     "current": [
-      "2024-dodo-rear-motor-mount/media/v3-1-hl--exploded.png",
-      "2024-dodo-rear-motor-mount/media/v3-2-exploded.png",
-      "2024-dodo-rear-motor-mount/media/v3-2-hl--exploded.png",
-      "2024-dodo-rear-motor-mount/media/v3-3-hl--exploded.png",
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/exploded.png",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/exploded.png",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/exploded.png"
+      "2024-dodo-rear-motor-mount/media/v3-1-hl--exploded.png"
     ],
     "sha256": "cbfb6807ae1f40b16709a4d3896428105a1c6e7d6b96d4c356d3b480052e9c3c"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.1_HL/matnotes.txt",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/matnotes.txt",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/matnotes.txt",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/matnotes.txt",
-      "2024-dodo-rear-motor-mount/source/V3_HL/matnotes.txt"
+      "2024-dodo-rear-motor-mount/source/V3.3_HL/matnotes.txt"
     ],
     "sha256": "a361f7aa64f0227b7283b1de7a507fc04d7097f41b6d680813ab9dad777ecd6b"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.1_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3_HL/MeSys_RearMotor_MockTailboom_V3_HL.SLDPRT"
+      "2024-dodo-rear-motor-mount/source/V3.3_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT"
     ],
     "sha256": "5224e1cd76bca227dc43daa08d50b6d6d0749a7823c91607a46fb26912f2f355"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.1_HL/MeSys_RearMotor_MountAssy_V3.1_HL.SLDASM",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/MeSys_RearMotor_MountAssy_V3.1_HL.SLDASM"
-    ],
-    "sha256": "3f1fdd26073c45ce6b80c492979000feb6b705212e8b56b60baeaa064624df3d"
+    "current": [],
+    "sha256": "3f1fdd26073c45ce6b80c492979000feb6b705212e8b56b60baeaa064624df3d",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3.1_HL/MeSys_RearMotor_MountAssy_V3.1_HL.SLDASM"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.1_HL/MeSys_RearMotor_Mount_HL_GasketBot.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/MeSys_RearMotor_Mount_HL_GasketBot.SLDPRT"
-    ],
-    "sha256": "405b2dbbaa28ab6c9431f2e3bde72493eb0fefca4e95cdc986b57d621a3bb5d0"
+    "current": [],
+    "sha256": "405b2dbbaa28ab6c9431f2e3bde72493eb0fefca4e95cdc986b57d621a3bb5d0",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3.1_HL/MeSys_RearMotor_Mount_HL_GasketBot.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.1_HL/MeSys_RearMotor_Mount_HL_LeftSplit.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/MeSys_RearMotor_Mount_HL_LeftSplit.SLDPRT"
-    ],
-    "sha256": "5727de8457a674856b6be39a48bf88ba12c93998e9d5b5570c356fc4151d0c5b"
+    "current": [],
+    "sha256": "5727de8457a674856b6be39a48bf88ba12c93998e9d5b5570c356fc4151d0c5b",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3.1_HL/MeSys_RearMotor_Mount_HL_LeftSplit.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.1_HL/MeSys_RearMotor_Mount_HL_RightSplit.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/MeSys_RearMotor_Mount_HL_RightSplit.SLDPRT"
-    ],
-    "sha256": "5f0174b3b42ba56f98d3a6b2979905f21aee23a0bb0af5b7a59ddac45c0d3fe1"
+    "current": [],
+    "sha256": "5f0174b3b42ba56f98d3a6b2979905f21aee23a0bb0af5b7a59ddac45c0d3fe1",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3.1_HL/MeSys_RearMotor_Mount_HL_RightSplit.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.1_HL/MeSys_RearMotor_Mount_V3.1_HL.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/MeSys_RearMotor_Mount_V3.1_HL.SLDPRT"
-    ],
-    "sha256": "a0f8d8e3eaa84beb269647d8b99a5568549b36921cd72a02349f3c69bc8d8a02"
+    "current": [],
+    "sha256": "a0f8d8e3eaa84beb269647d8b99a5568549b36921cd72a02349f3c69bc8d8a02",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3.1_HL/MeSys_RearMotor_Mount_V3.1_HL.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.1_HL/readme.txt",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/readme.txt",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/readme.txt",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/readme.txt"
     ],
     "sha256": "96c9a96d9f4ae8b4d22ed744e41aed1c892ee050240ceaff17e11e765fd219d1"
@@ -1274,8 +1246,6 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/Derived_Bolt.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/Derived_Bolt.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/Derived_Bolt.SLDPRT",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Bolt.SLDPRT"
     ],
     "sha256": "5142129c2759ca87626d544693066551a0f156a72734c84f26417a68b0805a2b"
@@ -1283,8 +1253,6 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/Derived_Locknut.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/Derived_Locknut.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/Derived_Locknut.SLDPRT",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Locknut.SLDPRT"
     ],
     "sha256": "3708234b78311384e8d6b3322efae079b26048430800aaaea10e05298cdc54b7"
@@ -1292,87 +1260,89 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/Derived_Motor.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V2_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3_HL/Derived_Motor.SLDPRT"
+      "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Motor.SLDPRT"
     ],
     "sha256": "9ec6141f21013fc4bb5cc16a0e5ef0e274085c36b334414f27eeafa80a907bf9"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/exploded.png",
     "current": [
-      "2024-dodo-rear-motor-mount/media/v3-1-hl--exploded.png",
-      "2024-dodo-rear-motor-mount/media/v3-2-exploded.png",
-      "2024-dodo-rear-motor-mount/media/v3-2-hl--exploded.png",
-      "2024-dodo-rear-motor-mount/media/v3-3-hl--exploded.png",
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/exploded.png",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/exploded.png",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/exploded.png"
+      "2024-dodo-rear-motor-mount/media/v3-1-hl--exploded.png"
     ],
     "sha256": "cbfb6807ae1f40b16709a4d3896428105a1c6e7d6b96d4c356d3b480052e9c3c"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/matnotes.txt",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/matnotes.txt",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/matnotes.txt",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/matnotes.txt",
-      "2024-dodo-rear-motor-mount/source/V3_HL/matnotes.txt"
+      "2024-dodo-rear-motor-mount/source/V3.3_HL/matnotes.txt"
     ],
     "sha256": "a361f7aa64f0227b7283b1de7a507fc04d7097f41b6d680813ab9dad777ecd6b"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3_HL/MeSys_RearMotor_MockTailboom_V3_HL.SLDPRT"
+      "2024-dodo-rear-motor-mount/source/V3.3_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT"
     ],
     "sha256": "5224e1cd76bca227dc43daa08d50b6d6d0749a7823c91607a46fb26912f2f355"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/MeSys_RearMotor_MountAssy_V3.2_HL.SLDASM",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/MeSys_RearMotor_MountAssy_V3.2_HL.SLDASM",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/MeSys_RearMotor_MountAssy_V3.3_HL.SLDASM"
     ],
     "sha256": "b5e51650db63ae12a78896b9be78c388c668a4a256aca9270c43de9cb149a6f9"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/MeSys_RearMotor_Mount_HL_GasketBot.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/MeSys_RearMotor_Mount_HL_GasketBot.SLDPRT"
-    ],
-    "sha256": "cef86729e1b8ce785d1da8c18a2617b0ed4bba3b7c5307b39a229e38dc8ffcca"
+    "current": [],
+    "sha256": "cef86729e1b8ce785d1da8c18a2617b0ed4bba3b7c5307b39a229e38dc8ffcca",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3.2_HL/MeSys_RearMotor_Mount_HL_GasketBot.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/MeSys_RearMotor_Mount_HL_LeftSplit.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/MeSys_RearMotor_Mount_HL_LeftSplit.SLDPRT"
-    ],
-    "sha256": "99376ed2815e8498350dcfe08fbcf8d54cfdb9ce3e764b3862cc666d7161eb32"
+    "current": [],
+    "sha256": "99376ed2815e8498350dcfe08fbcf8d54cfdb9ce3e764b3862cc666d7161eb32",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3.2_HL/MeSys_RearMotor_Mount_HL_LeftSplit.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/MeSys_RearMotor_Mount_HL_RightSplit.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/MeSys_RearMotor_Mount_HL_RightSplit.SLDPRT"
-    ],
-    "sha256": "b1949d16f7e3ee03036a7f73e832b554a28dd6d3fa566fb275cb925e17608d30"
+    "current": [],
+    "sha256": "b1949d16f7e3ee03036a7f73e832b554a28dd6d3fa566fb275cb925e17608d30",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3.2_HL/MeSys_RearMotor_Mount_HL_RightSplit.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/MeSys_RearMotor_Mount_V3.2_HL.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/MeSys_RearMotor_Mount_V3.2_HL.SLDPRT"
-    ],
-    "sha256": "27c1e7bd67369eac655dca2523efcb2ac32622eba61abe2a1843a6803ab996bd"
+    "current": [],
+    "sha256": "27c1e7bd67369eac655dca2523efcb2ac32622eba61abe2a1843a6803ab996bd",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3.2_HL/MeSys_RearMotor_Mount_V3.2_HL.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/MeSys_RearMotor_SideCmprRubber_V3.2_HL.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/MeSys_RearMotor_SideCmprRubber_V3.2_HL.SLDPRT",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/MeSys_RearMotor_SideCmprRubber_V3.3_HL.SLDPRT"
     ],
     "sha256": "d07735d643f30340c2031ac634f4d1f1ba4012269d894058681a915be230e1b1"
@@ -1380,7 +1350,6 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/MeSys_RearMotor_TopBotCmprRubber_V3.2_HL.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/MeSys_RearMotor_TopBotCmprRubber_V3.2_HL.SLDPRT",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/MeSys_RearMotor_TopBotCmprRubber_V3.2_HL.SLDPRT"
     ],
     "sha256": "1b316e642c2ac6dfcfa4279d8dcb3e32b2761dc91ec7144f81fc37731db6dce6"
@@ -1388,8 +1357,6 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/readme.txt",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/readme.txt",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/readme.txt",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/readme.txt"
     ],
     "sha256": "96c9a96d9f4ae8b4d22ed744e41aed1c892ee050240ceaff17e11e765fd219d1"
@@ -1397,7 +1364,6 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/Rubber Strip Calcs.xlsx",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/Rubber Strip Calcs.xlsx",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/Rubber Strip Calcs.xlsx"
     ],
     "sha256": "b45b42fb992dacd1fcbbe4392665827f0dfe4dfc02a279bf38934b9b72e5f709"
@@ -1405,37 +1371,49 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/rubberchoice.txt",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/rubberchoice.txt",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/rubberchoice.txt"
     ],
     "sha256": "f784857691cba9ac184f1e7cdd08c7fd0f95f72a01b86392d6a20fad74d7f09b"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/STLs/MeSys_RearMotor_MountAssy_V3.2_HL - MeSys_RearMotor_Mount_HL_LeftSplit-2.3mf",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/STLs/MeSys_RearMotor_MountAssy_V3.2_HL - MeSys_RearMotor_Mount_HL_LeftSplit-2.3mf"
-    ],
-    "sha256": "18cbdcbcd9ca164b69b8f8de545c0624c40ce7a5c7a58421393095e719935b81"
+    "current": [],
+    "sha256": "18cbdcbcd9ca164b69b8f8de545c0624c40ce7a5c7a58421393095e719935b81",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3.2_HL/STLs/MeSys_RearMotor_MountAssy_V3.2_HL - MeSys_RearMotor_Mount_HL_LeftSplit-2.3mf"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/STLs/MeSys_RearMotor_MountAssy_V3.2_HL - MeSys_RearMotor_Mount_HL_LeftSplit-2.STL",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/STLs/MeSys_RearMotor_MountAssy_V3.2_HL - MeSys_RearMotor_Mount_HL_LeftSplit-2.STL"
-    ],
-    "sha256": "a2d8614312df9170774f21e8730c2a987df5dc237691a38ca49816ad27342579"
+    "current": [],
+    "sha256": "a2d8614312df9170774f21e8730c2a987df5dc237691a38ca49816ad27342579",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3.2_HL/STLs/MeSys_RearMotor_MountAssy_V3.2_HL - MeSys_RearMotor_Mount_HL_LeftSplit-2.STL"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.2_HL/STLs/MeSys_RearMotor_MountAssy_V3.2_HL - MeSys_RearMotor_Mount_HL_RightSplit-2.STL",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/STLs/MeSys_RearMotor_MountAssy_V3.2_HL - MeSys_RearMotor_Mount_HL_RightSplit-2.STL"
-    ],
-    "sha256": "84edf43e2272baa4d06d72e4446b352541994b9adfbc3e632c3d7067e93e1c52"
+    "current": [],
+    "sha256": "84edf43e2272baa4d06d72e4446b352541994b9adfbc3e632c3d7067e93e1c52",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3.2_HL/STLs/MeSys_RearMotor_MountAssy_V3.2_HL - MeSys_RearMotor_Mount_HL_RightSplit-2.STL"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.3_HL/Derived_Bolt.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/Derived_Bolt.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/Derived_Bolt.SLDPRT",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Bolt.SLDPRT"
     ],
     "sha256": "5142129c2759ca87626d544693066551a0f156a72734c84f26417a68b0805a2b"
@@ -1443,8 +1421,6 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.3_HL/Derived_Locknut.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/Derived_Locknut.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/Derived_Locknut.SLDPRT",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Locknut.SLDPRT"
     ],
     "sha256": "3708234b78311384e8d6b3322efae079b26048430800aaaea10e05298cdc54b7"
@@ -1452,51 +1428,34 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.3_HL/Derived_Motor.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V2_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3_HL/Derived_Motor.SLDPRT"
+      "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Motor.SLDPRT"
     ],
     "sha256": "9ec6141f21013fc4bb5cc16a0e5ef0e274085c36b334414f27eeafa80a907bf9"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.3_HL/exploded.png",
     "current": [
-      "2024-dodo-rear-motor-mount/media/v3-1-hl--exploded.png",
-      "2024-dodo-rear-motor-mount/media/v3-2-exploded.png",
-      "2024-dodo-rear-motor-mount/media/v3-2-hl--exploded.png",
-      "2024-dodo-rear-motor-mount/media/v3-3-hl--exploded.png",
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/exploded.png",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/exploded.png",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/exploded.png"
+      "2024-dodo-rear-motor-mount/media/v3-1-hl--exploded.png"
     ],
     "sha256": "cbfb6807ae1f40b16709a4d3896428105a1c6e7d6b96d4c356d3b480052e9c3c"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.3_HL/matnotes.txt",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/matnotes.txt",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/matnotes.txt",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/matnotes.txt",
-      "2024-dodo-rear-motor-mount/source/V3_HL/matnotes.txt"
+      "2024-dodo-rear-motor-mount/source/V3.3_HL/matnotes.txt"
     ],
     "sha256": "a361f7aa64f0227b7283b1de7a507fc04d7097f41b6d680813ab9dad777ecd6b"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.3_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3_HL/MeSys_RearMotor_MockTailboom_V3_HL.SLDPRT"
+      "2024-dodo-rear-motor-mount/source/V3.3_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT"
     ],
     "sha256": "5224e1cd76bca227dc43daa08d50b6d6d0749a7823c91607a46fb26912f2f355"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.3_HL/MeSys_RearMotor_MountAssy_V3.3_HL.SLDASM",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/MeSys_RearMotor_MountAssy_V3.2_HL.SLDASM",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/MeSys_RearMotor_MountAssy_V3.3_HL.SLDASM"
     ],
     "sha256": "b5e51650db63ae12a78896b9be78c388c668a4a256aca9270c43de9cb149a6f9"
@@ -1532,7 +1491,6 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.3_HL/MeSys_RearMotor_SideCmprRubber_V3.3_HL.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/MeSys_RearMotor_SideCmprRubber_V3.2_HL.SLDPRT",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/MeSys_RearMotor_SideCmprRubber_V3.3_HL.SLDPRT"
     ],
     "sha256": "d07735d643f30340c2031ac634f4d1f1ba4012269d894058681a915be230e1b1"
@@ -1540,7 +1498,6 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.3_HL/MeSys_RearMotor_TopBotCmprRubber_V3.2_HL.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/MeSys_RearMotor_TopBotCmprRubber_V3.2_HL.SLDPRT",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/MeSys_RearMotor_TopBotCmprRubber_V3.2_HL.SLDPRT"
     ],
     "sha256": "1b316e642c2ac6dfcfa4279d8dcb3e32b2761dc91ec7144f81fc37731db6dce6"
@@ -1548,8 +1505,6 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.3_HL/readme.txt",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/readme.txt",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/readme.txt",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/readme.txt"
     ],
     "sha256": "96c9a96d9f4ae8b4d22ed744e41aed1c892ee050240ceaff17e11e765fd219d1"
@@ -1557,7 +1512,6 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.3_HL/Rubber Strip Calcs.xlsx",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/Rubber Strip Calcs.xlsx",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/Rubber Strip Calcs.xlsx"
     ],
     "sha256": "b45b42fb992dacd1fcbbe4392665827f0dfe4dfc02a279bf38934b9b72e5f709"
@@ -1565,276 +1519,411 @@
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.3_HL/rubberchoice.txt",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/rubberchoice.txt",
       "2024-dodo-rear-motor-mount/source/V3.3_HL/rubberchoice.txt"
     ],
     "sha256": "f784857691cba9ac184f1e7cdd08c7fd0f95f72a01b86392d6a20fad74d7f09b"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.3_HL/STLs/MeSys_RearMotor_Mount_HL_LeftSplit.STL",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/STLs/MeSys_RearMotor_Mount_HL_LeftSplit.STL"
-    ],
-    "sha256": "b163fcea46276a94ad1728c82e97a342c24969e4785f064280e9811ca97257d9"
+    "current": [],
+    "sha256": "b163fcea46276a94ad1728c82e97a342c24969e4785f064280e9811ca97257d9",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3.3_HL/STLs/MeSys_RearMotor_Mount_HL_RightSplit.STL",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/STLs/MeSys_RearMotor_Mount_HL_RightSplit.STL"
-    ],
-    "sha256": "5c35c7e3389af1e0989f6edba823d1c6d2a7dddde06f7fbb4143ae47f8fd2780"
+    "current": [],
+    "sha256": "5c35c7e3389af1e0989f6edba823d1c6d2a7dddde06f7fbb4143ae47f8fd2780",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3_HL/Derived_Motor.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V2_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Motor.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3_HL/Derived_Motor.SLDPRT"
+      "2024-dodo-rear-motor-mount/source/V3.3_HL/Derived_Motor.SLDPRT"
     ],
     "sha256": "9ec6141f21013fc4bb5cc16a0e5ef0e274085c36b334414f27eeafa80a907bf9"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3_HL/matnotes.txt",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/matnotes.txt",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/matnotes.txt",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/matnotes.txt",
-      "2024-dodo-rear-motor-mount/source/V3_HL/matnotes.txt"
+      "2024-dodo-rear-motor-mount/source/V3.3_HL/matnotes.txt"
     ],
     "sha256": "a361f7aa64f0227b7283b1de7a507fc04d7097f41b6d680813ab9dad777ecd6b"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3_HL/MeSys_RearMotor_MockTailboom_V3_HL.SLDPRT",
     "current": [
-      "2024-dodo-rear-motor-mount/source/V3.1_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.2_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3.3_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT",
-      "2024-dodo-rear-motor-mount/source/V3_HL/MeSys_RearMotor_MockTailboom_V3_HL.SLDPRT"
+      "2024-dodo-rear-motor-mount/source/V3.3_HL/MeSys_RearMotor_MockTailboom_HL.SLDPRT"
     ],
     "sha256": "5224e1cd76bca227dc43daa08d50b6d6d0749a7823c91607a46fb26912f2f355"
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3_HL/MeSys_RearMotor_MountAssy_V3_HL.SLDASM",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3_HL/MeSys_RearMotor_MountAssy_V3_HL.SLDASM"
-    ],
-    "sha256": "8ef83be58c7f4cc257f6c0430f0b43cb9393f84d28e20b5b9307c4be649a33c8"
+    "current": [],
+    "sha256": "8ef83be58c7f4cc257f6c0430f0b43cb9393f84d28e20b5b9307c4be649a33c8",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3_HL/MeSys_RearMotor_MountAssy_V3_HL.SLDASM"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3_HL/MeSys_RearMotor_Mount_V3_HL.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3_HL/MeSys_RearMotor_Mount_V3_HL.SLDPRT"
-    ],
-    "sha256": "8ffaab994f2d0561368eec9862a4032bd19ec5d22c47735d18edea47bb52bccf"
+    "current": [],
+    "sha256": "8ffaab994f2d0561368eec9862a4032bd19ec5d22c47735d18edea47bb52bccf",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3_HL/MeSys_RearMotor_Mount_V3_HL.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3_HL/MeSys_RearMotor_Mount_V3_HL_GasketBot.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3_HL/MeSys_RearMotor_Mount_V3_HL_GasketBot.SLDPRT"
-    ],
-    "sha256": "e052c8860f326ab79c4d37be2a552e0694da959c36276cf09b4240328242969a"
+    "current": [],
+    "sha256": "e052c8860f326ab79c4d37be2a552e0694da959c36276cf09b4240328242969a",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3_HL/MeSys_RearMotor_Mount_V3_HL_GasketBot.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3_HL/MeSys_RearMotor_Mount_V3_HL_LeftSplit.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3_HL/MeSys_RearMotor_Mount_V3_HL_LeftSplit.SLDPRT"
-    ],
-    "sha256": "8b70e11a20447eb8c8412b9152dab9fc33bfc73a6078e24249453574864cec63"
+    "current": [],
+    "sha256": "8b70e11a20447eb8c8412b9152dab9fc33bfc73a6078e24249453574864cec63",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3_HL/MeSys_RearMotor_Mount_V3_HL_LeftSplit.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3_HL/MeSys_RearMotor_Mount_V3_HL_RightSplit.SLDPRT",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3_HL/MeSys_RearMotor_Mount_V3_HL_RightSplit.SLDPRT"
-    ],
-    "sha256": "f5015b89fd1d9e8427eafea4e4c067dbf406683aba026a53c1f3dd67f87a1e3c"
+    "current": [],
+    "sha256": "f5015b89fd1d9e8427eafea4e4c067dbf406683aba026a53c1f3dd67f87a1e3c",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3_HL/MeSys_RearMotor_Mount_V3_HL_RightSplit.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2024 - Dodo RearMotor Mount (PART - R&D Mechanical Systems)/V3_HL/readme.txt",
-    "current": [
-      "2024-dodo-rear-motor-mount/source/V3_HL/readme.txt"
-    ],
-    "sha256": "4c73519e6845f22fa0ecb8dc2516479876f2cc69436e83c5e7992b4bc97b335a"
+    "current": [],
+    "sha256": "4c73519e6845f22fa0ecb8dc2516479876f2cc69436e83c5e7992b4bc97b335a",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2024-dodo-rear-motor-mount/source/intermediate_iterations.zip",
+        "entry": "V3_HL/readme.txt"
+      }
+    ]
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/beamBendingDocumention.docx",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/beamBendingDocumention.docx"
-    ],
-    "sha256": "2b6b1540beeb85018af17a534534aeb28b6d8406f124a7a6c419854d72b75494"
+    "current": [],
+    "sha256": "2b6b1540beeb85018af17a534534aeb28b6d8406f124a7a6c419854d72b75494",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/beamBendingDocumention.docx"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/beamBendingDocumention.docx"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/beamBendingDocumention.docx"
+      }
+    ]
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/beamBendingDocumention.pdf",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/beamBendingDocumention.pdf"
-    ],
-    "sha256": "a52008db87444188f1a41845cec1c083462e8f69eca8425d35b09e560ec78274"
+    "current": [],
+    "sha256": "a52008db87444188f1a41845cec1c083462e8f69eca8425d35b09e560ec78274",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/beamBendingDocumention.pdf"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/beamBendingDocumention.pdf"
+      }
+    ]
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/samoi_maximization.m",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/samoi_maximization.m"
-    ],
-    "sha256": "9bb640b91764a6e29d0caa924e62620908ac3f66248112e19e8692367156c27b"
+    "current": [],
+    "sha256": "9bb640b91764a6e29d0caa924e62620908ac3f66248112e19e8692367156c27b",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/samoi_maximization.m"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/samoi_maximization.m"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/samoi_maximization.m"
+      }
+    ]
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Summary - ShinQuad.txt",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Summary - ShinQuad.txt"
-    ],
-    "sha256": "f99806002c82bfd459e97cc94a5dedee63592ba1502eb869cf2cc4d1c2674ce6"
+    "current": [],
+    "sha256": "f99806002c82bfd459e97cc94a5dedee63592ba1502eb869cf2cc4d1c2674ce6",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Summary - ShinQuad.txt"
+      }
+    ]
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Notes & Figs/beambendingnotes.docx",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Notes & Figs/beambendingnotes.docx"
-    ],
-    "sha256": "fe9a6f968d60f35fcca80a98002e557233accb57fcbdfed641da90e6de7d6b10"
+    "current": [],
+    "sha256": "fe9a6f968d60f35fcca80a98002e557233accb57fcbdfed641da90e6de7d6b10",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Notes & Figs/beambendingnotes.docx"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Notes & Figs/beambendingnotes.docx"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/Notes & Figs/beambendingnotes.docx"
+      }
+    ]
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Notes & Figs/i-beam.jpg",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--i-beam.jpg",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Notes & Figs/i-beam.jpg"
+      "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--i-beam.jpg"
     ],
     "sha256": "4089f0dd91bd542190cff4d1abe3b55c583741651021943d89a9539bd97fe0fa"
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Notes & Figs/Shin+Foot.png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-foot.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Notes & Figs/Shin+Foot.png"
+      "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-foot.png"
     ],
     "sha256": "0d17e86bf28051fa8ed8fd23ee2ed6fc979b8939ac6f7f177a287c16c6898e37"
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Notes & Figs/ShinCore.png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-core.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Notes & Figs/ShinCore.png"
+      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core.png"
     ],
     "sha256": "1b65d89394f663fc51697693342794d21b795e0f946133a11cd2b5ddc681d56c"
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Notes & Figs/ShinCoreDeformation(FS8).png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-core-deformation-fs8.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Notes & Figs/ShinCoreDeformation(FS8).png"
+      "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-core-deformation-fs8.png"
     ],
     "sha256": "a5d9b353fdcb538dfeef3030fa23f97ad321140c62a292ffe87d33cb4af645ca"
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Notes & Figs/ShinCoreVMStress.png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-core-vmstress.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Notes & Figs/ShinCoreVMStress.png"
+      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core-vmstress.png"
     ],
     "sha256": "d2fbf7fe6c560eca201b2de56478ab105fe67fe1e9c351e880763000afa34641"
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Phase 1/Core-Static 1.CWR",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Phase 1/Core-Static 1.CWR"
-    ],
-    "sha256": "7d40e39139a882321c8da935cbbd7c87f787bae190c0a080c5f132eb24f3c7cb"
+    "current": [],
+    "sha256": "7d40e39139a882321c8da935cbbd7c87f787bae190c0a080c5f132eb24f3c7cb",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Phase 1/Core-Static 1.gsz",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Phase 1/Core-Static 1.gsz"
-    ],
-    "sha256": "eceefa83235622c425f6948c39b85f30faee7f37c533b45cca20476405e66bc8"
+    "current": [],
+    "sha256": "eceefa83235622c425f6948c39b85f30faee7f37c533b45cca20476405e66bc8",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Phase 1/Core-Static 1.gsz"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/Core-Static 1.gsz"
+      }
+    ]
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Phase 1/Core-Static 1.LOG",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Phase 1/Core-Static 1.LOG"
-    ],
-    "sha256": "181506762d44da5dcfdeeb4d9715fbd96e6a0c4f86b3b01449ae1445eff65710"
+    "current": [],
+    "sha256": "181506762d44da5dcfdeeb4d9715fbd96e6a0c4f86b3b01449ae1445eff65710",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Phase 1/Core-Static 1.LOG"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/Core-Static 1.LOG"
+      }
+    ]
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Phase 1/Core-Static 1.MFC",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Phase 1/Core-Static 1.MFC"
-    ],
-    "sha256": "9bb8e921e8f708fbfbc2fb0f3b0c49df5762474137aaca99589eb68127e45bd4"
+    "current": [],
+    "sha256": "9bb8e921e8f708fbfbc2fb0f3b0c49df5762474137aaca99589eb68127e45bd4",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Phase 1/Core-Static 1.MFC"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/Core-Static 1.MFC"
+      }
+    ]
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Phase 1/Core.SLDPRT",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Phase 1/Core.SLDPRT"
-    ],
-    "sha256": "f9a83a8720484ae2d651852c93b200a6dcdf5de1d09a43a3f32040be77b0d092"
+    "current": [],
+    "sha256": "f9a83a8720484ae2d651852c93b200a6dcdf5de1d09a43a3f32040be77b0d092",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Phase 1/Core.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Phase 1/PerformanceLog.txt",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Phase 1/PerformanceLog.txt"
-    ],
-    "sha256": "4dac40a4c321788c70e0309ee742e6523d577cdf0f3501d1fd89395d6daa0ed2"
+    "current": [],
+    "sha256": "4dac40a4c321788c70e0309ee742e6523d577cdf0f3501d1fd89395d6daa0ed2",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Phase 1/PerformanceLog.txt"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/PerformanceLog.txt"
+      }
+    ]
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Phase 1/Platform.SLDPRT",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Phase 1/Platform.SLDPRT"
-    ],
-    "sha256": "074640f24701de1cd68de57788f3884cd8f8b0f75f50773943a783603bfbd5b7"
+    "current": [],
+    "sha256": "074640f24701de1cd68de57788f3884cd8f8b0f75f50773943a783603bfbd5b7",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Phase 1/Platform.SLDPRT"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/Platform.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Phase 1/ShinAssy.SLDASM",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Phase 1/ShinAssy.SLDASM"
-    ],
-    "sha256": "97fdb2c4bc3ad389c2bb21fbea9401d68348d29f85edaef6bc471899d90e7167"
+    "current": [],
+    "sha256": "97fdb2c4bc3ad389c2bb21fbea9401d68348d29f85edaef6bc471899d90e7167",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Phase 1/ShinAssy.SLDASM"
+      }
+    ]
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Phase 1/linkage sysytems/Digit.png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-1--phase-1--linkage-sysytems--digit.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Phase 1/linkage sysytems/Digit.png"
+      "2025-hrc-l2-humanoid-leg/media/archive-1--phase-1--linkage-sysytems--digit.png"
     ],
     "sha256": "7e79814dec7bdbc00bbd54e383672cecaca1b3962e6cfbb058a3f39a7ca0115f"
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Phase 1/linkage sysytems/G1 i think.png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-1--phase-1--linkage-sysytems--g1-i-think.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Phase 1/linkage sysytems/G1 i think.png"
+      "2025-hrc-l2-humanoid-leg/media/archive-1--phase-1--linkage-sysytems--g1-i-think.png"
     ],
     "sha256": "3f375908a282a0c9e0aa76064a07db692edf279b5987419912a9131bb46a238b"
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Phase 1/linkage sysytems/GR 1.png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-1--phase-1--linkage-sysytems--gr-1.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Phase 1/linkage sysytems/GR 1.png"
+      "2025-hrc-l2-humanoid-leg/media/archive-1--phase-1--linkage-sysytems--gr-1.png"
     ],
     "sha256": "86f6723644d4e31fd7af5ed2ff2dc7d962f1a8dde3620441494509405e0b8f68"
   },
   {
     "original": "2025 - ShinCalf (HRC - Full-Scale Leg Phase 1)/Phase 1/linkage sysytems/GR 2.png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-1--phase-1--linkage-sysytems--gr-2.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-1/Phase 1/linkage sysytems/GR 2.png"
+      "2025-hrc-l2-humanoid-leg/media/archive-1--phase-1--linkage-sysytems--gr-2.png"
     ],
     "sha256": "8b7ce9de1f6e09598f47a34911b0a9110cbdd864336c45ef814b12d74a6c6807"
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/beamBendingDocumention.docx",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/beamBendingDocumention.docx",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/beamBendingDocumention.docx"
-    ],
-    "sha256": "2b6b1540beeb85018af17a534534aeb28b6d8406f124a7a6c419854d72b75494"
+    "current": [],
+    "sha256": "2b6b1540beeb85018af17a534534aeb28b6d8406f124a7a6c419854d72b75494",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/beamBendingDocumention.docx"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/beamBendingDocumention.docx"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/beamBendingDocumention.docx"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/beamBendingDocumention.pdf",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/beamBendingDocumention.pdf",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/beamBendingDocumention.pdf"
-    ],
-    "sha256": "a52008db87444188f1a41845cec1c083462e8f69eca8425d35b09e560ec78274"
+    "current": [],
+    "sha256": "a52008db87444188f1a41845cec1c083462e8f69eca8425d35b09e560ec78274",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/beamBendingDocumention.pdf"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/beamBendingDocumention.pdf"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Leg_3-30-2025_2.png",
@@ -1845,291 +1934,431 @@
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/samoi_maximization.m",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/samoi_maximization.m",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/samoi_maximization.m"
-    ],
-    "sha256": "9bb640b91764a6e29d0caa924e62620908ac3f66248112e19e8692367156c27b"
+    "current": [],
+    "sha256": "9bb640b91764a6e29d0caa924e62620908ac3f66248112e19e8692367156c27b",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/samoi_maximization.m"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/samoi_maximization.m"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/samoi_maximization.m"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Summary - ShinQuadKnee.txt",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Summary - ShinQuadKnee.txt"
-    ],
-    "sha256": "043bb0d2fe4b5a5655bd8ca0f1ede8e236b4cbc93fe5759c5bcc4e1b9fa2be58"
+    "current": [],
+    "sha256": "043bb0d2fe4b5a5655bd8ca0f1ede8e236b4cbc93fe5759c5bcc4e1b9fa2be58",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Summary - ShinQuadKnee.txt"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Notes & Figs/beambendingnotes.docx",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Notes & Figs/beambendingnotes.docx",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Notes & Figs/beambendingnotes.docx"
-    ],
-    "sha256": "fe9a6f968d60f35fcca80a98002e557233accb57fcbdfed641da90e6de7d6b10"
+    "current": [],
+    "sha256": "fe9a6f968d60f35fcca80a98002e557233accb57fcbdfed641da90e6de7d6b10",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Notes & Figs/beambendingnotes.docx"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Notes & Figs/beambendingnotes.docx"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/Notes & Figs/beambendingnotes.docx"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Notes & Figs/i-beam.jpg",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--i-beam.jpg",
-      "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--i-beam.jpg",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Notes & Figs/i-beam.jpg",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Notes & Figs/i-beam.jpg"
+      "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--i-beam.jpg"
     ],
     "sha256": "4089f0dd91bd542190cff4d1abe3b55c583741651021943d89a9539bd97fe0fa"
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Notes & Figs/Shin+Foot.png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-foot.png",
-      "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--shin-foot.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Notes & Figs/Shin+Foot.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Notes & Figs/Shin+Foot.png"
+      "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-foot.png"
     ],
     "sha256": "0d17e86bf28051fa8ed8fd23ee2ed6fc979b8939ac6f7f177a287c16c6898e37"
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Notes & Figs/ShinCore.png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core.png",
-      "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--shin-core.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Notes & Figs/ShinCore.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Notes & Figs/ShinCore.png"
+      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core.png"
     ],
     "sha256": "1b65d89394f663fc51697693342794d21b795e0f946133a11cd2b5ddc681d56c"
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Notes & Figs/ShinCoreDeformation(FS8).png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core-deformation-fs8.png",
-      "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--shin-core-deformation-fs8.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Notes & Figs/ShinCoreDeformation(FS8).png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Notes & Figs/ShinCoreDeformation(FS8).png"
+      "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-core-deformation-fs8.png"
     ],
     "sha256": "a5d9b353fdcb538dfeef3030fa23f97ad321140c62a292ffe87d33cb4af645ca"
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Notes & Figs/ShinCoreVMStress.png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core-vmstress.png",
-      "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--shin-core-vmstress.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Notes & Figs/ShinCoreVMStress.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Notes & Figs/ShinCoreVMStress.png"
+      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core-vmstress.png"
     ],
     "sha256": "d2fbf7fe6c560eca201b2de56478ab105fe67fe1e9c351e880763000afa34641"
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Femur Thigh Quad/QuadCore_HL.SLDPRT",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Femur Thigh Quad/QuadCore_HL.SLDPRT"
-    ],
-    "sha256": "eaccc8d058a9763dc28a76bdadc9a785e303d9238fcfff958de49703e1cc819c"
+    "current": [],
+    "sha256": "eaccc8d058a9763dc28a76bdadc9a785e303d9238fcfff958de49703e1cc819c",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Femur Thigh Quad/QuadCore_HL.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Femur Thigh Quad/TrueQuadCore_HL.SLDPRT",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Femur Thigh Quad/TrueQuadCore_HL.SLDPRT"
-    ],
-    "sha256": "cd1cfd3d14cc4636e4cefe96f3e7662377e0a4ab9af3a8508d821fe861e2bd5c"
+    "current": [],
+    "sha256": "cd1cfd3d14cc4636e4cefe96f3e7662377e0a4ab9af3a8508d821fe861e2bd5c",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Femur Thigh Quad/TrueQuadCore_HL.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Knee/kneebearingbotclamp.SLDPRT",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Knee/kneebearingbotclamp.SLDPRT"
-    ],
-    "sha256": "a512eab6ef0e544c24a1e906990420fad04bc7dd7e153addf5dbc3fd197d1b6b"
+    "current": [],
+    "sha256": "a512eab6ef0e544c24a1e906990420fad04bc7dd7e153addf5dbc3fd197d1b6b",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Knee/kneebearingbotclamp.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Knee/Knee_3-30-2025.png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--knee--knee-3-30-2025.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Knee/Knee_3-30-2025.png"
+      "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--knee--knee-3-30-2025.png"
     ],
     "sha256": "c3125a95f1f6766d11b67017e638c2baed593e218830a081195ff2195e9a44dd"
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Knee/Knee_Assy.SLDASM",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Knee/Knee_Assy.SLDASM"
-    ],
-    "sha256": "ca9a921787b6d7fe89c0e1b6a35d0318b072f387591fd0f4c4505564e18f5276"
+    "current": [],
+    "sha256": "ca9a921787b6d7fe89c0e1b6a35d0318b072f387591fd0f4c4505564e18f5276",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Knee/Knee_Assy.SLDASM"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Knee/quad connector.SLDPRT",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Knee/quad connector.SLDPRT"
-    ],
-    "sha256": "e03591d234da9ce9e53430cda45f9c77f406422087cc043b6f67947632f0ebfe"
+    "current": [],
+    "sha256": "e03591d234da9ce9e53430cda45f9c77f406422087cc043b6f67947632f0ebfe",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Knee/quad connector.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Knee/shin connector.SLDPRT",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Knee/shin connector.SLDPRT"
-    ],
-    "sha256": "6752f3425435648f135fdac9a4e2142d73af8d2f84afb92917289b0019387406"
+    "current": [],
+    "sha256": "6752f3425435648f135fdac9a4e2142d73af8d2f84afb92917289b0019387406",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Knee/shin connector.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/beamBendingDocumention.docx",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/beamBendingDocumention.docx",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/beamBendingDocumention.docx"
-    ],
-    "sha256": "2b6b1540beeb85018af17a534534aeb28b6d8406f124a7a6c419854d72b75494"
+    "current": [],
+    "sha256": "2b6b1540beeb85018af17a534534aeb28b6d8406f124a7a6c419854d72b75494",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/beamBendingDocumention.docx"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/beamBendingDocumention.docx"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/beamBendingDocumention.docx"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/beamBendingDocumention.pdf",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/beamBendingDocumention.pdf",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/beamBendingDocumention.pdf"
-    ],
-    "sha256": "a52008db87444188f1a41845cec1c083462e8f69eca8425d35b09e560ec78274"
+    "current": [],
+    "sha256": "a52008db87444188f1a41845cec1c083462e8f69eca8425d35b09e560ec78274",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/beamBendingDocumention.pdf"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/beamBendingDocumention.pdf"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/Core-Static 1.CWR",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Core-Static 1.CWR"
-    ],
-    "sha256": "02a7710137cc5d8586f5dc4d908cb4dafbc78e1f4198625d300188331062697f"
+    "current": [],
+    "sha256": "02a7710137cc5d8586f5dc4d908cb4dafbc78e1f4198625d300188331062697f",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/Core-Static 1.gsz",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Core-Static 1.gsz"
-    ],
-    "sha256": "eceefa83235622c425f6948c39b85f30faee7f37c533b45cca20476405e66bc8"
+    "current": [],
+    "sha256": "eceefa83235622c425f6948c39b85f30faee7f37c533b45cca20476405e66bc8",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Phase 1/Core-Static 1.gsz"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/Core-Static 1.gsz"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/Core-Static 1.LOG",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Core-Static 1.LOG"
-    ],
-    "sha256": "181506762d44da5dcfdeeb4d9715fbd96e6a0c4f86b3b01449ae1445eff65710"
+    "current": [],
+    "sha256": "181506762d44da5dcfdeeb4d9715fbd96e6a0c4f86b3b01449ae1445eff65710",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Phase 1/Core-Static 1.LOG"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/Core-Static 1.LOG"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/Core-Static 1.MFC",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Core-Static 1.MFC"
-    ],
-    "sha256": "9bb8e921e8f708fbfbc2fb0f3b0c49df5762474137aaca99589eb68127e45bd4"
+    "current": [],
+    "sha256": "9bb8e921e8f708fbfbc2fb0f3b0c49df5762474137aaca99589eb68127e45bd4",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Phase 1/Core-Static 1.MFC"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/Core-Static 1.MFC"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/Core.SLDPRT",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Core.SLDPRT"
-    ],
-    "sha256": "e7560c6dc3e9aae9248e7bdb0ac0fc460b56985e9b19b552c5f41ea5cf184bd8"
+    "current": [],
+    "sha256": "e7560c6dc3e9aae9248e7bdb0ac0fc460b56985e9b19b552c5f41ea5cf184bd8",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/Core.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/LargerCore.SLDPRT",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/LargerCore.SLDPRT"
-    ],
-    "sha256": "c2502fbb8f8ba178ea7be25d1f921100b1cef7669232066fbddb956bbdc7fcfa"
+    "current": [],
+    "sha256": "c2502fbb8f8ba178ea7be25d1f921100b1cef7669232066fbddb956bbdc7fcfa",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/LargerCore.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/PerformanceLog.txt",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/PerformanceLog.txt"
-    ],
-    "sha256": "4dac40a4c321788c70e0309ee742e6523d577cdf0f3501d1fd89395d6daa0ed2"
+    "current": [],
+    "sha256": "4dac40a4c321788c70e0309ee742e6523d577cdf0f3501d1fd89395d6daa0ed2",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Phase 1/PerformanceLog.txt"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/PerformanceLog.txt"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/Platform.SLDPRT",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Platform.SLDPRT"
-    ],
-    "sha256": "074640f24701de1cd68de57788f3884cd8f8b0f75f50773943a783603bfbd5b7"
+    "current": [],
+    "sha256": "074640f24701de1cd68de57788f3884cd8f8b0f75f50773943a783603bfbd5b7",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Phase 1/Platform.SLDPRT"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/Platform.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/samoi_maximization.m",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/samoi_maximization.m",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/samoi_maximization.m"
-    ],
-    "sha256": "9bb640b91764a6e29d0caa924e62620908ac3f66248112e19e8692367156c27b"
+    "current": [],
+    "sha256": "9bb640b91764a6e29d0caa924e62620908ac3f66248112e19e8692367156c27b",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/samoi_maximization.m"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/samoi_maximization.m"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/samoi_maximization.m"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/ShinAssy.SLDASM",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/ShinAssy.SLDASM"
-    ],
-    "sha256": "aab6216dd8d06af94f437cf465827d97fa0d04b10682905e302f3ec44344ba3e"
+    "current": [],
+    "sha256": "aab6216dd8d06af94f437cf465827d97fa0d04b10682905e302f3ec44344ba3e",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/ShinAssy.SLDASM"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/to-do.txt",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/to-do.txt"
-    ],
-    "sha256": "fb00fdca5a22b1b56ab2226105a692703e43e68f808ba9ec50b5641401a1eb8d"
+    "current": [],
+    "sha256": "fb00fdca5a22b1b56ab2226105a692703e43e68f808ba9ec50b5641401a1eb8d",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/to-do.txt"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/TrueShinCore_HL.SLDPRT",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/TrueShinCore_HL.SLDPRT"
-    ],
-    "sha256": "d6ff3755307e93f5fa82bbee5364df0ab734f08654defd845fbb12a299ef44be"
+    "current": [],
+    "sha256": "d6ff3755307e93f5fa82bbee5364df0ab734f08654defd845fbb12a299ef44be",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/TrueShinCore_HL.SLDPRT"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/Notes & Figs/beambendingnotes.docx",
-    "current": [
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Notes & Figs/beambendingnotes.docx",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Notes & Figs/beambendingnotes.docx"
-    ],
-    "sha256": "fe9a6f968d60f35fcca80a98002e557233accb57fcbdfed641da90e6de7d6b10"
+    "current": [],
+    "sha256": "fe9a6f968d60f35fcca80a98002e557233accb57fcbdfed641da90e6de7d6b10",
+    "status": "Retained inside compressed source archive.",
+    "archived_copies": [
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-1.zip",
+        "entry": "design-archive-1/Notes & Figs/beambendingnotes.docx"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Notes & Figs/beambendingnotes.docx"
+      },
+      {
+        "archive": "2025-hrc-l2-humanoid-leg/source/design-archive-2.zip",
+        "entry": "design-archive-2/Phase 2/Shin Calf/Notes & Figs/beambendingnotes.docx"
+      }
+    ]
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/Notes & Figs/i-beam.jpg",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--i-beam.jpg",
-      "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--i-beam.jpg",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Notes & Figs/i-beam.jpg",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Notes & Figs/i-beam.jpg"
+      "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--i-beam.jpg"
     ],
     "sha256": "4089f0dd91bd542190cff4d1abe3b55c583741651021943d89a9539bd97fe0fa"
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/Notes & Figs/Shin+Foot+Quad.png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--shin-foot-quad.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Notes & Figs/Shin+Foot+Quad.png"
+      "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--shin-foot-quad.png"
     ],
     "sha256": "e2472ed1eadd4bcfba2fa90bdf633d63ed31a6aa7e25dfc4d5a1efbad352f1b0"
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/Notes & Figs/Shin+Foot.png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-foot.png",
-      "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--shin-foot.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Notes & Figs/Shin+Foot.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Notes & Figs/Shin+Foot.png"
+      "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-foot.png"
     ],
     "sha256": "0d17e86bf28051fa8ed8fd23ee2ed6fc979b8939ac6f7f177a287c16c6898e37"
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/Notes & Figs/ShinCore.png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core.png",
-      "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--shin-core.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Notes & Figs/ShinCore.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Notes & Figs/ShinCore.png"
+      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core.png"
     ],
     "sha256": "1b65d89394f663fc51697693342794d21b795e0f946133a11cd2b5ddc681d56c"
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/Notes & Figs/ShinCoreDeformation(FS8).png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core-deformation-fs8.png",
-      "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--shin-core-deformation-fs8.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Notes & Figs/ShinCoreDeformation(FS8).png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Notes & Figs/ShinCoreDeformation(FS8).png"
+      "2025-hrc-l2-humanoid-leg/media/archive-1--notes-figs--shin-core-deformation-fs8.png"
     ],
     "sha256": "a5d9b353fdcb538dfeef3030fa23f97ad321140c62a292ffe87d33cb4af645ca"
   },
   {
     "original": "2025 - ShinQuadKnee (HRC - Full-Scale Leg Phase 2)/Phase 2/Shin Calf/Notes & Figs/ShinCoreVMStress.png",
     "current": [
-      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core-vmstress.png",
-      "2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--shin-calf--notes-figs--shin-core-vmstress.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Notes & Figs/ShinCoreVMStress.png",
-      "2025-hrc-l2-humanoid-leg/source/design-archive-2/Phase 2/Shin Calf/Notes & Figs/ShinCoreVMStress.png"
+      "2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core-vmstress.png"
     ],
     "sha256": "d2fbf7fe6c560eca201b2de56478ab105fe67fe1e9c351e880763000afa34641"
   },
@@ -2212,10 +2441,9 @@
   },
   {
     "original": "2026-ghostarm/livedemo.mp4",
-    "current": [
-      "2026-ghost-arm/source/live-demo-original.mp4"
-    ],
-    "sha256": "98d8dc62b44938b087350c7cd61ed38a19972c903664765b9df4ef98c611302b"
+    "current": [],
+    "sha256": "98d8dc62b44938b087350c7cd61ed38a19972c903664765b9df4ef98c611302b",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   },
   {
     "original": "2026-skateboard-cat/media/presentationbooth.jpg",
@@ -2226,9 +2454,8 @@
   },
   {
     "original": "2026-tipping-hat-battle-bot/media/20260304_213640000_iOS.MOV",
-    "current": [
-      "2026-tipping-hat-battle-bot/source/battle-bot-match-original.mov"
-    ],
-    "sha256": "81d1ea983ded045dd9ce8a5b512debea01c13697c98312b4b4f6660419c892a4"
+    "current": [],
+    "sha256": "81d1ea983ded045dd9ce8a5b512debea01c13697c98312b4b4f6660419c892a4",
+    "status": "Removed during size cleanup or already absent; original SHA-256 retained for provenance."
   }
 ]

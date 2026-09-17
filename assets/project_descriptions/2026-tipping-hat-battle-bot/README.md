@@ -30,14 +30,14 @@ The existing portfolio records a team first-place award. Final-build and mechani
 
 | Asset | Format |
 | --- | --- |
-| [drive system](media/drive-system.png) | PNG |
-| [final build](media/final-build.png) | PNG |
-| [full creo assembly](media/full-creo-assembly.jpg) | JPG |
-| [hat tip mechanism](media/hat-tip-mechanism.png) | PNG |
 | [Tipping Hat battle bot competition footage](media/battle-bot-match.mp4) | MP4 |
+| [Compact drive system](media/drive-system.png) | PNG |
+| [Tipping Hat battle bot final build](media/final-build.png) | PNG |
+| [Complete battle bot Creo assembly](media/full-creo-assembly.jpg) | JPG |
+| [Hat-tip lifting mechanism](media/hat-tip-mechanism.png) | PNG |
 
 ## Source Files
 
-[Original competition video](source/battle-bot-match-original.mov) is preserved alongside the browser-friendly MP4. No native CAD or original summary files were supplied. Summary and constraints are drawn from `index.html` and `assets/js/script.js`.
+The project narrative and retained media document this work. No separate source files remain in this repository.
 
-Original notes, native CAD filenames, and source subdirectories are preserved as supplied. Summary statements use the supplied project notes and existing portfolio; design intentions are distinguished from documented results.
+Redundant copies and generated exports were removed in the repository size cleanup. See [the cleanup manifest](../cleanup-manifest.json) for the removal inventory and retained replacements.

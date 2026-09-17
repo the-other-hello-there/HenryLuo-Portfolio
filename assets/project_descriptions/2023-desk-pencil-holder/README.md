@@ -28,11 +28,11 @@ A CAD model and project image are available; load and fit test results are not r
 
 | Asset | Format |
 | --- | --- |
-| [pencil holder](media/pencil-holder.png) | PNG |
+| [Desk-edge pencil holder design](media/pencil-holder.png) | PNG |
 
 ## Source Files
 
 - [PencilHolder.f3d](source/PencilHolder.f3d)
 - [Summary - Pencil Holder.txt](source/Summary%20-%20Pencil%20Holder.txt)
 
-Original notes, native CAD filenames, and source subdirectories are preserved as supplied. Summary statements use the supplied project notes and existing portfolio; design intentions are distinguished from documented results.
+Redundant copies and generated exports were removed in the repository size cleanup. See [the cleanup manifest](../cleanup-manifest.json) for the removal inventory and retained replacements.

@@ -96,6 +96,7 @@ function renderProject(project) {
         <p>${escapeHtml(project.contribution)}</p>
       </div>
       ${project.outcome ? `<div class="dialog-section"><h3>Outcome and Testing</h3><p>${escapeHtml(project.outcome)}</p></div>` : ''}
+      ${project.documents?.length ? `<div class="dialog-section"><h3>Project Documentation</h3><ul>${project.documents.map(document => `<li><a class="text-link" href="${escapeHtml(encodeURI(document.src))}" target="_blank" rel="noopener noreferrer">${escapeHtml(document.label)}</a></li>`).join('')}</ul></div>` : ''}
       ${project.media.length ? `<div class="dialog-section"><h3>Project Media</h3><div class="dialog-gallery">${project.media.map(renderMedia).join('')}</div></div>` : ''}
     </div>`;
 }

@@ -1,0 +1,18 @@
+Original STP File Source: https://grabcad.com/library/human-3d-2
+
+Whole Body:
+Original: 178.05 cm
+Goal: 17.458 cm
+Scale: 17.458/178.05=0.098051109239
+
+Legs:
+Scale1: 8.886032853 cm
+Goal: 8.6285 cm
+Additional Scale: 8.6285/8.886032853=0.97101824208
+Total Z Scale: 0.098051109239*0.97101824208=0.09520941572
+
+Torso:
+Scale1: 8.568365275 cm
+Goal: 8.8295 cm
+Additional Scale: 8.8295/8.568365275=1.03047660979
+Total Z Scale: 0.098051109239*1.03047660979=0.10103937463
