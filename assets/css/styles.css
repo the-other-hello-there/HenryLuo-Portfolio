@@ -59,6 +59,7 @@ h3 { font-size: 1.25rem; }
 .about-details p { color: var(--muted); margin: 10px 0; }
 .about-details .pill-row { margin: 10px 0; }
 #projects { padding-top: 20px; }
+#projects > .container { width:min(calc(100% - clamp(24px, 5vw, 120px)), 2160px); }
 #projects .section-heading h2 { margin: 0; }
 #projects .project-grid { margin-top: 16px; }
 .photo-placeholder { min-height: 240px; border: 1.5px dashed #4d627c; border-radius: var(--radius); background: linear-gradient(135deg, rgba(101,212,255,.06), rgba(155,242,200,.03)); color: #8fa2b7; display: flex; align-items: center; justify-content: center; text-align: center; padding: 28px; }
@@ -82,7 +83,16 @@ h3 { font-size: 1.25rem; }
 .company { margin-top:0; color:var(--accent-2); font-weight:700; }
 .timeline-card li { color:var(--muted); margin-bottom:7px; }
 
-.project-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:20px; margin-top:44px; }
+.project-grid { display:grid; grid-template-columns:minmax(0, 1fr); gap:20px; margin-top:44px; }
+@media (min-width: 720px) {
+  .project-grid { grid-template-columns:repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1200px) {
+  .project-grid { grid-template-columns:repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 2000px) {
+  .project-grid { grid-template-columns:repeat(4, minmax(0, 1fr)); }
+}
 .project-card { overflow:hidden; border:1px solid var(--line); border-radius:var(--radius); background:var(--panel); transition:.22s ease; }
 .project-card:hover { transform:translateY(-4px); border-color:#40566f; }
 .project-card.featured { grid-column:1 / -1; display:grid; grid-template-columns:1fr 1.1fr; }
@@ -154,7 +164,7 @@ h3 { font-size: 1.25rem; }
   .nav-toggle { display:block; }
   .hero-grid, .two-col, .credentials-grid, .contact-card { grid-template-columns:1fr; }
   .hero-grid { gap:16px; }
-  .project-grid, .skills-grid { grid-template-columns:1fr; }
+  .skills-grid { grid-template-columns:1fr; }
   .project-card.featured { grid-column:auto; display:flex; flex-direction:column; }
   .featured .project-body { order:-1; }
   .featured .project-image { min-height:180px; border-right:0; border-bottom:0; border-top:1px dashed #40566f; }
