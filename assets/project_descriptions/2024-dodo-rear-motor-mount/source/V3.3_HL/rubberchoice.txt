@@ -1,0 +1,10 @@
+Butyl Rubber Sheet - https://www.mcmaster.com/8609K45/
+Gap to close on each side: 0.025 inches
+Set notch depth: .015 inches
+Rubber sheet thickness: 0.0625 inches
+
+After compression set (assuming 25% compression set): 0.046875 inches
+Real gap to fill on each side: .04 inches
+Required compression amount (%): (0.046875-.04)/.04*100=17.1875%<100%
+Young's modulus (<100% compression): 1.5 MPa
+Maximum allowable strain (negative, assuming still .003 inches sticking out): 

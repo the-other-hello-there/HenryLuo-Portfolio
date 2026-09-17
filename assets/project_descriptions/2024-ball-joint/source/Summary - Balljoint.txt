@@ -1,0 +1,13 @@
+Overview:
+This 3D-printed ball joint assembly was created to explore control mechanisms for humanoid robotic calves. Its design supports mobility and range of motion, serving as a foundational element for future prototypes.
+
+Design Parameters:
+• 3D-printed
+  - Fits on print bed
+  - Minimal supports
+• Mimics ankle rotation
+• Variable-based CADing to make it easy to make dimensional adjustments
+
+Components:
+• Ball - attaches to the calf and rotates in the socket
+• Socket - houses the ball and attaches to the foot

@@ -1,0 +1,8 @@
+Overview:
+This project features a pencil holder designed to securely attach to the edge of a desk. Its minimalist design provides a practical and space-efficient solution for storing writing utensils.
+
+Design Parameters:
+• 3D-printed
+  - Fits on print bed
+  - Minimal supports
+• Can hang off the edge of a table

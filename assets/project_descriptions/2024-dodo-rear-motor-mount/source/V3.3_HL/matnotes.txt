@@ -1,0 +1,6 @@
+
+PLA Properties:
+	Density = 1.43 g/cm^3=1430 kg/m^3
+	Poisson's ratio = .43
+	Young's Modulus (z) = 3071 MPa = 3071000000 Pa
+	https://um-support-files.ultimaker.com/materials/2.85mm/tds/PLA/Ultimaker-PLA-TDS-v5.00.pdf

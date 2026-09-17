@@ -1,0 +1,26 @@
+Overview:
+The Pine Display Shelf is a handcrafted L-shaped shelf created from unlaminated pine plywood. Built with basic tools, this project allowed me to explore woodworking techniques while working towards a more personal home.
+
+Design Parameters:
+• Made of wood
+  - Consider delamination or other wood-specific damages
+  - Plan subtractive manufacturing
+  - Only use a jigsaw and a drill
+• Aesthetically pleasing
+• Can sturdily stand upright while holding reasonably heavy items for display
+• Materials cost less than $100 (spent $77.58)
+
+Proof of Concept (POC):
+• RoomLayout - layout of the destination room
+• FrameModel - model of the outer frame of the display shelf
+• LayoutModel - assembly of the frame and room layout to verify that the shelf can be maneuvered into the desired position
+• RoomLayoutWAssy - model of the final display shelf in the room
+• Board-Cutting Schematic - sketch of the selected plywood boards with the cuts shown
+
+Components:
+• 5x Frame Beam - vertical beams to hold plates together
+• Shelves - differently-shaped shelves to support various display items
+• Shelf Supports - differently-shaped plates to support a shelf above another shelf
+• 2x Sandwich Plate - plates on the top and bottom to sandwich the frame beams
+• Aluminum L-Brackets - brackets that allow the shelves to be bolted to other components
+• Bolts - fasten components to brackets

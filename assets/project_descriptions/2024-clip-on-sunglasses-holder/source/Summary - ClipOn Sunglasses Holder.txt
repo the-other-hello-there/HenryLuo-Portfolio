@@ -1,0 +1,13 @@
+Overview:
+The Clip-On Sunglasses Holder is a practical accessory for securely holding clip-on sunglasses in a car. Its simple design offers convenience and accessibility for glasses-wearing drivers.
+
+Design Parameters:
+• 3D-printed
+  - Fits on print bed
+  - Minimal supports
+• Can hold clip-on sunglasses
+• Can clip onto the door pocket of a car
+
+Components:
+• Clip - attaches to the car door pocket
+• Housing - holds the clip-on sunglasses and can clip onto the clip or another housing unit

@@ -1,0 +1,13 @@
+Overview:
+The Display Hooks are a structural design intended to showcase hookable memorabilia. They provide an efficient and aesthetically pleasing way to display items.
+
+Design Parameters:
+• 3D-printed
+  - Fits on print bed
+  - Minimal supports
+• Has hooks
+• Minimal material usage
+• Aesthetically pleasing (or artistically different)
+
+Components:
+• Display Hooks - standalone structure to hold 6 items and an optional item in the middle

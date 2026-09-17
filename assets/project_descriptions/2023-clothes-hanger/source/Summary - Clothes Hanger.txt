@@ -1,0 +1,27 @@
+Overview:
+The Clothes Hangar is a tree-like modular structure designed to efficiently organize and display clothing. Its snap-together connections allow for permanent assembly while still enabling rotation between sections.
+
+Design Parameters:
+• 3D-printed
+  - Fits on print bed
+  - Minimal supports
+• Modular sections
+• Can sturdily stand upright
+
+Proof of Concept (POC):
+• HookF & HookM - base hook female and male snap test
+• BaseF & BaseM - base snap test with more structure as context
+• PoleMidsects - midsect connection test
+
+Components:
+• Base
+  - 2x BaseF - snap mechanism receiver
+  - 2x BaseM - snap mechanism protruder
+• Pole Sections
+  - Bottom - connects base to midsect male side
+  - Midsect - snap-on pole section
+  - Arm Midsect - snap-on pole section with a branch
+  - Hook Midsect - snap-on pole section with hooks on the side
+  - Top - hook midsect with a cone top
+  - Mid Plug - 2-piece cover to minimize dust buildup in midsect snap mechanism
+  - Top Plug - covers the top of midsect

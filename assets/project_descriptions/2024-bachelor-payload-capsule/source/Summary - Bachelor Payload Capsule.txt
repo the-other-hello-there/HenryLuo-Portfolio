@@ -1,0 +1,17 @@
+Overview:
+The Bachelor Payload project was initialized by a need for a lighter alternative to a triple payload basket ("Trinity Basket"). The device involves a two-piece snap-together assembly that controls the deployment of a single payload from a UAV above 100 feet. This simplistic design ensures reliable operation during airborne missions while being easy to swap out.
+
+Design Parameters:
+• 3D-printed
+  - Fits on print bed
+  - Minimal supports
+• Uses same components as other prototypes
+  - 1x Lidar
+  - 1x Arduino Nano
+  - 1x Servo
+• Lightweight
+
+Components:
+• Flapper - barrier to keep payload normally within the body, rotating open to release the payload when spun by the servo's gear attachment
+• Body - houses the payload and constrains the flapper to rotate
+• Lockball (Optional) - experimental component inserted into the gap in the flapper snap mechanism to make rotation smoother and to prevent accidental disassembly

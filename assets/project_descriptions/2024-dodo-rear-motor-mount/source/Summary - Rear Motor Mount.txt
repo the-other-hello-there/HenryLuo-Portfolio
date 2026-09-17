@@ -1,0 +1,16 @@
+Overview:
+The Rear Motor Mount is a tailored design for securing a rear motor on a UAV tail boom. This design avoids the risk of tail boom composite delamination by eliminating the need for a bolt, improving both durability and manufacturability.
+
+Design Parameters:
+• Mostly 3D-printed
+  - Fits on print bed
+  - Minimal supports
+• Can securely clamp onto the tail boom
+• Can sturdily hold the motor
+
+Components:
+• Mount - surrounds the tail boom and creates a clamping force by closing a gap at the bottom; note that its material choice also limits the maximum clamping force possible, given that it is the most likely component to fail as a result of compression or shear from bolt tension and thereby limits the allowable normal force applied by the bolts (calculations can be found in "Rubber Strip Calcs.xlsx")
+  - Left Split
+  - Right Split
+• Butyl Rubber Strips - compression on the rubber strips provides the normal force and high frictional coefficient to grip onto the sides of the tail boom
+• 4x Bolts/Locknuts - clamps the two mount halves together around the tail boom to produce the strong clamping force needed to keep the rear motor in place
