@@ -1,0 +1,358 @@
+{
+  "site_url": "https://the-other-hello-there.github.io/HenryLuo-Portfolio/",
+  "review_date": "2026-09-23",
+  "allowed_agents": [
+    "Googlebot",
+    "Googlebot-Image",
+    "Googlebot-Video",
+    "bingbot",
+    "LinkedInBot"
+  ],
+  "approved": [
+    {
+      "path": "assets/project_descriptions/2026-skateboard-cat/media/final-build.jpg",
+      "kind": "image",
+      "sha256": "67f2cd804b36fa3bf63b22ac1ff00e03a1494437d7791abeb0540c356c498342",
+      "reason": "Clear toy fabrication or component/assembly CAD evidence; no independent award verification implied."
+    },
+    {
+      "path": "assets/project_descriptions/2026-skateboard-cat/media/full-creo-assembly.png",
+      "kind": "image",
+      "sha256": "4b7728729573abbe0062a95f786c6827f8358bc52304ffcdd219cdedbe12c45f",
+      "reason": "Clear toy fabrication or component/assembly CAD evidence; no independent award verification implied."
+    },
+    {
+      "path": "assets/project_descriptions/2026-skateboard-cat/media/drive-system-cad.png",
+      "kind": "image",
+      "sha256": "b52b3b0d3c2de5e219b5515bdfbb5877bc6298d1d1a30483aba9d849d71fdee9",
+      "reason": "Clear toy fabrication or component/assembly CAD evidence; no independent award verification implied."
+    },
+    {
+      "path": "assets/project_descriptions/2026-skateboard-cat/media/shell-securing-assembly.png",
+      "kind": "image",
+      "sha256": "fab581389a3d3b703b48e87e67e2485bad63b6b291e689fdeef9fc867d4584d3",
+      "reason": "Clear toy fabrication or component/assembly CAD evidence; no independent award verification implied."
+    },
+    {
+      "path": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/final-build.png",
+      "kind": "image",
+      "sha256": "23c7c8421f94ff7244a975991050a8dccdb6f4c8bb73a05b917571bcf35c4dc6",
+      "reason": "Clear final build or mechanism CAD evidence; no independent competition result verification implied."
+    },
+    {
+      "path": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/full-creo-assembly.jpg",
+      "kind": "image",
+      "sha256": "365cf6a2392a6e8ce585c82080cd05532f8b220bac1ffc608e305e8b5601c797",
+      "reason": "Clear final build or mechanism CAD evidence; no independent competition result verification implied."
+    },
+    {
+      "path": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/hat-tip-mechanism.png",
+      "kind": "image",
+      "sha256": "4ac3308581fc879d160aa655e8ce223d130e8832c6fc36641cde4ed11dc0cd86",
+      "reason": "Clear final build or mechanism CAD evidence; no independent competition result verification implied."
+    },
+    {
+      "path": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/drive-system.png",
+      "kind": "image",
+      "sha256": "01ba5c269df96ba1990e6c5dfe27ec7ed26ddce3b82fad01e14930ee6ec349ca",
+      "reason": "Clear final build or mechanism CAD evidence; no independent competition result verification implied."
+    },
+    {
+      "path": "assets/project_descriptions/2026-ghost-arm/media/ghost-arm.jpg",
+      "kind": "image",
+      "sha256": "2fcb1226af5a16594de5013879d964bf17511067c241a1bda32434298061fe05",
+      "reason": "Close-up of the team robotic assembly; retain the case study attribution and fabrication limitations."
+    },
+    {
+      "path": "assets/project_descriptions/2026-infill-thermal-conduction/media/blocks.png",
+      "kind": "image",
+      "sha256": "15f0b3417ac33048bb2154fdbf123946ded0fa921aebc628dd9be4254d611d4c",
+      "reason": "Clear experimental setup, specimens, or heat-transfer schematic; not validation of numerical report conclusions."
+    },
+    {
+      "path": "assets/project_descriptions/2026-infill-thermal-conduction/media/setup-diagram.png",
+      "kind": "image",
+      "sha256": "14acd38cc6667806f871ec0bd350714300da5c3e54c2d336a7f6edb995f483a9",
+      "reason": "Clear experimental setup, specimens, or heat-transfer schematic; not validation of numerical report conclusions."
+    },
+    {
+      "path": "assets/project_descriptions/2026-infill-thermal-conduction/media/block-cavity.png",
+      "kind": "image",
+      "sha256": "9da01d54e578679bb7435edf0075dc8207773801191e924df3eb426599764e05",
+      "reason": "Clear experimental setup, specimens, or heat-transfer schematic; not validation of numerical report conclusions."
+    },
+    {
+      "path": "assets/project_descriptions/2026-infill-thermal-conduction/media/heat-transfer-diagram.png",
+      "kind": "image",
+      "sha256": "78c5e3000aeda68e80fbf1336a14673e04d20c2f44db69ec2777ad56ffed951d",
+      "reason": "Clear experimental setup, specimens, or heat-transfer schematic; not validation of numerical report conclusions."
+    },
+    {
+      "path": "assets/project_descriptions/2026-headwind-safety/media/model-165-deg-setup.jpg",
+      "kind": "image",
+      "sha256": "bea7a46ff6f290d68adf94e762474e35c4b314f09899c8ddc5b31099d4004ed1",
+      "reason": "Experimental setup or assembly drawing; not a demonstrated human safety threshold."
+    },
+    {
+      "path": "assets/project_descriptions/2026-headwind-safety/media/wind-tunnel-setup.png",
+      "kind": "image",
+      "sha256": "5aab649154f83ceb507acf14e297c9243a64cb58957f331161eba15b15c30259",
+      "reason": "Experimental setup or assembly drawing; not a demonstrated human safety threshold."
+    },
+    {
+      "path": "assets/project_descriptions/2026-headwind-safety/media/model-150-deg-assembly.jpg",
+      "kind": "image",
+      "sha256": "a146671270ee72214fb80e9def97657a770fddeefe82b7e68046bde8f794875f",
+      "reason": "Experimental setup or assembly drawing; not a demonstrated human safety threshold."
+    },
+    {
+      "path": "assets/project_descriptions/2026-headwind-safety/media/model-165-deg-assembly.jpg",
+      "kind": "image",
+      "sha256": "db9a2788b9529bd9a79ff229d0357cf1225cfa2cd35a1f9beae416456aafb69e",
+      "reason": "Experimental setup or assembly drawing; not a demonstrated human safety threshold."
+    },
+    {
+      "path": "assets/project_descriptions/2026-headwind-safety/media/model-180-deg-assembly.jpg",
+      "kind": "image",
+      "sha256": "d67b5275b169b6087ac55c88c48857ca09a98fcdc65734744a67d1ce347c9091",
+      "reason": "Experimental setup or assembly drawing; not a demonstrated human safety threshold."
+    },
+    {
+      "path": "assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/archive-2--leg-3-30-2025-2.png",
+      "kind": "image",
+      "sha256": "113c3999ba9b0c2d047fac0b2194b7e5891b04afcbc7247c698ac270bdcce73f",
+      "reason": "Structural design CAD; not proof of physical load validation."
+    },
+    {
+      "path": "assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--knee--knee-3-30-2025.png",
+      "kind": "image",
+      "sha256": "c3125a95f1f6766d11b67017e638c2baed593e218830a081195ff2195e9a44dd",
+      "reason": "Structural design CAD; not proof of physical load validation."
+    },
+    {
+      "path": "assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core.png",
+      "kind": "image",
+      "sha256": "1b65d89394f663fc51697693342794d21b795e0f946133a11cd2b5ddc681d56c",
+      "reason": "Structural design CAD; not proof of physical load validation."
+    },
+    {
+      "path": "assets/project_descriptions/2024-asme-mini-rc-car/media/final-build.jpg",
+      "kind": "image",
+      "sha256": "8770d9d92cb03184bda331eb07a942d3d383289b7e3044587e5b8a5f3f94d780",
+      "reason": "Clear fabricated car or assembly CAD showing packaging and drivetrain work."
+    },
+    {
+      "path": "assets/project_descriptions/2024-asme-mini-rc-car/media/full-onshape-assembly.png",
+      "kind": "image",
+      "sha256": "dc8756caccf38173fdddd811d3edd7be91665e8b21977c2fc560cd89cf7bf572",
+      "reason": "Clear fabricated car or assembly CAD showing packaging and drivetrain work."
+    },
+    {
+      "path": "assets/project_descriptions/2024-asme-mini-rc-car/media/top-view.jpg",
+      "kind": "image",
+      "sha256": "d788c950779a472c0649505f31a06b58be83bdb70a120cb924c26120e3e108fd",
+      "reason": "Clear fabricated car or assembly CAD showing packaging and drivetrain work."
+    },
+    {
+      "path": "assets/project_descriptions/2024-asme-mini-rc-car/media/rear.jpg",
+      "kind": "image",
+      "sha256": "b51bf4a6a33d13355098c7ee9332ae0c9a62e4fad7f10e625ba8c1b4ea0c541a",
+      "reason": "Clear fabricated car or assembly CAD showing packaging and drivetrain work."
+    },
+    {
+      "path": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/final-build-aircraft.jpg",
+      "kind": "image",
+      "sha256": "eabed0bed8154fd34b55056025fda6902acf65f8da4508172498702a65ca0cbe",
+      "reason": "Clear mount CAD, fabricated parts, or aircraft integration evidence."
+    },
+    {
+      "path": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/final-assembly.jpg",
+      "kind": "image",
+      "sha256": "d1d054a1ff888b338f47658df27c564858ee8f83a839acdc00bcd71e080d5741",
+      "reason": "Clear mount CAD, fabricated parts, or aircraft integration evidence."
+    },
+    {
+      "path": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/exploded-solidworks-assembly.png",
+      "kind": "image",
+      "sha256": "1dc565770c998dda3419529e1d13fec2ee10634e01631eaa76a2ceac187c6e5a",
+      "reason": "Clear mount CAD, fabricated parts, or aircraft integration evidence."
+    },
+    {
+      "path": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/printed-split-proto.jpg",
+      "kind": "image",
+      "sha256": "d964f0e48caae01028931a0caf037144a2582c694cf016cef84cd1eb18b3a5e7",
+      "reason": "Clear mount CAD, fabricated parts, or aircraft integration evidence."
+    },
+    {
+      "path": "assets/project_descriptions/2024-bachelor-payload-capsule/media/mk2.jpg",
+      "kind": "image",
+      "sha256": "d96c16189e46b143ff1d1ec0e17933c7b49dfb2d5a34a0477474241849daf12e",
+      "reason": "Mechanism CAD or second prototype; does not imply flight testing."
+    },
+    {
+      "path": "assets/project_descriptions/2024-bachelor-payload-capsule/media/bachelor-exploded.png",
+      "kind": "image",
+      "sha256": "d17c6cfa9acf66a2a7e4359a8be77214d9094b0331c5cc7e894ceb967739f7a7",
+      "reason": "Mechanism CAD or second prototype; does not imply flight testing."
+    },
+    {
+      "path": "assets/project_descriptions/2024-bachelor-payload-capsule/media/joint.png",
+      "kind": "image",
+      "sha256": "7544a8ddbd43c0c6259dfb382c3992b79abcb4fb49fe668259595e0177e150e5",
+      "reason": "Mechanism CAD or second prototype; does not imply flight testing."
+    },
+    {
+      "path": "assets/project_descriptions/2024-ball-joint/media/cadballjoint.png",
+      "kind": "image",
+      "sha256": "e4bfb08c57de55c54cfd6815a41a8fa6de3be4bcf2d24b73fd38ef4d9aa6e34f",
+      "reason": "Clear CAD geometry documenting the joint and calf interface."
+    },
+    {
+      "path": "assets/project_descriptions/2024-ball-joint/media/cadcalf.png",
+      "kind": "image",
+      "sha256": "b8cd2e15daef54711ff7773ff1c2f3b0641e03318770a3d2877cb78fb05b0fdc",
+      "reason": "Clear CAD geometry documenting the joint and calf interface."
+    },
+    {
+      "path": "assets/project_descriptions/2024-clip-on-sunglasses-holder/media/v2.jpg",
+      "kind": "image",
+      "sha256": "0335cecab028e0ff37e3642c8bba79ef213bf47b3c1dc487f6f94be9452b5f45",
+      "reason": "CAD geometry or finished holder, including installed use."
+    },
+    {
+      "path": "assets/project_descriptions/2024-clip-on-sunglasses-holder/media/v2--v2-attached.jpg",
+      "kind": "image",
+      "sha256": "25c7955b8e5e357889e1a94981073b60c8147ec46c33354111d67741590ffd96",
+      "reason": "CAD geometry or finished holder, including installed use."
+    },
+    {
+      "path": "assets/project_descriptions/2024-clip-on-sunglasses-holder/media/v1--clip.png",
+      "kind": "image",
+      "sha256": "39d449243627a4943cb28b300a3cb631a89b183405e1feab48d4f124d27e4e13",
+      "reason": "CAD geometry or finished holder, including installed use."
+    },
+    {
+      "path": "assets/project_descriptions/2024-clip-on-sunglasses-holder/media/v1--housing.png",
+      "kind": "image",
+      "sha256": "502e6251fe714882c40e6bd661f7b8b422e9e5f8d99e65ca28def9a04704e9d7",
+      "reason": "CAD geometry or finished holder, including installed use."
+    },
+    {
+      "path": "assets/project_descriptions/2024-display-hooks/media/display-hooks.jpg",
+      "kind": "image",
+      "sha256": "179222ddd9792e6c25b0954b066c395e9d79b689d58e83f05a620c10ce71e888",
+      "reason": "Finished display in use with hanging items."
+    },
+    {
+      "path": "assets/project_descriptions/2023-pine-display-shelf/media/day-2-shelf-installed.jpg",
+      "kind": "image",
+      "sha256": "5e2afa37fb106f488f204c3c79ff0a2b61247acf10e1cffffc630307bb3c385d",
+      "reason": "Installed shelf or CAD/cutting plan documenting design and fabrication."
+    },
+    {
+      "path": "assets/project_descriptions/2023-pine-display-shelf/media/target-room-cad.png",
+      "kind": "image",
+      "sha256": "10d2be997303e3559bd64d82aeeba3ed6822612da267b035aefb356b3200ffb4",
+      "reason": "Installed shelf or CAD/cutting plan documenting design and fabrication."
+    },
+    {
+      "path": "assets/project_descriptions/2023-pine-display-shelf/media/frame-cad.png",
+      "kind": "image",
+      "sha256": "21691bfd920feafe89b0397ba238b42dec6219d15623594f531c9460706b8d8e",
+      "reason": "Installed shelf or CAD/cutting plan documenting design and fabrication."
+    },
+    {
+      "path": "assets/project_descriptions/2023-pine-display-shelf/media/shelf-cutting-schematic.png",
+      "kind": "image",
+      "sha256": "f36e87a1e7a46bc3a0a12efe3f50cbe14ec6d92e123e7afcb72d138230f70739",
+      "reason": "Installed shelf or CAD/cutting plan documenting design and fabrication."
+    },
+    {
+      "path": "assets/project_descriptions/2023-clothes-hanger/media/midsects.jpg",
+      "kind": "image",
+      "sha256": "464a1c04a3a2f1cfa6448f42582484406acc56493d90129b22da14a6e86bd9ba",
+      "reason": "Printed modular sections or corresponding CAD; no complete clothing tree claim."
+    },
+    {
+      "path": "assets/project_descriptions/2023-clothes-hanger/media/pole-midsects.png",
+      "kind": "image",
+      "sha256": "b643b703a28055841d5d934eb519071ea7b3a14b9d3837453dc75e9306384ec4",
+      "reason": "Printed modular sections or corresponding CAD; no complete clothing tree claim."
+    },
+    {
+      "path": "assets/project_descriptions/2023-desk-pencil-holder/media/pencil-holder.png",
+      "kind": "image",
+      "sha256": "e4451293bc32d640c97c1a35ab19a4f4d54b48cc1644b6302c3a44026b82c89a",
+      "reason": "Clear desk-edge holder CAD; not evidence of a fabricated product."
+    },
+    {
+      "path": "HL_resume.pdf",
+      "kind": "document",
+      "sha256": "616e64775c93a6f9a37609382de11705a7fa2cf764437a4ebde732f01057377b",
+      "reason": "Readable one-page recruiting document, text and page layout reviewed; employment and credential claims not independently audited."
+    }
+  ],
+  "withheld_catalog_assets": [
+    {
+      "path": "assets/project_descriptions/2026-skateboard-cat/media/presentation-booth.jpg",
+      "reason": "Team portrait adds less engineering evidence than the selected CAD and final-build images."
+    },
+    {
+      "path": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/battle-bot-match.mp4",
+      "reason": "Sampled 12 frames across the clip; audio and uninterrupted playback not verified. Withheld under strict review policy."
+    },
+    {
+      "path": "assets/project_descriptions/2026-ghost-arm/media/support-frame.jpg",
+      "reason": "Distant overhead setup with limited mechanism detail."
+    },
+    {
+      "path": "assets/project_descriptions/2026-ghost-arm/media/arm-sleeve.jpg",
+      "reason": "Cluttered early cardboard prototype; retain in case study, not promoted separately."
+    },
+    {
+      "path": "assets/project_descriptions/2026-ghost-arm/media/live-demo-web.mp4",
+      "reason": "Sampled 12 frames across the clip; audio and uninterrupted playback not verified. Withheld under strict review policy."
+    },
+    {
+      "path": "assets/project_descriptions/2026-infill-thermal-conduction/source/ME315_Team04_FinalReport.pdf",
+      "reason": "Withheld after report review; see SEARCH_POLICY.md for specific numerical/conclusion concerns."
+    },
+    {
+      "path": "assets/project_descriptions/2026-headwind-safety/media/ground-clearance.jpeg",
+      "reason": "Documents an experimental limitation; stronger setup image selected."
+    },
+    {
+      "path": "assets/project_descriptions/2026-headwind-safety/source/Open Lab/ME30801_S26_OpenLab_Report_T065.pdf",
+      "reason": "Withheld after report review; see SEARCH_POLICY.md for specific numerical/conclusion concerns."
+    },
+    {
+      "path": "assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core-vmstress.png",
+      "reason": "Stress image lacks visible numerical legend and validation context; CAD selected instead."
+    },
+    {
+      "path": "assets/project_descriptions/2024-asme-mini-rc-car/media/performance--successfuljump.mp4",
+      "reason": "Sampled 12 frames across the clip; audio and uninterrupted playback not verified. Withheld under strict review policy."
+    },
+    {
+      "path": "assets/project_descriptions/2024-asme-mini-rc-car/media/performance--raceclip.mp4",
+      "reason": "Sampled 12 frames across the clip; audio and uninterrupted playback not verified. Withheld under strict review policy."
+    },
+    {
+      "path": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/vertical-hover.mp4",
+      "reason": "Sampled 12 frames across the clip; audio and uninterrupted playback not verified. Withheld under strict review policy."
+    },
+    {
+      "path": "assets/project_descriptions/2024-bachelor-payload-capsule/media/mk1.jpg",
+      "reason": "Earlier prototype; second prototype and exploded CAD communicate the design more clearly."
+    },
+    {
+      "path": "assets/project_descriptions/2024-ball-joint/media/printed-balljoint.png",
+      "reason": "Low-resolution video still; CAD views communicate geometry more clearly."
+    },
+    {
+      "path": "assets/project_descriptions/2024-ball-joint/media/balljoint.mp4",
+      "reason": "Sampled 12 frames across the clip; audio and uninterrupted playback not verified. Withheld under strict review policy."
+    }
+  ],
+  "unlisted_policy": "Excluded by default. Raw source files, archives, slides, receipts, reference imagery and duplicate images are not automatically approved."
+}
