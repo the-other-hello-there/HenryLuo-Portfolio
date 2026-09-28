@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tipping Hat Battle Bot — Supporting files</title>
+<link rel="stylesheet" href="../../../css/styles.css">
+<link rel="canonical" href="https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/index.html">
+</head><body><main class="container section">
+<a class="btn btn-small" href="https://the-other-hello-there.github.io/" aria-label="Personal landing page">HL</a>
+<p><a class="text-link" href="../../../../index.html#project-battle-bot">Back to project</a></p>
+<h1>Tipping Hat Battle Bot</h1><h2>Supporting files</h2>
+<p>Additional photos, video recordings, requirements, and project notes. The main case study presents the selected results; these files provide further context and design history.</p>
+<p>Each file can be opened or downloaded individually. Expand a category to browse individual files. HEIC images may require downloading to view.</p>
+<details><summary>Code (1)</summary><ul><li style="margin-block:1rem;overflow-wrap:anywhere"><details><summary>Read text</summary><pre style="white-space:pre-wrap;overflow-wrap:anywhere">#define BLYNK_PRINT Serial
+
+#define BLYNK_TEMPLATE_ID &quot;TMPL2xsnIvtL-&quot;
+#define BLYNK_TEMPLATE_NAME &quot;MiniCar&quot;
+#define BLYNK_AUTH_TOKEN &quot;REPLACE_WITH_YOUR_VALUE&quot;
+
+#include &lt;BlynkSimpleEsp32.h&gt;
+
+// Auth token from Blynk
+char auth[] = &quot;eQ_YCGRbytewnV28IG5FcOIty_wHMGwo&quot;; //copy the BLYNK_AUTH_TOKEN string to here
+
+// Your WiFi credentials
+char ssid[] = &quot;REPLACE_WITH_YOUR_VALUE&quot;;
+char pwd[] = &quot;quaintbreeze400&quot;;
+
+#include &quot;ESP32Servo.h&quot;
+
+const int servoPin = 27;     //specify pin numbers according to the circuit diagram
+const int servoAngle = 90;
+const int pwmPinA = 15; 
+const int in1PinA = 2; 
+const int in2PinA = 0;
+const int pwmPinB = 13; 
+const int in1PinB = 12; 
+const int in2PinB = 14;
+
+
+Servo myServo;  //claim the servo motor object
+               
+void setup() // setup function runs onces whenever the arduino board is powered on or the &quot;EN&quot; button is pressed
+{
+  Serial.begin(9600);
+  delay(100);
+
+  Blynk.begin(auth, ssid, pwd);  // Initialize the connection to Blynk using auth-token and WiFI credentials. 
+  
+  myServo.attach(servoPin);    //set up the servo pin as pin 27
+  myServo.write(servoAngle);    //initialize the servo motor at 90 degree
+  pinMode(in1PinA, OUTPUT);    //set in1PinA(2) as an output pin
+  pinMode(in2PinA, OUTPUT);    //set in2PinA(0) as an output pin
+  pinMode(pwmPinA, OUTPUT); //set enablePinA(15) as an output pin
+  pinMode(in1PinB, OUTPUT);    //set in1PinB(12) as an output pin
+  pinMode(in2PinB, OUTPUT);    //set in2PinB(14) as an output pin
+  pinMode(pwmPinB, OUTPUT); //set enablePinB(13) as an output pin  
+}
+
+//This function will be activated whenever the virutal pin V0 has a changing status
+//When the pushbush (V0) is pressed, run motor A forward at the highest speed
+BLYNK_WRITE(V0)  
+{
+  digitalWrite(pwmPinA, param.asInt());  //  param.asInt() return&#x27;s V0 virtual pin&#x27;s current value from the blynk App 0-LOW, 1-HIGH  
+  digitalWrite(in1PinA, HIGH); //run the gearhead motor A forward, 
+  digitalWrite(in2PinA, LOW);
+}
+
+//This function will be activated whenever the virutal pin V1 has a changing status
+// When the pushbush (V1) is pressed, run motor A backward at the highest speed
+BLYNK_WRITE(V1) 
+{
+  digitalWrite(pwmPinA, param.asInt());  //run the gearhead motor A backward 
+  digitalWrite(in1PinA, LOW);
+  digitalWrite(in2PinA, HIGH);
+}
+
+// When the slider (V2) is dragged, rotate the servo motor to the corresponding angular position
+BLYNK_WRITE(V2)
+{
+  int servoPosition = param.asInt();
+  myServo.write(servoPosition);//servo.write() function controls the servo angle, param.asInt() return&#x27;s V2 pin&#x27;s current value (slider position)
+  Serial.print(&quot;servo motor goes to&quot;);
+  Serial.println(servoPosition);
+}
+
+// When the slider (V3) is dragged, using the slider value to control motor B&#x27;s speed (PWM duty cycle)
+BLYNK_WRITE(V3)
+{
+  int sliderPosition = param.asInt();
+  int speed = map(abs(sliderPosition), 0, 100, 0, 255);
+  if(sliderPosition&gt;0){
+    digitalWrite(in1PinB, HIGH);      
+    digitalWrite(in2PinB, LOW);  
+    analogWrite(pwmPinB, speed);
+  }
+  else{
+    digitalWrite(in1PinB, LOW);      
+    digitalWrite(in2PinB, HIGH);  
+    analogWrite(pwmPinB, speed);
+  } 
+
+  Serial.print(&quot;Motor B runs at &quot;);
+  Serial.print(sliderPosition);
+  Serial.println(&quot;% speed&quot;);
+}
+
+void loop() {
+  Blynk.run();  // keeps the connection alive and processes data 
+}
+</pre></details><p><a class="text-link" href="code/MiniCar_Blynk/MiniCar_Blynk.ino">code/MiniCar_Blynk/MiniCar_Blynk.ino</a> · 0.00 MB · <a href="code/MiniCar_Blynk/MiniCar_Blynk.ino" download>Download</a></p></li></ul></details><details><summary>Documents (2)</summary><ul><li style="margin-block:1rem;overflow-wrap:anywhere"><p><a class="text-link" href="documents/ME444_S26_T7.docx">documents/ME444_S26_T7.docx</a> · 8.33 MB · <a href="documents/ME444_S26_T7.docx" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><p><a class="text-link" href="documents/MG996R%20Servo%20Motor.pdf">documents/MG996R Servo Motor.pdf</a> · 0.09 MB · <a href="documents/MG996R%20Servo%20Motor.pdf" download>Download</a></p></li></ul></details><details><summary>Media/Images (9)</summary><ul><li style="margin-block:1rem;overflow-wrap:anywhere"><p><a class="text-link" href="media/images/adhesiveclamping.heic">media/images/adhesiveclamping.heic</a> · 2.25 MB · <a href="media/images/adhesiveclamping.heic" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><p><a class="text-link" href="media/images/backleft.heic">media/images/backleft.heic</a> · 2.39 MB · <a href="media/images/backleft.heic" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/botbrac.png"><img src="media/images/botbrac.png" alt="botbrac" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/botbrac.png">media/images/botbrac.png</a> · 0.08 MB · <a href="media/images/botbrac.png" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/driveSis.png"><img src="media/images/driveSis.png" alt="driveSis" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/driveSis.png">media/images/driveSis.png</a> · 0.06 MB · <a href="media/images/driveSis.png" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/drivesyswithplate.png"><img src="media/images/drivesyswithplate.png" alt="drivesyswithplate" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/drivesyswithplate.png">media/images/drivesyswithplate.png</a> · 0.05 MB · <a href="media/images/drivesyswithplate.png" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><p><a class="text-link" href="media/images/frontright.heic">media/images/frontright.heic</a> · 2.41 MB · <a href="media/images/frontright.heic" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><p><a class="text-link" href="media/images/mountingmotors.heic">media/images/mountingmotors.heic</a> · 1.36 MB · <a href="media/images/mountingmotors.heic" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/popper2prt.png"><img src="media/images/popper2prt.png" alt="popper2prt" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/popper2prt.png">media/images/popper2prt.png</a> · 0.11 MB · <a href="media/images/popper2prt.png" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/wholeshebang.jpg"><img src="media/images/wholeshebang.jpg" alt="wholeshebang" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/wholeshebang.jpg">media/images/wholeshebang.jpg</a> · 0.05 MB · <a href="media/images/wholeshebang.jpg" download>Download</a></p></li></ul></details><details><summary>Media/Videos (5)</summary><ul><li style="margin-block:1rem;overflow-wrap:anywhere"><video controls playsinline preload="none" src="media/videos/20260304-213640000-ios.mp4" aria-label="20260304-213640000-ios" style="max-width:100%;max-height:360px"></video><p><a class="text-link" href="media/videos/20260304-213640000-ios.mp4">media/videos/20260304-213640000-ios.mp4</a> · 65.16 MB · <a href="media/videos/20260304-213640000-ios.mp4" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><video controls playsinline preload="none" src="media/videos/20260304-215156000-ios.mp4" aria-label="20260304-215156000-ios" style="max-width:100%;max-height:360px"></video><p><a class="text-link" href="media/videos/20260304-215156000-ios.mp4">media/videos/20260304-215156000-ios.mp4</a> · 88.47 MB · <a href="media/videos/20260304-215156000-ios.mp4" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><video controls playsinline preload="none" src="media/videos/botcelly.mp4" aria-label="botcelly" style="max-width:100%;max-height:360px"></video><p><a class="text-link" href="media/videos/botcelly.mp4">media/videos/botcelly.mp4</a> · 1.17 MB · <a href="media/videos/botcelly.mp4" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><video controls playsinline preload="none" src="media/videos/botmovement.mp4" aria-label="botmovement" style="max-width:100%;max-height:360px"></video><p><a class="text-link" href="media/videos/botmovement.mp4">media/videos/botmovement.mp4</a> · 2.25 MB · <a href="media/videos/botmovement.mp4" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><video controls playsinline preload="none" src="media/videos/hattipdemo.mp4" aria-label="hattipdemo" style="max-width:100%;max-height:360px"></video><p><a class="text-link" href="media/videos/hattipdemo.mp4">media/videos/hattipdemo.mp4</a> · 1.41 MB · <a href="media/videos/hattipdemo.mp4" download>Download</a></p></li></ul></details><details><summary>Notes (1)</summary><ul><li style="margin-block:1rem;overflow-wrap:anywhere"><details><summary>Read text</summary><pre style="white-space:pre-wrap;overflow-wrap:anywhere"># Tipping Hat Battle Bot
+
+## Purpose
+Immobilize opposing robots while surviving field hazards under the course constraints.
+
+## Requirements and constraints
+- Fit within a 10 × 10 × 10 inch envelope.
+- Stay at or below 5 pounds.
+- Use the provided electronics.
+- Package the lifting mechanism and drivetrain together.
+
+## Engineering contribution
+Developed a hat-inspired lifting mechanism and integrated it with a compact drive system and full CAD assembly.
+
+## Outcome and limits
+The team earned first place in the ME 444 Battle Bot competition.
+
+## Drive bracket: fit and floor contact
+
+Before: Caster placement and printing were difficult; the alignment hole and motor geometry caused interference.
+
+After: Removed the casters, changed the alignment-hole height, and revised motor clearances so the wheels could sit correctly against the floor.
+
+## Hat mechanism: intended lift versus observed motion
+
+Before: The shell was intended to lift vertically and flip an opponent.
+
+After: Loose constraints produced a slower sideways hat-tip instead. The bot still won its lab and course battles, but the report does not document a later fix for the intended flipping action.
+
+## Retained source
+The design report retains the mechanical description, requirements, test results, and limitations. Embedded code screenshots were removed; editable source has credential literals replaced with configuration placeholders.
+</pre></details><p><a class="text-link" href="project-notes.md">project-notes.md</a> · 0.00 MB · <a href="project-notes.md" download>Download</a></p></li></ul></details></main></body></html>

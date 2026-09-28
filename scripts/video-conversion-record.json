@@ -1,0 +1,175 @@
+{
+  "backup": "C:\\Users\\rrenkit\\AppData\\Local\\Temp\\henry-original-videos-hs37mxas",
+  "entries": [
+    {
+      "source": "assets/project_descriptions/2024-asme-mini-rc-car/media/videos/performance--halfthrottle.mp4",
+      "target": "assets/project_descriptions/2024-asme-mini-rc-car/media/videos/performance--halfthrottle.mp4",
+      "before": 16361694,
+      "after": 3803105,
+      "original_sha256": "e521e4c70875690bd34311420c02129b75f452a630f2688732dc4c70c2ed081d",
+      "sha256": "4e2fd182515a3821c7baece66a725d08ea26923da585bcafd4d8a53eae49801a",
+      "hdr_to_sdr": false,
+      "duration": 9.054478
+    },
+    {
+      "source": "assets/project_descriptions/2024-asme-mini-rc-car/media/videos/performance--raceclip.mp4",
+      "target": "assets/project_descriptions/2024-asme-mini-rc-car/media/videos/performance--raceclip.mp4",
+      "before": 2743299,
+      "after": 2249833,
+      "original_sha256": "85cecdaa7e5b896ac516825846a7b5c219df0384db8be5ad372a35270034cb31",
+      "sha256": "b7eb5246f48f36a3a46b7ca7541aeb07a2f68ee6f0d3444f4da0d08fd4ecae94",
+      "hdr_to_sdr": false,
+      "duration": 6.533333
+    },
+    {
+      "source": "assets/project_descriptions/2024-asme-mini-rc-car/media/videos/performance--successfuljump.mp4",
+      "target": "assets/project_descriptions/2024-asme-mini-rc-car/media/videos/performance--successfuljump.mp4",
+      "before": 10070281,
+      "after": 7668404,
+      "original_sha256": "72f9c7cf675f77990c4fc4a540d04ab4078417ce7337cd124dd7f47b6743aaed",
+      "sha256": "f56b463891c95e5ab6f27ef67b57a2f18be6b28ba6ff0d0c36846398955b1ac0",
+      "hdr_to_sdr": false,
+      "duration": 44.566667
+    },
+    {
+      "source": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/videos/vertical-hover.mp4",
+      "target": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/videos/vertical-hover.mp4",
+      "before": 32739667,
+      "after": 17768050,
+      "original_sha256": "2cdd70093fcf32643d0f4358632caa684aee3212fb4c3006985177f08e2b4c1d",
+      "sha256": "7c7faac8e22197572e4fd9ff2abae646ca826aca34df39b8f2681d93a0c882ea",
+      "hdr_to_sdr": false,
+      "duration": 44.72
+    },
+    {
+      "source": "assets/project_descriptions/2026-ghost-arm/media/videos/live-demo-web.mp4",
+      "target": "assets/project_descriptions/2026-ghost-arm/media/videos/live-demo-web.mp4",
+      "before": 5840194,
+      "after": 4321978,
+      "original_sha256": "3b45be545f21b94234b68042b7d1a6feb8423998a327069073f25d0afc1ae9f1",
+      "sha256": "a11e8440172c2f0b9b1cddf9e3b7170d6203c2584638bd30b142f946fd314468",
+      "hdr_to_sdr": false,
+      "duration": 18.341995
+    },
+    {
+      "source": "assets/project_descriptions/2026-skateboard-cat/supporting/media/videos/armswiping.MP4",
+      "target": "assets/project_descriptions/2026-skateboard-cat/supporting/media/videos/armswiping.mp4",
+      "before": 2868576,
+      "after": 1568362,
+      "original_sha256": "cc07c84d457a956855825cde7d8d6f0f9982229daa0e9ff491db68452c90f5e7",
+      "sha256": "010b52e15265eec786a19b457d7bde5789963ec495779657453b32f1f9107458",
+      "hdr_to_sdr": false,
+      "duration": 9.498333
+    },
+    {
+      "source": "assets/project_descriptions/2026-skateboard-cat/supporting/media/videos/fullchase.MOV",
+      "target": "assets/project_descriptions/2026-skateboard-cat/supporting/media/videos/fullchase.mp4",
+      "before": 21280731,
+      "after": 4339363,
+      "original_sha256": "944d5ca768b2d6ad76434a80f06727796cd3cbc88a77538ebda445d946b790eb",
+      "sha256": "8d52828444fb68d1e6eb49c381a4d24d1aba4538728131c0ade9315e2911817c",
+      "hdr_to_sdr": false,
+      "duration": 11.068333
+    },
+    {
+      "source": "assets/project_descriptions/2026-skateboard-cat/supporting/media/videos/Group7ActionToyVideoSummary.MOV",
+      "target": "assets/project_descriptions/2026-skateboard-cat/supporting/media/videos/group7actiontoyvideosummary.mp4",
+      "before": 126711885,
+      "after": 17265341,
+      "original_sha256": "0a6c6901b5c5844901e030e2a2abb36e34034100f71d115f5115223e2101f571",
+      "sha256": "6df923503e576184ac9e720debad12750fd77016240771c877a75675978e683a",
+      "hdr_to_sdr": false,
+      "duration": 75.666667
+    },
+    {
+      "source": "assets/project_descriptions/2026-skateboard-cat/supporting/media/videos/headturnlasertracking.MOV",
+      "target": "assets/project_descriptions/2026-skateboard-cat/supporting/media/videos/headturnlasertracking.mp4",
+      "before": 16399350,
+      "after": 1804928,
+      "original_sha256": "5bf4c0d853cbab455f2e3d6bce1011d35bba6f1098e59aa1d611e07db70edaab",
+      "sha256": "ee1e0017a3c366a68a8736370dde94306a183c1aa62ced4f2fa480af8f5186a1",
+      "hdr_to_sdr": false,
+      "duration": 13.2
+    },
+    {
+      "source": "assets/project_descriptions/2026-skateboard-cat/supporting/media/videos/legswing.mp4",
+      "target": "assets/project_descriptions/2026-skateboard-cat/supporting/media/videos/legswing.mp4",
+      "before": 20060803,
+      "after": 2508620,
+      "original_sha256": "54a7c3c755cd76980a9f2b747a7044a0a0f666ab9eee5a03b48a55f435908b30",
+      "sha256": "ef340b94ad5c3a4bac1604a88c94069d47e3d6414905ec0598e5263f3ccd793c",
+      "hdr_to_sdr": false,
+      "duration": 28.693313
+    },
+    {
+      "source": "assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/media/videos/20260304_152123000_iOS.MOV",
+      "target": "assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/media/videos/20260304-152123000-ios.mp4",
+      "before": 18042376,
+      "after": 6508821,
+      "original_sha256": "76cfce1bec0f8a29c1666e5fee391aca84d02fa447f173717f95ca93d51ae55f",
+      "sha256": "6831972651f51b08c25637fa7b92c9004751bdc15f8896cabfca2d79feb98453",
+      "hdr_to_sdr": true,
+      "duration": 15.968333
+    },
+    {
+      "source": "assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/media/videos/20260304_213225000_iOS.MOV",
+      "target": "assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/media/videos/20260304-213225000-ios.mp4",
+      "before": 3677524,
+      "after": 1000219,
+      "original_sha256": "a715f726a7a172ba81c20adaea456f1db0ac2f520873f87edc9b3917d458419b",
+      "sha256": "a4836fe19665aaae1ac16678d282a6555ef8f7241fb9abea062ee7fd4edb7dcf",
+      "hdr_to_sdr": true,
+      "duration": 1.866667
+    },
+    {
+      "source": "assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/media/videos/20260304_213539000_iOS.MOV",
+      "target": "assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/media/videos/20260304-213539000-ios.mp4",
+      "before": 3952585,
+      "after": 1480141,
+      "original_sha256": "3c4ddaef8de48f1f1007bcf17274d74a817d05407fcaea81649366a51bab0ca5",
+      "sha256": "e81b00d0e463578b8cfea052932068ae45a4e191b4c55d4b6abb1a8f19f33110",
+      "hdr_to_sdr": true,
+      "duration": 3.3667
+    },
+    {
+      "source": "assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/media/videos/20260304_213640000_iOS.MOV",
+      "target": "assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/media/videos/20260304-213640000-ios.mp4",
+      "before": 332968466,
+      "after": 68320596,
+      "original_sha256": "81d1ea983ded045dd9ce8a5b512debea01c13697c98312b4b4f6660419c892a4",
+      "sha256": "553a2afdf8973cf080363aa077178ab6d57b67eb5a356a4b54e2849a9015fadf",
+      "hdr_to_sdr": true,
+      "duration": 173.473333
+    },
+    {
+      "source": "assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/media/videos/20260304_215156000_iOS.MOV",
+      "target": "assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/media/videos/20260304-215156000-ios.mp4",
+      "before": 442325118,
+      "after": 92767307,
+      "original_sha256": "1a5c68918966e07031a8085d8c81f9e3986155bcac81c53123633826faf21d4a",
+      "sha256": "b6a79c79706eee7e9efddbd2bab5737b45af8346a48ccd91e797b11004172b8e",
+      "hdr_to_sdr": true,
+      "duration": 235.673333
+    },
+    {
+      "source": "assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/media/videos/20260304_215556000_iOS.MOV",
+      "target": "assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/media/videos/20260304-215556000-ios.mp4",
+      "before": 4867745,
+      "after": 1225258,
+      "original_sha256": "f1fcd888d7012f097cbe17f8c67998d0333a5561aabb17a533f309ecf707d2ae",
+      "sha256": "a24cd2b351a3720804a6271ffcd1fc2fccb10adefa3d46acc9b92f08599c0c8d",
+      "hdr_to_sdr": true,
+      "duration": 2.435
+    },
+    {
+      "source": "assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/media/videos/20260304_220732000_iOS.MOV",
+      "target": "assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/media/videos/20260304-220732000-ios.mp4",
+      "before": 6024369,
+      "after": 2356853,
+      "original_sha256": "8e9ac5ce86c47a8e812922e363aa3ce58108dca72014d88b858cc29b688abfb6",
+      "sha256": "07c22cc52298aa2a65c58f45a93cc020613ad835dde9c4d112b592028ad3f3ad",
+      "hdr_to_sdr": true,
+      "duration": 5.333333
+    }
+  ]
+}

@@ -150,6 +150,7 @@ h3 { font-size: 1.25rem; }
 .media-download { color:var(--accent); font-size:.85rem; }
 .dialog-inner .award { color:var(--accent-2); }
 
+
 .reveal { opacity:0; transform:translateY(16px); transition:opacity .55s ease, transform .55s ease; }
 .reveal.visible { opacity:1; transform:none; }
 @media (prefers-reduced-motion: reduce) {

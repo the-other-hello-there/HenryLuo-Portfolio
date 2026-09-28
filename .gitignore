@@ -1,6 +1,7 @@
 # Local verification tools and temporary artifacts
 .tmp-*/
 .project-check.html
+.cad-local-check.html
 __pycache__/
 *.pyc
 

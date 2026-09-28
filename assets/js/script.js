@@ -71,12 +71,13 @@ function renderMedia(asset) {
   const caption = escapeHtml(asset.caption);
   const poster = asset.poster ? ` poster="${escapeHtml(asset.poster)}"` : '';
   const content = asset.type === 'video'
-    ? `<video controls preload="metadata" playsinline${poster} aria-label="${caption}" src="${src}"></video><a class="media-download" href="${src}">Open video file</a>`
-    : `<a href="${src}" target="_blank" rel="noopener noreferrer" aria-label="Open full image: ${caption}"><img src="${src}" alt="${caption}" loading="lazy" decoding="async" /></a>`;
+    ? `<video controls preload="metadata" playsinline${poster} aria-label="${caption}" src="${src}"></video><p><a class="media-download" href="${src}">Open video file</a> &middot; <a class="media-download" href="${src}" download>Download video</a></p>`
+    : `<a href="${src}" target="_blank" rel="noopener noreferrer" aria-label="Open full image: ${caption}"><img src="${src}" alt="${caption}" loading="lazy" decoding="async" /></a><a class="media-download" href="${src}" download>Download image</a>`;
   return `<figure>${content}<figcaption>${caption}</figcaption></figure>`;
 }
 
 function renderProject(project) {
+  const gallery = project.media;
   dialogContent.innerHTML = `
     <div class="dialog-inner">
       <p class="eyebrow">Project Case Study</p>
@@ -96,8 +97,11 @@ function renderProject(project) {
         <p>${escapeHtml(project.contribution)}</p>
       </div>
       ${project.outcome ? `<div class="dialog-section"><h3>Outcome and Testing</h3><p>${escapeHtml(project.outcome)}</p></div>` : ''}
+      ${project.iterations?.length ? `<div class="dialog-section"><h3>Design Evolution</h3>${project.iterations.map(step => `<h4>${escapeHtml(step.title)}</h4><p><strong>Before:</strong> ${escapeHtml(step.before)}</p><p><strong>After:</strong> ${escapeHtml(step.after)}</p>`).join('')}</div>` : ''}
+      ${project.external_links?.length ? `<div class="dialog-section"><h3>Interactive CAD</h3>${project.external_links.map(link => `<p><a class="text-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label)}</a></p><p>${escapeHtml(link.description)}</p>`).join('')}</div>` : ''}
+      ${project.supporting_page ? `<div class="dialog-section"><h3>Supporting files</h3><p><a class="text-link" href="${escapeHtml(encodeURI(project.supporting_page))}">Browse supporting files</a></p></div>` : ''}
       ${project.documents?.length ? `<div class="dialog-section"><h3>Project Documentation</h3><ul>${project.documents.map(document => `<li><a class="text-link" href="${escapeHtml(encodeURI(document.src))}" target="_blank" rel="noopener noreferrer">${escapeHtml(document.label)}</a></li>`).join('')}</ul></div>` : ''}
-      ${project.media.length ? `<div class="dialog-section"><h3>Project Media</h3><div class="dialog-gallery">${project.media.map(renderMedia).join('')}</div></div>` : ''}
+      ${gallery.length ? `<div class="dialog-section"><h3>Build Photos &amp; Demonstrations</h3><div class="dialog-gallery">${gallery.map(renderMedia).join('')}</div></div>` : ''}
     </div>`;
 }
 
@@ -113,9 +117,12 @@ document.querySelectorAll('.project-open').forEach(button => {
 
 document.querySelector('.dialog-close')?.addEventListener('click', () => dialog.close());
 dialog?.addEventListener('close', () => {
+  if (dialog.open) return;
   dialog.querySelectorAll('video').forEach(video => video.pause());
 });
+
 dialog?.addEventListener('click', event => {
+  if (event.target !== dialog) return;
   const rect = dialog.getBoundingClientRect();
   const inside = event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom;
   if (!inside) dialog.close();

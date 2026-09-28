@@ -1,147 +1,309 @@
 <?xml version='1.0' encoding='utf-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/</loc>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/media/final-build.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/media/images/final-build.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/media/full-creo-assembly.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/media/images/drive-system-cad.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/media/drive-system-cad.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/media/images/shell-securing-assembly.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/media/shell-securing-assembly.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-tipping-hat-battle-bot/media/images/final-build.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-tipping-hat-battle-bot/media/final-build.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-tipping-hat-battle-bot/media/images/full-creo-assembly.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-tipping-hat-battle-bot/media/full-creo-assembly.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-tipping-hat-battle-bot/media/images/hat-tip-mechanism.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-tipping-hat-battle-bot/media/hat-tip-mechanism.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-tipping-hat-battle-bot/media/images/drive-system.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-tipping-hat-battle-bot/media/drive-system.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-ghost-arm/media/images/ghost-arm.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-ghost-arm/media/ghost-arm.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-infill-thermal-conduction/media/images/blocks.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-infill-thermal-conduction/media/blocks.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-infill-thermal-conduction/media/images/setup-diagram.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-infill-thermal-conduction/media/setup-diagram.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-infill-thermal-conduction/media/images/block-cavity.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-infill-thermal-conduction/media/block-cavity.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-infill-thermal-conduction/media/images/heat-transfer-diagram.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-infill-thermal-conduction/media/heat-transfer-diagram.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-headwind-safety/media/images/model-165-deg-setup.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-headwind-safety/media/model-165-deg-setup.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-headwind-safety/media/images/wind-tunnel-setup.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-headwind-safety/media/wind-tunnel-setup.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-headwind-safety/media/images/model-150-deg-assembly.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-headwind-safety/media/model-150-deg-assembly.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-headwind-safety/media/images/model-165-deg-assembly.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-headwind-safety/media/model-165-deg-assembly.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-headwind-safety/media/images/model-180-deg-assembly.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-headwind-safety/media/model-180-deg-assembly.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/images/archive-2--leg-3-30-2025-2.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/archive-2--leg-3-30-2025-2.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/images/archive-2--phase-2--knee--knee-3-30-2025.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--knee--knee-3-30-2025.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/images/archive-2--notes-figs--shin-core.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/images/final-build.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/final-build.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/images/full-onshape-assembly.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/full-onshape-assembly.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/images/top-view.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/top-view.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/images/rear.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/rear.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-dodo-rear-motor-mount/media/images/final-build-aircraft.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-dodo-rear-motor-mount/media/final-build-aircraft.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-dodo-rear-motor-mount/media/images/final-assembly.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-dodo-rear-motor-mount/media/final-assembly.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-dodo-rear-motor-mount/media/images/exploded-solidworks-assembly.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-dodo-rear-motor-mount/media/exploded-solidworks-assembly.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-dodo-rear-motor-mount/media/images/printed-split-proto.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-dodo-rear-motor-mount/media/printed-split-proto.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-bachelor-payload-capsule/media/images/mk2.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-bachelor-payload-capsule/media/mk2.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-bachelor-payload-capsule/media/images/bachelor-exploded.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-bachelor-payload-capsule/media/bachelor-exploded.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-bachelor-payload-capsule/media/images/joint.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-bachelor-payload-capsule/media/joint.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-ball-joint/media/images/cadballjoint.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-ball-joint/media/cadballjoint.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-ball-joint/media/images/cadcalf.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-ball-joint/media/cadcalf.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-clip-on-sunglasses-holder/media/images/v2.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-clip-on-sunglasses-holder/media/v2.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-clip-on-sunglasses-holder/media/images/v2--v2-attached.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-clip-on-sunglasses-holder/media/v2--v2-attached.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-clip-on-sunglasses-holder/media/images/v1--clip.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-clip-on-sunglasses-holder/media/v1--clip.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-clip-on-sunglasses-holder/media/images/v1--housing.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-clip-on-sunglasses-holder/media/v1--housing.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-display-hooks/media/images/display-hooks.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-display-hooks/media/display-hooks.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-pine-display-shelf/media/images/day-2-shelf-installed.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-pine-display-shelf/media/day-2-shelf-installed.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-pine-display-shelf/media/images/target-room-cad.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-pine-display-shelf/media/target-room-cad.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-pine-display-shelf/media/images/frame-cad.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-pine-display-shelf/media/frame-cad.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-pine-display-shelf/media/images/shelf-cutting-schematic.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-pine-display-shelf/media/shelf-cutting-schematic.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-clothes-hanger/media/images/midsects.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-clothes-hanger/media/midsects.jpg</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-clothes-hanger/media/images/pole-midsects.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-clothes-hanger/media/pole-midsects.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-desk-pencil-holder/media/images/pencil-holder.png</image:loc>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-tipping-hat-battle-bot/media/previews/battle-bot-match-poster.jpg</video:thumbnail_loc>
+      <video:title>Tipping Hat battle bot competition footage</video:title>
+      <video:description>Tipping Hat battle bot competition footage</video:description>
+      <video:content_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-tipping-hat-battle-bot/media/videos/battle-bot-match.mp4</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-ghost-arm/media/previews/live-demo-poster.jpg</video:thumbnail_loc>
+      <video:title>Ghost Arm live demonstration</video:title>
+      <video:description>Ghost Arm live demonstration</video:description>
+      <video:content_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-ghost-arm/media/videos/live-demo-web.mp4</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/previews/performance--successfuljump-poster.jpg</video:thumbnail_loc>
+      <video:title>RC car jump demonstration</video:title>
+      <video:description>RC car jump demonstration</video:description>
+      <video:content_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/videos/performance--successfuljump.mp4</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/previews/performance--halfthrottle-poster.jpg</video:thumbnail_loc>
+      <video:title>RC car half-throttle driving test</video:title>
+      <video:description>RC car half-throttle driving test</video:description>
+      <video:content_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/videos/performance--halfthrottle.mp4</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/previews/full-race-documentation-poster.jpg</video:thumbnail_loc>
+      <video:title>RC car full race recording</video:title>
+      <video:description>RC car full race recording</video:description>
+      <video:content_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/videos/full-race-documentation.mp4</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-dodo-rear-motor-mount/media/previews/vertical-hover-poster.jpg</video:thumbnail_loc>
+      <video:title>Dodo UAV vertical hover demonstration</video:title>
+      <video:description>Dodo UAV vertical hover demonstration</video:description>
+      <video:content_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-dodo-rear-motor-mount/media/videos/vertical-hover.mp4</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-ball-joint/media/previews/balljoint-poster.jpg</video:thumbnail_loc>
+      <video:title>Ball joint motion demonstration</video:title>
+      <video:description>Ball joint motion demonstration</video:description>
+      <video:content_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-ball-joint/media/videos/balljoint.mp4</video:content_loc>
+    </video:video>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/images/archive-1--notes-figs--shin-foot.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-desk-pencil-holder/media/pencil-holder.png</image:loc>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-display-hooks/media/images/display-hooks-cad-preview.png</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-pine-display-shelf/media/images/full-shelf-cad.png</image:loc>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/media/previews/laser-following-demo-poster.jpg</video:thumbnail_loc>
+      <video:title>Completed skateboard cat responding to a laser on the floor</video:title>
+      <video:description>Completed skateboard cat responding to a laser on the floor</video:description>
+      <video:content_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/media/videos/laser-following-demo.mp4</video:content_loc>
+    </video:video>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/media/images/final-solidworks-assembly.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-tipping-hat-battle-bot/media/images/early-drive-bracket.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-tipping-hat-battle-bot/media/images/final-drive-bracket.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/media/images/arm-subassembly.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/media/images/head-subassembly.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/media/images/full-creo-assembly.png</image:loc>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/previews/performance--raceclip-poster.jpg</video:thumbnail_loc>
+      <video:title>RC car short race clip</video:title>
+      <video:description>RC car short race clip</video:description>
+      <video:content_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/media/videos/performance--raceclip.mp4</video:content_loc>
+    </video:video>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-ghost-arm/media/images/support-frame.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-ghost-arm/media/images/arm-sleeve.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-infill-thermal-conduction/media/images/experimental-setup-cad.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-headwind-safety/media/images/ground-clearance.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/images/archive-2--notes-figs--shin-core-vmstress.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-bachelor-payload-capsule/media/images/mk1.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-ball-joint/media/images/printed-balljoint.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-clip-on-sunglasses-holder/media/images/v2-assembly-cad.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-clip-on-sunglasses-holder/media/images/v2-bracket-cad.png</image:loc>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/media/previews/cat-hype-poster.jpg</video:thumbnail_loc>
+      <video:title>Felon the Freestylin’ Feline: team showcase, mechanisms, and testing</video:title>
+      <video:description>Felon the Freestylin’ Feline: team showcase, mechanisms, and testing</video:description>
+      <video:content_loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/media/videos/cat-hype.mp4</video:content_loc>
+    </video:video>
   </url>
   <url>
     <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/HL_resume.pdf</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/Introduction.txt</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/fullportfolio.pptx</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/supporting/index.html</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/index.html</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-ghost-arm/supporting/index.html</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-infill-thermal-conduction/supporting/index.html</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-headwind-safety/supporting/index.html</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2025-hrc-l2-humanoid-leg/supporting/index.html</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-asme-mini-rc-car/supporting/index.html</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-dodo-rear-motor-mount/supporting/index.html</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-bachelor-payload-capsule/supporting/index.html</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-ball-joint/supporting/index.html</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-clip-on-sunglasses-holder/supporting/index.html</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2024-display-hooks/supporting/index.html</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-pine-display-shelf/supporting/index.html</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-clothes-hanger/supporting/index.html</loc>
+  </url>
+  <url>
+    <loc>https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2023-desk-pencil-holder/supporting/index.html</loc>
   </url>
 </urlset>

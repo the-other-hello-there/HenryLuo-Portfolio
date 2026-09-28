@@ -1,44 +1,7 @@
 # Ball Joint
 
-- **Year:** 2024
-- **Context:** HRC · Small Leg Components
-
-## Summary
-
 Designed a parametric, 3D-printed ball-and-socket jig to simulate ankle rolling motion for ankle-controls development. Adjustable CAD dimensions support rapid changes to the calf-mounted ball and foot-mounted socket.
 
-## Objective
+Selected photos, CAD screenshots, and demonstrations live in `media/images`, `media/videos`, and `media/previews`. Native CAD and model archives have been removed.
 
-Create a ball-and-socket jig that simulates ankle rolling motion for the development of ankle controls.
-
-## Design Constraints
-
-- Provide ankle-like rotation.
-- Use variable-based CAD for dimensional adjustments.
-- Fit printed parts on the print bed with minimal supports.
-
-## Engineering Work
-
-Modeled the ball, socket, and assembly in SOLIDWORKS and produced a printed joint prototype.
-
-## Outcome and Evidence
-
-A printed assembly and motion video are available; load capacity and range of motion are not quantified.
-
-## Media
-
-| Asset | Format |
-| --- | --- |
-| [Ball joint motion demonstration](media/balljoint.mp4) | MP4 |
-| [Ball-and-socket CAD assembly](media/cadballjoint.png) | PNG |
-| [Calf joint CAD](media/cadcalf.png) | PNG |
-| [Printed ball-and-socket prototype](media/printed-balljoint.png) | PNG |
-
-## Source Files
-
-- [HL_Assy.SLDASM](source/HL_Assy.SLDASM)
-- [HL_Ball.SLDPRT](source/HL_Ball.SLDPRT)
-- [HL_Socket.SLDPRT](source/HL_Socket.SLDPRT)
-- [Summary - Balljoint.txt](source/Summary%20-%20Balljoint.txt)
-
-Redundant copies and generated exports were removed in the repository size cleanup. See [the cleanup manifest](../cleanup-manifest.json) for the removal inventory and retained replacements.
+[Supporting files](supporting/index.html) provides individual previews and downloads for notes, requirements, additional images, data, code, and videos where available. [Project notes](supporting/project-notes.md) document scope and limitations.

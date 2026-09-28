@@ -18,34 +18,76 @@
     ],
     "media": [
       {
-        "src": "assets/project_descriptions/2026-skateboard-cat/media/final-build.jpg",
+        "src": "assets/project_descriptions/2026-skateboard-cat/media/images/final-build.jpg",
         "caption": "Skateboard cat final build",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-skateboard-cat/media/full-creo-assembly.png",
-        "caption": "Complete skateboard cat Creo assembly",
-        "type": "image"
-      },
-      {
-        "src": "assets/project_descriptions/2026-skateboard-cat/media/drive-system-cad.png",
+        "src": "assets/project_descriptions/2026-skateboard-cat/media/images/drive-system-cad.png",
         "caption": "Drive system CAD",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-skateboard-cat/media/shell-securing-assembly.png",
+        "src": "assets/project_descriptions/2026-skateboard-cat/media/images/shell-securing-assembly.png",
         "caption": "Shell-securing assembly",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-skateboard-cat/media/presentation-booth.jpg",
-        "caption": "Skateboard cat team presentation booth",
+        "src": "assets/project_descriptions/2026-skateboard-cat/media/images/final-solidworks-assembly.png",
+        "caption": "Final integrated SOLIDWORKS assembly",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2026-skateboard-cat/media/images/arm-subassembly.png",
+        "caption": "Four-bar swiping arm subassembly",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2026-skateboard-cat/media/images/head-subassembly.png",
+        "caption": "Head-turn servo and snap-fit interface",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2026-skateboard-cat/media/videos/cat-hype.mp4",
+        "poster": "assets/project_descriptions/2026-skateboard-cat/media/previews/cat-hype-poster.jpg",
+        "caption": "Felon the Freestylin’ Feline: team showcase, mechanisms, and testing",
+        "type": "video",
+        "feature_on_card": true
+      },
+      {
+        "src": "assets/project_descriptions/2026-skateboard-cat/media/videos/laser-following-demo.mp4",
+        "poster": "assets/project_descriptions/2026-skateboard-cat/media/previews/laser-following-demo-poster.jpg",
+        "caption": "Completed skateboard cat responding to a laser on the floor",
+        "type": "video",
+        "feature_on_card": true
+      },
+      {
+        "src": "assets/project_descriptions/2026-skateboard-cat/media/images/full-creo-assembly.png",
+        "caption": "Skateboard cat Creo assembly view",
         "type": "image"
       }
     ],
     "highlight": true,
     "award": "Team award: ME 444 Interactive Toy — Honorable Mention",
-    "outcome": "The team completed the interactive toy and earned an Honorable Mention in ME 444."
+    "outcome": "The team demonstrated laser-responsive driving, steering, and arm motion and earned an Honorable Mention. Head retention and arm-motor attachment remained unreliable during the toy fair; the rear-leg swinging mechanism was not completed.",
+    "iterations": [
+      {
+        "title": "From separate mechanisms to an integrated toy",
+        "before": "Prototype parts had interference and difficult interfaces during assembly.",
+        "after": "Rapid printed revisions and oversized fastening holes made assembly and disassembly easier. The final design combined front drive, rear steering, a swiping arm, and head rotation. Head retention and arm-motor attachment still needed another revision.",
+        "evidence": "Final report: system integration, prototyping, and results. Individual dated CAD saves do not establish separate validated milestones."
+      }
+    ],
+    "supporting_page": "assets/project_descriptions/2026-skateboard-cat/supporting/index.html",
+    "documents": [],
+    "presentation_bullets": [
+      "Split chassis separates shells from functional components",
+      "Integrated driving, steering, swiping, and head rotation",
+      "Revised interference points and enlarged fastening holes",
+      "Team earned Honorable Mention at toy fair",
+      "Head and arm attachments still needed refinement",
+      "Planned rear-leg swinging mechanism remained physically unfinished"
+    ]
   },
   {
     "id": "battle-bot",
@@ -67,34 +109,68 @@
     ],
     "media": [
       {
-        "src": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/final-build.png",
+        "src": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/images/final-build.png",
         "caption": "Tipping Hat battle bot final build",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/full-creo-assembly.jpg",
+        "src": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/images/full-creo-assembly.jpg",
         "caption": "Complete battle bot Creo assembly",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/hat-tip-mechanism.png",
+        "src": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/images/hat-tip-mechanism.png",
         "caption": "Hat-tip lifting mechanism",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/drive-system.png",
+        "src": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/images/drive-system.png",
         "caption": "Compact drive system",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/battle-bot-match.mp4",
+        "src": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/videos/battle-bot-match.mp4",
         "caption": "Tipping Hat battle bot competition footage",
-        "type": "video"
+        "type": "video",
+        "poster": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/previews/battle-bot-match-poster.jpg"
+      },
+      {
+        "src": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/images/early-drive-bracket.png",
+        "caption": "Early drive bracket with caster features",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2026-tipping-hat-battle-bot/media/images/final-drive-bracket.png",
+        "caption": "Revised bracket after clearance and alignment changes",
+        "type": "image"
       }
     ],
     "highlight": true,
     "award": "Team award: ME 444 Battle Bot — 1st Place",
-    "outcome": "The team earned first place in the ME 444 Battle Bot competition."
+    "outcome": "The team earned first place in the ME 444 Battle Bot competition.",
+    "iterations": [
+      {
+        "title": "Drive bracket: fit and floor contact",
+        "before": "Caster placement and printing were difficult; the alignment hole and motor geometry caused interference.",
+        "after": "Removed the casters, changed the alignment-hole height, and revised motor clearances so the wheels could sit correctly against the floor.",
+        "evidence": "Design report section 2.1 and figures 2.1.1-2.1.4."
+      },
+      {
+        "title": "Hat mechanism: intended lift versus observed motion",
+        "before": "The shell was intended to lift vertically and flip an opponent.",
+        "after": "Loose constraints produced a slower sideways hat-tip instead. The bot still won its lab and course battles, but the report does not document a later fix for the intended flipping action.",
+        "evidence": "Design report: prototyping, results, and conclusion."
+      }
+    ],
+    "supporting_page": "assets/project_descriptions/2026-tipping-hat-battle-bot/supporting/index.html",
+    "documents": [],
+    "presentation_bullets": [
+      "Designed hat-inspired mechanism and compact drive system",
+      "Revised motor clearances and bracket alignment geometry",
+      "Removed casters to improve wheel floor contact",
+      "Loose constraints produced sideways tipping, not flipping",
+      "Team earned first place in course competition"
+    ]
   },
   {
     "id": "ghost-arm",
@@ -113,31 +189,40 @@
       "Only one attempt available to 3D-print the complete mechanical system",
       "CAD relation verification before fabrication"
     ],
-    "contribution": "I led purpose ideation and low-fidelity prototyping with cardboard and tape, helping define the robotic arm’s purpose and explore the concept before fabrication. I also worked on the 3D-printed mechanical system.",
+    "contribution": "I led purpose ideation and low-fidelity prototyping with cardboard and tape, helping define the robotic arm’s purpose and explore the concept before fabrication. I also worked on the 3D-printed mechanical system. The concept evolved rapidly during the short project timeline, so CAD did not meaningfully carry through to the final design. Physical prototypes and demonstration footage document the final implementation.",
     "outcome": "A CAD relation error caused my fabrication attempt to fail, and the single-attempt constraint left no opportunity for a corrected print. This highlighted the importance of checking CAD relations and planning for fabrication risk. The team earned Best Implementation of Viam at StarkHacks 2026.",
     "award": "Team award: StarkHacks 2026 — Best Implementation of Viam",
     "media": [
       {
-        "src": "assets/project_descriptions/2026-ghost-arm/media/ghost-arm.jpg",
+        "src": "assets/project_descriptions/2026-ghost-arm/media/images/ghost-arm.jpg",
         "caption": "Ghost Arm robotic arm assembly",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-ghost-arm/media/support-frame.jpg",
+        "src": "assets/project_descriptions/2026-ghost-arm/media/images/support-frame.jpg",
         "caption": "Ghost Arm support frame and demonstration setup",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-ghost-arm/media/arm-sleeve.jpg",
+        "src": "assets/project_descriptions/2026-ghost-arm/media/images/arm-sleeve.jpg",
         "caption": "Cardboard arm-sleeve prototype with electronics",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-ghost-arm/media/live-demo-web.mp4",
+        "src": "assets/project_descriptions/2026-ghost-arm/media/videos/live-demo-web.mp4",
         "caption": "Ghost Arm live demonstration",
         "type": "video",
-        "poster": "assets/project_descriptions/2026-ghost-arm/media/live-demo-poster.jpg"
+        "poster": "assets/project_descriptions/2026-ghost-arm/media/previews/live-demo-poster.jpg"
       }
+    ],
+    "supporting_page": "assets/project_descriptions/2026-ghost-arm/supporting/index.html",
+    "documents": [],
+    "presentation_bullets": [
+      "Led purpose ideation and rapid cardboard prototyping",
+      "Explored teleoperation for difficult industrial working environments",
+      "Rapid evolution outpaced CAD during short development",
+      "Printing failure prevented a corrected mechanical iteration",
+      "Team earned Best Implementation of Viam award"
     ]
   },
   {
@@ -162,31 +247,45 @@
     "outcome": "The team completed the experimental design, testing, analysis, and final report. Results were inconclusive because of unreliable equipment and limitations in the experimental assumptions. The report identifies wattmeter uncertainty, thermocouple noise, heat leakage, nonuniform surface temperatures, and operation near PETG’s glass-transition range as limitations. It proposes better instrumentation, improved insulation, and a control test for a future iteration.",
     "media": [
       {
-        "src": "assets/project_descriptions/2026-infill-thermal-conduction/media/blocks.png",
+        "src": "assets/project_descriptions/2026-infill-thermal-conduction/media/images/blocks.png",
         "caption": "PETG test blocks with 15%, 50%, and 100% infill",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-infill-thermal-conduction/media/setup-diagram.png",
+        "src": "assets/project_descriptions/2026-infill-thermal-conduction/media/images/setup-diagram.png",
         "caption": "Insulated block assembly and blower setup",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-infill-thermal-conduction/media/block-cavity.png",
+        "src": "assets/project_descriptions/2026-infill-thermal-conduction/media/images/block-cavity.png",
         "caption": "Block enclosure cavity",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-infill-thermal-conduction/media/heat-transfer-diagram.png",
+        "src": "assets/project_descriptions/2026-infill-thermal-conduction/media/images/heat-transfer-diagram.png",
         "caption": "Heat-transfer model used in the experiment",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2026-infill-thermal-conduction/media/images/experimental-setup-cad.png",
+        "caption": "Experimental setup CAD with transparent enclosure",
         "type": "image"
       }
     ],
     "documents": [
       {
-        "label": "Read the ME 315 final report (PDF)",
-        "src": "assets/project_descriptions/2026-infill-thermal-conduction/source/ME315_Team04_FinalReport.pdf"
+        "label": "Read reviewed project notes and limitations",
+        "src": "assets/project_descriptions/2026-infill-thermal-conduction/supporting/project-notes.md"
       }
+    ],
+    "supporting_page": "assets/project_descriptions/2026-infill-thermal-conduction/supporting/index.html",
+    "presentation_bullets": [
+      "Led concept development and coordinated experimental teamwork",
+      "Compared PETG specimens with three infill densities",
+      "Combined patch heating, insulation, and forced convection",
+      "Measured temperatures, heater power, and infrared imagery",
+      "Equipment uncertainty and heat leakage limited conclusions",
+      "Recommended improved instrumentation, insulation, and control tests"
     ]
   },
   {
@@ -211,41 +310,49 @@
     "outcome": "The team designed and conducted the experiment and produced a final report. The findings did not establish a reliable ideal posture or real-world safety threshold. Mounting interference, incomplete dynamic similarity, ground-clearance effects, and the inability to reproduce gusts limited the conclusions. The report documents these limitations and recommends improvements to the mounting, model, and test conditions.",
     "media": [
       {
-        "src": "assets/project_descriptions/2026-headwind-safety/media/model-165-deg-setup.jpg",
+        "src": "assets/project_descriptions/2026-headwind-safety/media/images/model-165-deg-setup.jpg",
         "caption": "165-degree model mounted in the wind tunnel",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-headwind-safety/media/wind-tunnel-setup.png",
+        "src": "assets/project_descriptions/2026-headwind-safety/media/images/wind-tunnel-setup.png",
         "caption": "Annotated wind-tunnel setup",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-headwind-safety/media/model-150-deg-assembly.jpg",
+        "src": "assets/project_descriptions/2026-headwind-safety/media/images/model-150-deg-assembly.jpg",
         "caption": "150-degree model assembly drawing",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-headwind-safety/media/model-165-deg-assembly.jpg",
+        "src": "assets/project_descriptions/2026-headwind-safety/media/images/model-165-deg-assembly.jpg",
         "caption": "165-degree model assembly drawing",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-headwind-safety/media/model-180-deg-assembly.jpg",
+        "src": "assets/project_descriptions/2026-headwind-safety/media/images/model-180-deg-assembly.jpg",
         "caption": "180-degree model assembly drawing",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2026-headwind-safety/media/ground-clearance.jpeg",
+        "src": "assets/project_descriptions/2026-headwind-safety/media/images/ground-clearance.jpeg",
         "caption": "Model clearance above the ground plate",
         "type": "image"
       }
     ],
     "documents": [
       {
-        "label": "Read the ME 30801 final report (PDF)",
-        "src": "assets/project_descriptions/2026-headwind-safety/source/Open Lab/ME30801_S26_OpenLab_Report_T065.pdf"
+        "label": "Read reviewed project notes and limitations",
+        "src": "assets/project_descriptions/2026-headwind-safety/supporting/project-notes.md"
       }
+    ],
+    "supporting_page": "assets/project_descriptions/2026-headwind-safety/supporting/index.html",
+    "presentation_bullets": [
+      "Helped design wind-tunnel tests across three postures",
+      "Measured lift and drag with baseline corrections",
+      "Compared coefficients, uncertainty, and scaled force estimates",
+      "Mounting interference and incomplete similarity limited conclusions",
+      "Tests did not establish real-world safety thresholds"
     ]
   },
   {
@@ -268,27 +375,50 @@
     ],
     "media": [
       {
-        "src": "assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/archive-2--leg-3-30-2025-2.png",
+        "src": "assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/images/archive-2--leg-3-30-2025-2.png",
         "caption": "HRC L2 leg CAD assembly",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/archive-2--phase-2--knee--knee-3-30-2025.png",
+        "src": "assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/images/archive-2--phase-2--knee--knee-3-30-2025.png",
         "caption": "Knee assembly CAD",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core.png",
+        "src": "assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/images/archive-2--notes-figs--shin-core.png",
         "caption": "Shin core structural concept",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/archive-2--notes-figs--shin-core-vmstress.png",
+        "src": "assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/images/archive-2--notes-figs--shin-core-vmstress.png",
         "caption": "Shin core stress simulation",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2025-hrc-l2-humanoid-leg/media/images/archive-1--notes-figs--shin-foot.png",
+        "caption": "Phase 1 shin design study",
         "type": "image"
       }
     ],
-    "outcome": "The HRC L2 team produced a complete, functional 3D-printed leg. It was never stress-tested or integrated into a larger assembly. The metal I-beam concepts and simulations in the design files are design studies, not evidence of load validation of the printed leg."
+    "outcome": "The HRC L2 team produced a complete, functional 3D-printed leg. It was never stress-tested or integrated into a larger assembly. The metal I-beam concepts and simulations in the design files are design studies, not evidence of load validation of the printed leg.",
+    "iterations": [
+      {
+        "title": "From custom shin geometry to stock-section leg concepts",
+        "before": "Phase 1 used a custom shin core and sliding electronics platforms, with substantial proposed machining.",
+        "after": "Phase 2 develops shin and thigh cores from lightly modified stock I-beams and adds forked knee connectors and a bearing clamp. These metal concepts were design studies; the printed team leg was not stress-tested.",
+        "evidence": "Phase 1 and Phase 2 source summaries and CAD inventories."
+      }
+    ],
+    "supporting_page": "assets/project_descriptions/2025-hrc-l2-humanoid-leg/supporting/index.html",
+    "documents": [],
+    "presentation_bullets": [
+      "Explored structural shin, thigh, and knee concepts",
+      "Used SOLIDWORKS, FEA, and MATLAB section studies",
+      "Replaced custom shin concepts with stock sections",
+      "Developed modular electronics platforms and bearing-supported knees",
+      "Team produced a functional printed leg assembly",
+      "Printed leg lacked stress testing and integration"
+    ]
   },
   {
     "id": "rc-car",
@@ -311,39 +441,62 @@
     ],
     "media": [
       {
-        "src": "assets/project_descriptions/2024-asme-mini-rc-car/media/final-build.jpg",
+        "src": "assets/project_descriptions/2024-asme-mini-rc-car/media/images/final-build.jpg",
         "caption": "ASME mini RC car final build",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-asme-mini-rc-car/media/full-onshape-assembly.png",
+        "src": "assets/project_descriptions/2024-asme-mini-rc-car/media/images/full-onshape-assembly.png",
         "caption": "Complete RC car Onshape assembly",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-asme-mini-rc-car/media/top-view.jpg",
+        "src": "assets/project_descriptions/2024-asme-mini-rc-car/media/images/top-view.jpg",
         "caption": "RC car component layout from above",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-asme-mini-rc-car/media/rear.jpg",
+        "src": "assets/project_descriptions/2024-asme-mini-rc-car/media/images/rear.jpg",
         "caption": "Rear drivetrain assembly",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-asme-mini-rc-car/media/performance--successfuljump.mp4",
+        "src": "assets/project_descriptions/2024-asme-mini-rc-car/media/videos/performance--successfuljump.mp4",
         "caption": "RC car jump demonstration",
-        "type": "video"
+        "type": "video",
+        "poster": "assets/project_descriptions/2024-asme-mini-rc-car/media/previews/performance--successfuljump-poster.jpg"
       },
       {
-        "src": "assets/project_descriptions/2024-asme-mini-rc-car/media/performance--raceclip.mp4",
-        "caption": "RC car race footage",
-        "type": "video"
+        "src": "assets/project_descriptions/2024-asme-mini-rc-car/media/videos/performance--halfthrottle.mp4",
+        "caption": "RC car half-throttle driving test",
+        "type": "video",
+        "poster": "assets/project_descriptions/2024-asme-mini-rc-car/media/previews/performance--halfthrottle-poster.jpg"
+      },
+      {
+        "src": "assets/project_descriptions/2024-asme-mini-rc-car/media/videos/full-race-documentation.mp4",
+        "caption": "RC car full race recording",
+        "type": "video",
+        "poster": "assets/project_descriptions/2024-asme-mini-rc-car/media/previews/full-race-documentation-poster.jpg"
+      },
+      {
+        "src": "assets/project_descriptions/2024-asme-mini-rc-car/media/videos/performance--raceclip.mp4",
+        "caption": "RC car short race clip",
+        "type": "video",
+        "poster": "assets/project_descriptions/2024-asme-mini-rc-car/media/previews/performance--raceclip-poster.jpg"
       }
     ],
     "highlight": true,
     "award": "Team award: ASME Mini RC Car — 1st Place",
-    "outcome": "The team earned first place in the ASME Mini RC Car competition. The existing race record is three laps in 2:21."
+    "outcome": "The team earned first place in the ASME Mini RC Car competition. The existing race record is three laps in 2:21.",
+    "supporting_page": "assets/project_descriptions/2024-asme-mini-rc-car/supporting/index.html",
+    "documents": [],
+    "presentation_bullets": [
+      "Co-designed car with steering and axle focus",
+      "Developed dogbone axles, holders, and motor clearances",
+      "Integrated suspension, differential, and mostly printed chassis",
+      "Team earned first place in ASME competition",
+      "Completed three race laps in two minutes twenty-one seconds"
+    ]
   },
   {
     "id": "motor-mount",
@@ -366,33 +519,52 @@
     ],
     "media": [
       {
-        "src": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/final-build-aircraft.jpg",
+        "src": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/images/final-build-aircraft.jpg",
         "caption": "Dodo UAV with rear motor mount installed",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/final-assembly.jpg",
+        "src": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/images/final-assembly.jpg",
         "caption": "Rear motor mount assembly",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/exploded-solidworks-assembly.png",
+        "src": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/images/exploded-solidworks-assembly.png",
         "caption": "Exploded SOLIDWORKS mount assembly",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/printed-split-proto.jpg",
+        "src": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/images/printed-split-proto.jpg",
         "caption": "Printed split-mount prototype",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/vertical-hover.mp4",
+        "src": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/videos/vertical-hover.mp4",
         "caption": "Dodo UAV vertical hover demonstration",
-        "type": "video"
+        "type": "video",
+        "poster": "assets/project_descriptions/2024-dodo-rear-motor-mount/media/previews/vertical-hover-poster.jpg"
       }
     ],
     "highlight": true,
-    "outcome": "Printed prototypes and final aircraft assembly photos document the mount’s development and integration."
+    "outcome": "Printed prototypes and final aircraft assembly photos document the mount’s development and integration.",
+    "iterations": [
+      {
+        "title": "From a through-bolt concept to a split clamp",
+        "before": "The inherited mounting approach required a through-bolt in the composite boom, raising a delamination concern.",
+        "after": "Developed a two-piece clamp around the existing boom. Later geometry adds compliant side and top/bottom rubber contact pieces; four bolt/locknut pairs close the clamp. The notes do not establish tested clamp-load or delamination margins.",
+        "evidence": "Project summary, early and final CAD component inventories, and rubber-interface notes. The original designer is not identified."
+      }
+    ],
+    "supporting_page": "assets/project_descriptions/2024-dodo-rear-motor-mount/supporting/index.html",
+    "documents": [],
+    "presentation_bullets": [
+      "Redesigned mount around the existing composite boom",
+      "Replaced through-bolt approach with a split clamp",
+      "Combined printed halves, rubber contacts, and bolts",
+      "Iterated motor retention, clamping contact, and printability",
+      "Aircraft photos document final installation and integration",
+      "Clamp-load and delamination margins were not established"
+    ]
   },
   {
     "id": "bachelor-capsule",
@@ -414,27 +586,44 @@
     ],
     "media": [
       {
-        "src": "assets/project_descriptions/2024-bachelor-payload-capsule/media/mk2.jpg",
+        "src": "assets/project_descriptions/2024-bachelor-payload-capsule/media/images/mk2.jpg",
         "caption": "Bachelor payload capsule second prototype",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-bachelor-payload-capsule/media/mk1.jpg",
+        "src": "assets/project_descriptions/2024-bachelor-payload-capsule/media/images/mk1.jpg",
         "caption": "Bachelor payload capsule first prototype",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-bachelor-payload-capsule/media/bachelor-exploded.png",
+        "src": "assets/project_descriptions/2024-bachelor-payload-capsule/media/images/bachelor-exploded.png",
         "caption": "Exploded payload capsule CAD",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-bachelor-payload-capsule/media/joint.png",
+        "src": "assets/project_descriptions/2024-bachelor-payload-capsule/media/images/joint.png",
         "caption": "Payload capsule joint detail",
         "type": "image"
       }
     ],
-    "outcome": "The capsule was tested by dropping it from a tall balcony; it was not tested in flight. The design was subsequently scrapped because the team changed the direction of the payload capsule."
+    "outcome": "The capsule was tested by dropping it from a tall balcony; it was not tested in flight. The design was subsequently scrapped because the team changed the direction of the payload capsule.",
+    "iterations": [
+      {
+        "title": "A simpler single-payload capsule",
+        "before": "The project began as a lighter alternative to a triple-payload basket.",
+        "after": "The retained Mk2 design uses a snap-together body and servo-driven flapper. Only Mk2 CAD is available; the photos alone do not establish the exact Mk1-to-Mk2 geometry changes.",
+        "evidence": "Project summary and retained Mk2 CAD. No unsupported Mk1 failure claim is made."
+      }
+    ],
+    "supporting_page": "assets/project_descriptions/2024-bachelor-payload-capsule/supporting/index.html",
+    "documents": [],
+    "presentation_bullets": [
+      "Designed single-payload body and servo-driven release flapper",
+      "Explored snap interfaces and optional lockball guidance",
+      "Mk2 geometry documented through CAD and prototypes",
+      "Balcony drop testing preceded changed project direction",
+      "No flight testing occurred before project cancellation"
+    ]
   },
   {
     "id": "ball-joint",
@@ -456,25 +645,33 @@
     ],
     "media": [
       {
-        "src": "assets/project_descriptions/2024-ball-joint/media/printed-balljoint.png",
+        "src": "assets/project_descriptions/2024-ball-joint/media/images/printed-balljoint.png",
         "caption": "Printed ball-and-socket prototype",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-ball-joint/media/cadballjoint.png",
+        "src": "assets/project_descriptions/2024-ball-joint/media/images/cadballjoint.png",
         "caption": "Ball-and-socket CAD assembly",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-ball-joint/media/cadcalf.png",
+        "src": "assets/project_descriptions/2024-ball-joint/media/images/cadcalf.png",
         "caption": "Calf joint CAD",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-ball-joint/media/balljoint.mp4",
+        "src": "assets/project_descriptions/2024-ball-joint/media/videos/balljoint.mp4",
         "caption": "Ball joint motion demonstration",
-        "type": "video"
+        "type": "video",
+        "poster": "assets/project_descriptions/2024-ball-joint/media/previews/balljoint-poster.jpg"
       }
+    ],
+    "supporting_page": "assets/project_descriptions/2024-ball-joint/supporting/index.html",
+    "documents": [],
+    "presentation_bullets": [
+      "Modeled ball, socket, and assembly in SOLIDWORKS",
+      "Explored ankle-like rotation through ball-and-socket joint geometry",
+      "Produced a physical prototype using 3D printing"
     ]
   },
   {
@@ -482,40 +679,75 @@
     "year": 2024,
     "title": "Clip-On Sunglasses Holder",
     "context": "Personal project",
-    "summary": "Designed a modular, 3D-printed holder for clip-on sunglasses that attaches to a car door pocket. Separate clip and housing components support accessible storage, while the housing can attach to the clip or another housing unit.",
+    "summary": "Designed a modular, 3D-printed sunglasses holder for a car door pocket. A tension bracket improved retention after V1 clips occasionally slipped; the revised bracket lasted nearly two years in everyday use.",
     "objective": "Keep clip-on sunglasses accessible and securely stored in a car.",
     "challenges": [
       "Clip onto the car door pocket.",
       "Retain clip-on sunglasses.",
       "Fit printed parts on the print bed with minimal supports."
     ],
-    "contribution": "Developed separate attachment and storage components, with CAD and photos organized across multiple iterations.",
+    "contribution": "Designed the modular clip, housing, and V2 retention bracket. V1 relied on the front-most holder’s own clips to connect to upstream components. V2 added a secondary tensile load path, reducing reliance on the clips’ limited interference engagement.",
     "tags": [
       "Personal Project",
       "3D Printing"
     ],
     "media": [
       {
-        "src": "assets/project_descriptions/2024-clip-on-sunglasses-holder/media/v2.jpg",
+        "src": "assets/project_descriptions/2024-clip-on-sunglasses-holder/media/images/v2.jpg",
         "caption": "Clip-on sunglasses holder",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-clip-on-sunglasses-holder/media/v2--v2-attached.jpg",
+        "src": "assets/project_descriptions/2024-clip-on-sunglasses-holder/media/images/v2--v2-attached.jpg",
         "caption": "Holder attached to a car door pocket",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-clip-on-sunglasses-holder/media/v1--clip.png",
+        "src": "assets/project_descriptions/2024-clip-on-sunglasses-holder/media/images/v1--clip.png",
         "caption": "Attachment clip CAD",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2024-clip-on-sunglasses-holder/media/v1--housing.png",
+        "src": "assets/project_descriptions/2024-clip-on-sunglasses-holder/media/images/v1--housing.png",
         "caption": "Sunglasses housing CAD",
         "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2024-clip-on-sunglasses-holder/media/images/v2-assembly-cad.png",
+        "caption": "V2 sunglasses-holder CAD assembly",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2024-clip-on-sunglasses-holder/media/images/v2-bracket-cad.png",
+        "caption": "Revised V2 attachment bracket",
+        "type": "image"
       }
-    ]
+    ],
+    "iterations": [
+      {
+        "title": "From clip slippage to secondary tension retention",
+        "before": "V1 had no bracket. The front-most holder connected to upstream components only through its own clips, which occasionally slipped when the car door opened aggressively.",
+        "after": "V2 added a bracket that holds the components together primarily through tension, providing secondary retention beyond the clips’ small interference engagement.",
+        "evidence": "Owner’s account of V1 behavior, V2 bracket geometry, and nearly two years of use."
+      },
+      {
+        "title": "Field service and an acceptable failure mode",
+        "before": "Repeated impacts, temperature changes, and moisture-driven expansion exposed the bracket to continuous cycling.",
+        "after": "After nearly two years, the bracket broke. Observed brittleness was attributed to environmental and impact cycling. Low consequences, long service life, obvious looseness, and very low replacement-material cost made this failure acceptable for this personal application.",
+        "evidence": "Owner-reported service history and qualitative failure assessment; no formal FMEA scores or controlled aging tests are claimed."
+      }
+    ],
+    "supporting_page": "assets/project_descriptions/2024-clip-on-sunglasses-holder/supporting/index.html",
+    "documents": [],
+    "presentation_bullets": [
+      "V1 clips slipped during aggressive door opening",
+      "V2 bracket added a secondary tensile connection",
+      "Revised bracket lasted nearly two service years",
+      "Cycling was the suspected cause of brittleness",
+      "Gradual looseness made bracket failure easily detectable",
+      "Low consequences and replacement cost were acceptable"
+    ],
+    "outcome": "The revised bracket lasted nearly two years before breaking in everyday use. Based on observed use and failure, I attributed increased brittleness to repeated impact, thermal, and moisture-driven expansion cycles; this assessment comes from field observations. The failure was gradual and easy to detect: the assembly became looser and the bracket came loose, without suddenly separating the mount. I considered this acceptable for this application because consequences were minor, service life was long, and replacement material cost was estimated below one cent; printing time and other costs were not included."
   },
   {
     "id": "display-hooks",
@@ -536,10 +768,22 @@
     ],
     "media": [
       {
-        "src": "assets/project_descriptions/2024-display-hooks/media/display-hooks.jpg",
+        "src": "assets/project_descriptions/2024-display-hooks/media/images/display-hooks.jpg",
         "caption": "Freestanding memorabilia display hooks",
         "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2024-display-hooks/media/images/display-hooks-cad-preview.png",
+        "caption": "Preview embedded in the Fusion design",
+        "type": "image"
       }
+    ],
+    "supporting_page": "assets/project_descriptions/2024-display-hooks/supporting/index.html",
+    "documents": [],
+    "presentation_bullets": [
+      "Designed compact freestanding hooks for displaying memorabilia",
+      "Modeled the required hook arrangement in Fusion",
+      "Physical photographs document the completed display structure"
     ]
   },
   {
@@ -562,27 +806,49 @@
     ],
     "media": [
       {
-        "src": "assets/project_descriptions/2023-pine-display-shelf/media/day-2-shelf-installed.jpg",
+        "src": "assets/project_descriptions/2023-pine-display-shelf/media/images/day-2-shelf-installed.jpg",
         "caption": "Pine display shelf installed in the room",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2023-pine-display-shelf/media/target-room-cad.png",
+        "src": "assets/project_descriptions/2023-pine-display-shelf/media/images/target-room-cad.png",
         "caption": "Target room CAD layout",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2023-pine-display-shelf/media/frame-cad.png",
+        "src": "assets/project_descriptions/2023-pine-display-shelf/media/images/frame-cad.png",
         "caption": "Shelf frame CAD",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2023-pine-display-shelf/media/shelf-cutting-schematic.png",
+        "src": "assets/project_descriptions/2023-pine-display-shelf/media/images/shelf-cutting-schematic.png",
         "caption": "Plywood cutting schematic",
+        "type": "image"
+      },
+      {
+        "src": "assets/project_descriptions/2023-pine-display-shelf/media/images/full-shelf-cad.png",
+        "caption": "Complete shelf CAD assembly",
         "type": "image"
       }
     ],
-    "outcome": "Built and installed the shelf using a jigsaw and drill. Materials cost $77.58 against a budget below $100."
+    "outcome": "Built and installed the shelf using a jigsaw and drill. Materials cost $77.58 against a budget below $100.",
+    "iterations": [
+      {
+        "title": "From room-fit planning to the installed shelf",
+        "before": "The shelf needed to fit an irregular room and be maneuvered into position using limited fabrication tools.",
+        "after": "Room and frame models checked placement; a board-cutting schematic guided fabrication of the L-shaped shelf. Installation photos document the resulting build.",
+        "evidence": "Project summary, planning CAD, and installed-shelf photos."
+      }
+    ],
+    "supporting_page": "assets/project_descriptions/2023-pine-display-shelf/supporting/index.html",
+    "documents": [],
+    "presentation_bullets": [
+      "Planned shelf around an irregular room layout",
+      "Modeled frame, assembly, and plywood cutting scheme",
+      "Built using only a jigsaw and drill",
+      "Combined shaped shelves, structural beams, and brackets",
+      "Installed successfully for $77.58 against $100 budget"
+    ]
   },
   {
     "id": "clothes-hanger",
@@ -603,15 +869,31 @@
     ],
     "media": [
       {
-        "src": "assets/project_descriptions/2023-clothes-hanger/media/midsects.jpg",
+        "src": "assets/project_descriptions/2023-clothes-hanger/media/images/midsects.jpg",
         "caption": "Printed clothing-tree section prototypes",
         "type": "image"
       },
       {
-        "src": "assets/project_descriptions/2023-clothes-hanger/media/pole-midsects.png",
+        "src": "assets/project_descriptions/2023-clothes-hanger/media/images/pole-midsects.png",
         "caption": "Modular pole section CAD",
         "type": "image"
       }
+    ],
+    "iterations": [
+      {
+        "title": "From snap-fit tests to modular parts",
+        "before": "The initial proof-of-concept models isolate male/female hook and base snap connections.",
+        "after": "The later part set applies those connections to bases, poles, branches, and hooks, with plugs covering the joints. A complete loaded assembly test is not recorded.",
+        "evidence": "Project summary: proof-of-concept and component sections."
+      }
+    ],
+    "supporting_page": "assets/project_descriptions/2023-clothes-hanger/supporting/index.html",
+    "documents": [],
+    "presentation_bullets": [
+      "Developed modular pole sections and snap-fit connections",
+      "Explored bases, branches, hooks, and joint covers",
+      "Printed prototypes demonstrate the main pole concept",
+      "Complete loaded assembly testing was not recorded"
     ]
   },
   {
@@ -632,10 +914,17 @@
     ],
     "media": [
       {
-        "src": "assets/project_descriptions/2023-desk-pencil-holder/media/pencil-holder.png",
+        "src": "assets/project_descriptions/2023-desk-pencil-holder/media/images/pencil-holder.png",
         "caption": "Desk-edge pencil holder design",
         "type": "image"
       }
+    ],
+    "supporting_page": "assets/project_descriptions/2023-desk-pencil-holder/supporting/index.html",
+    "documents": [],
+    "presentation_bullets": [
+      "Designed compact storage for frequently used pencils",
+      "Modeled desk-edge attachment geometry in Fusion 360",
+      "CAD image shows holder and attachment interface"
     ]
   }
 ]

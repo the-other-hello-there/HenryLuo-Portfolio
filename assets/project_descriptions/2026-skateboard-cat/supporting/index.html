@@ -1,0 +1,1515 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Felon the Freestylin’ Feline — Supporting files</title>
+<link rel="stylesheet" href="../../../css/styles.css">
+<link rel="canonical" href="https://the-other-hello-there.github.io/HenryLuo-Portfolio/assets/project_descriptions/2026-skateboard-cat/supporting/index.html">
+</head><body><main class="container section">
+<a class="btn btn-small" href="https://the-other-hello-there.github.io/" aria-label="Personal landing page">HL</a>
+<p><a class="text-link" href="../../../../index.html#project-feline">Back to project</a></p>
+<h1>Felon the Freestylin’ Feline</h1><h2>Supporting files</h2>
+<p>Additional photos, video recordings, requirements, and project notes. The main case study presents the selected results; these files provide further context and design history.</p>
+<p>Each file can be opened or downloaded individually. Expand a category to browse individual files. HEIC images may require downloading to view.</p>
+<details><summary>Code (7)</summary><ul><li style="margin-block:1rem;overflow-wrap:anywhere"><details><summary>Read text</summary><pre style="white-space:pre-wrap;overflow-wrap:anywhere">// Copyright 2015-2016 Espressif Systems (Shanghai) PTE LTD
+//
+// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+#include &quot;Arduino.h&quot;
+#include &quot;esp_http_server.h&quot;
+#include &quot;esp_timer.h&quot;
+#include &quot;esp_camera.h&quot;
+#include &quot;img_converters.h&quot;
+#include &quot;fb_gfx.h&quot;
+#include &quot;esp32-hal-ledc.h&quot;
+#include &quot;sdkconfig.h&quot;
+#include &quot;camera_index.h&quot;
+#include &quot;board_config.h&quot;
+
+#if defined(ARDUINO_ARCH_ESP32) &amp;&amp; defined(CONFIG_ARDUHAL_ESP_LOG)
+#include &quot;esp32-hal-log.h&quot;
+#endif
+
+// LED FLASH setup
+#if defined(LED_GPIO_NUM)
+#define CONFIG_LED_MAX_INTENSITY 255
+
+int led_duty = 0;
+bool isStreaming = false;
+
+#endif
+
+typedef struct {
+  httpd_req_t *req;
+  size_t len;
+} jpg_chunking_t;
+
+#define PART_BOUNDARY &quot;123456789000000000000987654321&quot;
+static const char *_STREAM_CONTENT_TYPE = &quot;multipart/x-mixed-replace;boundary=&quot; PART_BOUNDARY;
+static const char *_STREAM_BOUNDARY = &quot;\r\n--&quot; PART_BOUNDARY &quot;\r\n&quot;;
+static const char *_STREAM_PART = &quot;Content-Type: image/jpeg\r\nContent-Length: %u\r\nX-Timestamp: %d.%06d\r\n\r\n&quot;;
+
+httpd_handle_t stream_httpd = NULL;
+httpd_handle_t camera_httpd = NULL;
+
+typedef struct {
+  size_t size;   //number of values used for filtering
+  size_t index;  //current value index
+  size_t count;  //value count
+  int sum;
+  int *values;  //array to be filled with values
+} ra_filter_t;
+
+static ra_filter_t ra_filter;
+
+static ra_filter_t *ra_filter_init(ra_filter_t *filter, size_t sample_size) {
+  memset(filter, 0, sizeof(ra_filter_t));
+
+  filter-&gt;values = (int *)malloc(sample_size * sizeof(int));
+  if (!filter-&gt;values) {
+    return NULL;
+  }
+  memset(filter-&gt;values, 0, sample_size * sizeof(int));
+
+  filter-&gt;size = sample_size;
+  return filter;
+}
+
+#if ARDUHAL_LOG_LEVEL &gt;= ARDUHAL_LOG_LEVEL_INFO
+static int ra_filter_run(ra_filter_t *filter, int value) {
+  if (!filter-&gt;values) {
+    return value;
+  }
+  filter-&gt;sum -= filter-&gt;values[filter-&gt;index];
+  filter-&gt;values[filter-&gt;index] = value;
+  filter-&gt;sum += filter-&gt;values[filter-&gt;index];
+  filter-&gt;index++;
+  filter-&gt;index = filter-&gt;index % filter-&gt;size;
+  if (filter-&gt;count &lt; filter-&gt;size) {
+    filter-&gt;count++;
+  }
+  return filter-&gt;sum / filter-&gt;count;
+}
+#endif
+
+#if defined(LED_GPIO_NUM)
+void enable_led(bool en) {  // Turn LED On or Off
+  int duty = en ? led_duty : 0;
+  if (en &amp;&amp; isStreaming &amp;&amp; (led_duty &gt; CONFIG_LED_MAX_INTENSITY)) {
+    duty = CONFIG_LED_MAX_INTENSITY;
+  }
+  ledcWrite(LED_GPIO_NUM, duty);
+  //ledc_set_duty(CONFIG_LED_LEDC_SPEED_MODE, CONFIG_LED_LEDC_CHANNEL, duty);
+  //ledc_update_duty(CONFIG_LED_LEDC_SPEED_MODE, CONFIG_LED_LEDC_CHANNEL);
+  log_i(&quot;Set LED intensity to %d&quot;, duty);
+}
+#endif
+
+static esp_err_t bmp_handler(httpd_req_t *req) {
+  camera_fb_t *fb = NULL;
+  esp_err_t res = ESP_OK;
+#if ARDUHAL_LOG_LEVEL &gt;= ARDUHAL_LOG_LEVEL_INFO
+  int64_t fr_start = esp_timer_get_time();
+#endif
+  fb = esp_camera_fb_get();
+  if (!fb) {
+    log_e(&quot;Camera capture failed&quot;);
+    httpd_resp_send_500(req);
+    return ESP_FAIL;
+  }
+
+  httpd_resp_set_type(req, &quot;image/x-windows-bmp&quot;);
+  httpd_resp_set_hdr(req, &quot;Content-Disposition&quot;, &quot;inline; filename=capture.bmp&quot;);
+  httpd_resp_set_hdr(req, &quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+
+  char ts[32];
+  // Cast to uint32_t is safe until year 2106.
+  snprintf(ts, 32, &quot;%&quot; PRIu32 &quot;.%06&quot; PRIu32, (uint32_t)fb-&gt;timestamp.tv_sec, (uint32_t)fb-&gt;timestamp.tv_usec);
+  httpd_resp_set_hdr(req, &quot;X-Timestamp&quot;, (const char *)ts);
+
+  uint8_t *buf = NULL;
+  size_t buf_len = 0;
+  bool converted = frame2bmp(fb, &amp;buf, &amp;buf_len);
+  esp_camera_fb_return(fb);
+  if (!converted) {
+    log_e(&quot;BMP Conversion failed&quot;);
+    httpd_resp_send_500(req);
+    return ESP_FAIL;
+  }
+  res = httpd_resp_send(req, (const char *)buf, buf_len);
+  free(buf);
+#if ARDUHAL_LOG_LEVEL &gt;= ARDUHAL_LOG_LEVEL_INFO
+  int64_t fr_end = esp_timer_get_time();
+#endif
+  log_i(&quot;BMP: %&quot; PRId32 &quot;ms, %&quot; PRIu32 &quot;B&quot;, (int32_t)((fr_end - fr_start) / 1000), (uint32_t)buf_len);
+  return res;
+}
+
+static size_t jpg_encode_stream(void *arg, size_t index, const void *data, size_t len) {
+  jpg_chunking_t *j = (jpg_chunking_t *)arg;
+  if (!index) {
+    j-&gt;len = 0;
+  }
+  if (httpd_resp_send_chunk(j-&gt;req, (const char *)data, len) != ESP_OK) {
+    return 0;
+  }
+  j-&gt;len += len;
+  return len;
+}
+
+static esp_err_t capture_handler(httpd_req_t *req) {
+  camera_fb_t *fb = NULL;
+  esp_err_t res = ESP_OK;
+#if ARDUHAL_LOG_LEVEL &gt;= ARDUHAL_LOG_LEVEL_INFO
+  int64_t fr_start = esp_timer_get_time();
+#endif
+
+#if defined(LED_GPIO_NUM)
+  enable_led(true);
+  vTaskDelay(150 / portTICK_PERIOD_MS);  // The LED needs to be turned on ~150ms before the call to esp_camera_fb_get()
+  fb = esp_camera_fb_get();              // or it won&#x27;t be visible in the frame. A better way to do this is needed.
+  enable_led(false);
+#else
+  fb = esp_camera_fb_get();
+#endif
+
+  if (!fb) {
+    log_e(&quot;Camera capture failed&quot;);
+    httpd_resp_send_500(req);
+    return ESP_FAIL;
+  }
+
+  httpd_resp_set_type(req, &quot;image/jpeg&quot;);
+  httpd_resp_set_hdr(req, &quot;Content-Disposition&quot;, &quot;inline; filename=capture.jpg&quot;);
+  httpd_resp_set_hdr(req, &quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+
+  char ts[32];
+  // Cast to uint32_t is safe until year 2106.
+  snprintf(ts, 32, &quot;%&quot; PRIu32 &quot;.%06&quot; PRIu32, (uint32_t)fb-&gt;timestamp.tv_sec, (uint32_t)fb-&gt;timestamp.tv_usec);
+  httpd_resp_set_hdr(req, &quot;X-Timestamp&quot;, (const char *)ts);
+
+#if ARDUHAL_LOG_LEVEL &gt;= ARDUHAL_LOG_LEVEL_INFO
+  size_t fb_len = 0;
+#endif
+  if (fb-&gt;format == PIXFORMAT_JPEG) {
+#if ARDUHAL_LOG_LEVEL &gt;= ARDUHAL_LOG_LEVEL_INFO
+    fb_len = fb-&gt;len;
+#endif
+    res = httpd_resp_send(req, (const char *)fb-&gt;buf, fb-&gt;len);
+  } else {
+    jpg_chunking_t jchunk = {req, 0};
+    res = frame2jpg_cb(fb, 80, jpg_encode_stream, &amp;jchunk) ? ESP_OK : ESP_FAIL;
+    httpd_resp_send_chunk(req, NULL, 0);
+#if ARDUHAL_LOG_LEVEL &gt;= ARDUHAL_LOG_LEVEL_INFO
+    fb_len = jchunk.len;
+#endif
+  }
+  esp_camera_fb_return(fb);
+#if ARDUHAL_LOG_LEVEL &gt;= ARDUHAL_LOG_LEVEL_INFO
+  int64_t fr_end = esp_timer_get_time();
+#endif
+  log_i(&quot;JPG: %&quot; PRIu32 &quot;B %&quot; PRId32 &quot; ms&quot;, (uint32_t)fb_len, (int32_t)((fr_end - fr_start) / 1000));
+  return res;
+}
+
+static esp_err_t stream_handler(httpd_req_t *req) {
+  camera_fb_t *fb = NULL;
+  struct timeval _timestamp;
+  esp_err_t res = ESP_OK;
+  size_t _jpg_buf_len = 0;
+  uint8_t *_jpg_buf = NULL;
+  char *part_buf[128];
+
+  static int64_t last_frame = 0;
+  if (!last_frame) {
+    last_frame = esp_timer_get_time();
+  }
+
+  res = httpd_resp_set_type(req, _STREAM_CONTENT_TYPE);
+  if (res != ESP_OK) {
+    return res;
+  }
+
+  httpd_resp_set_hdr(req, &quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+  httpd_resp_set_hdr(req, &quot;X-Framerate&quot;, &quot;60&quot;);
+
+#if defined(LED_GPIO_NUM)
+  isStreaming = true;
+  enable_led(true);
+#endif
+
+  while (true) {
+    fb = esp_camera_fb_get();
+    if (!fb) {
+      log_e(&quot;Camera capture failed&quot;);
+      res = ESP_FAIL;
+    } else {
+      _timestamp.tv_sec = fb-&gt;timestamp.tv_sec;
+      _timestamp.tv_usec = fb-&gt;timestamp.tv_usec;
+      if (fb-&gt;format != PIXFORMAT_JPEG) {
+        bool jpeg_converted = frame2jpg(fb, 80, &amp;_jpg_buf, &amp;_jpg_buf_len);
+        esp_camera_fb_return(fb);
+        fb = NULL;
+        if (!jpeg_converted) {
+          log_e(&quot;JPEG compression failed&quot;);
+          res = ESP_FAIL;
+        }
+      } else {
+        _jpg_buf_len = fb-&gt;len;
+        _jpg_buf = fb-&gt;buf;
+      }
+    }
+    if (res == ESP_OK) {
+      res = httpd_resp_send_chunk(req, _STREAM_BOUNDARY, strlen(_STREAM_BOUNDARY));
+    }
+    if (res == ESP_OK) {
+      size_t hlen = snprintf((char *)part_buf, 128, _STREAM_PART, _jpg_buf_len, _timestamp.tv_sec, _timestamp.tv_usec);
+      res = httpd_resp_send_chunk(req, (const char *)part_buf, hlen);
+    }
+    if (res == ESP_OK) {
+      res = httpd_resp_send_chunk(req, (const char *)_jpg_buf, _jpg_buf_len);
+    }
+    if (fb) {
+      esp_camera_fb_return(fb);
+      fb = NULL;
+      _jpg_buf = NULL;
+    } else if (_jpg_buf) {
+      free(_jpg_buf);
+      _jpg_buf = NULL;
+    }
+    if (res != ESP_OK) {
+      log_e(&quot;Send frame failed&quot;);
+      break;
+    }
+    int64_t fr_end = esp_timer_get_time();
+
+    int64_t frame_time = fr_end - last_frame;
+    last_frame = fr_end;
+
+    frame_time /= 1000;
+#if ARDUHAL_LOG_LEVEL &gt;= ARDUHAL_LOG_LEVEL_INFO
+    uint32_t avg_frame_time = ra_filter_run(&amp;ra_filter, frame_time);
+#endif
+    log_i(
+      &quot;MJPG: %&quot; PRIu32 &quot;B %&quot; PRId32 &quot;ms (%.1ffps), AVG: %&quot; PRIu32 &quot;ms (%.1ffps)&quot;, (uint32_t)_jpg_buf_len, (int32_t)frame_time, 1000.0 / frame_time,
+      avg_frame_time, 1000.0 / avg_frame_time
+    );
+  }
+
+#if defined(LED_GPIO_NUM)
+  isStreaming = false;
+  enable_led(false);
+#endif
+
+  return res;
+}
+
+static esp_err_t parse_get(httpd_req_t *req, char **obuf) {
+  char *buf = NULL;
+  size_t buf_len = 0;
+
+  buf_len = httpd_req_get_url_query_len(req) + 1;
+  if (buf_len &gt; 1) {
+    buf = (char *)malloc(buf_len);
+    if (!buf) {
+      httpd_resp_send_500(req);
+      return ESP_FAIL;
+    }
+    if (httpd_req_get_url_query_str(req, buf, buf_len) == ESP_OK) {
+      *obuf = buf;
+      return ESP_OK;
+    }
+    free(buf);
+  }
+  httpd_resp_send_404(req);
+  return ESP_FAIL;
+}
+
+static esp_err_t cmd_handler(httpd_req_t *req) {
+  char *buf = NULL;
+  char variable[32];
+  char value[32];
+
+  if (parse_get(req, &amp;buf) != ESP_OK) {
+    return ESP_FAIL;
+  }
+  if (httpd_query_key_value(buf, &quot;var&quot;, variable, sizeof(variable)) != ESP_OK || httpd_query_key_value(buf, &quot;val&quot;, value, sizeof(value)) != ESP_OK) {
+    free(buf);
+    httpd_resp_send_404(req);
+    return ESP_FAIL;
+  }
+  free(buf);
+
+  int val = atoi(value);
+  log_i(&quot;%s = %d&quot;, variable, val);
+  sensor_t *s = esp_camera_sensor_get();
+  int res = 0;
+
+  if (!strcmp(variable, &quot;framesize&quot;)) {
+    if (s-&gt;pixformat == PIXFORMAT_JPEG) {
+      res = s-&gt;set_framesize(s, (framesize_t)val);
+    }
+  } else if (!strcmp(variable, &quot;quality&quot;)) {
+    res = s-&gt;set_quality(s, val);
+  } else if (!strcmp(variable, &quot;contrast&quot;)) {
+    res = s-&gt;set_contrast(s, val);
+  } else if (!strcmp(variable, &quot;brightness&quot;)) {
+    res = s-&gt;set_brightness(s, val);
+  } else if (!strcmp(variable, &quot;saturation&quot;)) {
+    res = s-&gt;set_saturation(s, val);
+  } else if (!strcmp(variable, &quot;gainceiling&quot;)) {
+    res = s-&gt;set_gainceiling(s, (gainceiling_t)val);
+  } else if (!strcmp(variable, &quot;colorbar&quot;)) {
+    res = s-&gt;set_colorbar(s, val);
+  } else if (!strcmp(variable, &quot;awb&quot;)) {
+    res = s-&gt;set_whitebal(s, val);
+  } else if (!strcmp(variable, &quot;agc&quot;)) {
+    res = s-&gt;set_gain_ctrl(s, val);
+  } else if (!strcmp(variable, &quot;aec&quot;)) {
+    res = s-&gt;set_exposure_ctrl(s, val);
+  } else if (!strcmp(variable, &quot;hmirror&quot;)) {
+    res = s-&gt;set_hmirror(s, val);
+  } else if (!strcmp(variable, &quot;vflip&quot;)) {
+    res = s-&gt;set_vflip(s, val);
+  } else if (!strcmp(variable, &quot;awb_gain&quot;)) {
+    res = s-&gt;set_awb_gain(s, val);
+  } else if (!strcmp(variable, &quot;agc_gain&quot;)) {
+    res = s-&gt;set_agc_gain(s, val);
+  } else if (!strcmp(variable, &quot;aec_value&quot;)) {
+    res = s-&gt;set_aec_value(s, val);
+  } else if (!strcmp(variable, &quot;aec2&quot;)) {
+    res = s-&gt;set_aec2(s, val);
+  } else if (!strcmp(variable, &quot;dcw&quot;)) {
+    res = s-&gt;set_dcw(s, val);
+  } else if (!strcmp(variable, &quot;bpc&quot;)) {
+    res = s-&gt;set_bpc(s, val);
+  } else if (!strcmp(variable, &quot;wpc&quot;)) {
+    res = s-&gt;set_wpc(s, val);
+  } else if (!strcmp(variable, &quot;raw_gma&quot;)) {
+    res = s-&gt;set_raw_gma(s, val);
+  } else if (!strcmp(variable, &quot;lenc&quot;)) {
+    res = s-&gt;set_lenc(s, val);
+  } else if (!strcmp(variable, &quot;special_effect&quot;)) {
+    res = s-&gt;set_special_effect(s, val);
+  } else if (!strcmp(variable, &quot;wb_mode&quot;)) {
+    res = s-&gt;set_wb_mode(s, val);
+  } else if (!strcmp(variable, &quot;ae_level&quot;)) {
+    res = s-&gt;set_ae_level(s, val);
+  }
+#if defined(LED_GPIO_NUM)
+  else if (!strcmp(variable, &quot;led_intensity&quot;)) {
+    led_duty = val;
+    if (isStreaming) {
+      enable_led(true);
+    }
+  }
+#endif
+  else {
+    log_i(&quot;Unknown command: %s&quot;, variable);
+    res = -1;
+  }
+
+  if (res &lt; 0) {
+    return httpd_resp_send_500(req);
+  }
+
+  httpd_resp_set_hdr(req, &quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+  return httpd_resp_send(req, NULL, 0);
+}
+
+static int print_reg(char *p, char *end, sensor_t *s, uint16_t reg, uint32_t mask) {
+  return snprintf(p, end - p, &quot;\&quot;0x%04x\&quot;:%d,&quot;, reg, s-&gt;get_reg(s, reg, mask));
+}
+
+static esp_err_t status_handler(httpd_req_t *req) {
+  static char json_response[1024];
+
+  sensor_t *s = esp_camera_sensor_get();
+  char *p = json_response;
+  char *end = json_response + sizeof(json_response);
+  *p++ = &#x27;{&#x27;;
+
+  if (s-&gt;id.PID == OV5640_PID || s-&gt;id.PID == OV3660_PID) {
+    for (int reg = 0x3400; reg &lt; 0x3406; reg += 2) {
+      p += print_reg(p, end, s, reg, 0xFFF);  //12 bit
+    }
+    p += print_reg(p, end, s, 0x3406, 0xFF);
+
+    p += print_reg(p, end, s, 0x3500, 0xFFFF0);  //16 bit
+    p += print_reg(p, end, s, 0x3503, 0xFF);
+    p += print_reg(p, end, s, 0x350a, 0x3FF);   //10 bit
+    p += print_reg(p, end, s, 0x350c, 0xFFFF);  //16 bit
+
+    for (int reg = 0x5480; reg &lt;= 0x5490; reg++) {
+      p += print_reg(p, end, s, reg, 0xFF);
+    }
+
+    for (int reg = 0x5380; reg &lt;= 0x538b; reg++) {
+      p += print_reg(p, end, s, reg, 0xFF);
+    }
+
+    for (int reg = 0x5580; reg &lt; 0x558a; reg++) {
+      p += print_reg(p, end, s, reg, 0xFF);
+    }
+    p += print_reg(p, end, s, 0x558a, 0x1FF);  //9 bit
+  } else if (s-&gt;id.PID == OV2640_PID) {
+    p += print_reg(p, end, s, 0xd3, 0xFF);
+    p += print_reg(p, end, s, 0x111, 0xFF);
+    p += print_reg(p, end, s, 0x132, 0xFF);
+  }
+
+  p += snprintf(p, end - p, &quot;\&quot;xclk\&quot;:%u,&quot;, s-&gt;xclk_freq_hz / 1000000);
+  p += snprintf(p, end - p, &quot;\&quot;pixformat\&quot;:%u,&quot;, s-&gt;pixformat);
+  p += snprintf(p, end - p, &quot;\&quot;framesize\&quot;:%u,&quot;, s-&gt;status.framesize);
+  p += snprintf(p, end - p, &quot;\&quot;quality\&quot;:%u,&quot;, s-&gt;status.quality);
+  p += snprintf(p, end - p, &quot;\&quot;brightness\&quot;:%d,&quot;, s-&gt;status.brightness);
+  p += snprintf(p, end - p, &quot;\&quot;contrast\&quot;:%d,&quot;, s-&gt;status.contrast);
+  p += snprintf(p, end - p, &quot;\&quot;saturation\&quot;:%d,&quot;, s-&gt;status.saturation);
+  p += snprintf(p, end - p, &quot;\&quot;sharpness\&quot;:%d,&quot;, s-&gt;status.sharpness);
+  p += snprintf(p, end - p, &quot;\&quot;special_effect\&quot;:%u,&quot;, s-&gt;status.special_effect);
+  p += snprintf(p, end - p, &quot;\&quot;wb_mode\&quot;:%u,&quot;, s-&gt;status.wb_mode);
+  p += snprintf(p, end - p, &quot;\&quot;awb\&quot;:%u,&quot;, s-&gt;status.awb);
+  p += snprintf(p, end - p, &quot;\&quot;awb_gain\&quot;:%u,&quot;, s-&gt;status.awb_gain);
+  p += snprintf(p, end - p, &quot;\&quot;aec\&quot;:%u,&quot;, s-&gt;status.aec);
+  p += snprintf(p, end - p, &quot;\&quot;aec2\&quot;:%u,&quot;, s-&gt;status.aec2);
+  p += snprintf(p, end - p, &quot;\&quot;ae_level\&quot;:%d,&quot;, s-&gt;status.ae_level);
+  p += snprintf(p, end - p, &quot;\&quot;aec_value\&quot;:%u,&quot;, s-&gt;status.aec_value);
+  p += snprintf(p, end - p, &quot;\&quot;agc\&quot;:%u,&quot;, s-&gt;status.agc);
+  p += snprintf(p, end - p, &quot;\&quot;agc_gain\&quot;:%u,&quot;, s-&gt;status.agc_gain);
+  p += snprintf(p, end - p, &quot;\&quot;gainceiling\&quot;:%u,&quot;, s-&gt;status.gainceiling);
+  p += snprintf(p, end - p, &quot;\&quot;bpc\&quot;:%u,&quot;, s-&gt;status.bpc);
+  p += snprintf(p, end - p, &quot;\&quot;wpc\&quot;:%u,&quot;, s-&gt;status.wpc);
+  p += snprintf(p, end - p, &quot;\&quot;raw_gma\&quot;:%u,&quot;, s-&gt;status.raw_gma);
+  p += snprintf(p, end - p, &quot;\&quot;lenc\&quot;:%u,&quot;, s-&gt;status.lenc);
+  p += snprintf(p, end - p, &quot;\&quot;hmirror\&quot;:%u,&quot;, s-&gt;status.hmirror);
+  p += snprintf(p, end - p, &quot;\&quot;vflip\&quot;:%u,&quot;, s-&gt;status.vflip);
+  p += snprintf(p, end - p, &quot;\&quot;dcw\&quot;:%u,&quot;, s-&gt;status.dcw);
+  p += snprintf(p, end - p, &quot;\&quot;colorbar\&quot;:%u&quot;, s-&gt;status.colorbar);
+#if defined(LED_GPIO_NUM)
+  p += snprintf(p, end - p, &quot;,\&quot;led_intensity\&quot;:%u&quot;, led_duty);
+#else
+  p += snprintf(p, end - p, &quot;,\&quot;led_intensity\&quot;:%d&quot;, -1);
+#endif
+  *p++ = &#x27;}&#x27;;
+  *p++ = 0;
+  httpd_resp_set_type(req, &quot;application/json&quot;);
+  httpd_resp_set_hdr(req, &quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+  return httpd_resp_send(req, json_response, strlen(json_response));
+}
+
+static esp_err_t xclk_handler(httpd_req_t *req) {
+  char *buf = NULL;
+  char _xclk[32];
+
+  if (parse_get(req, &amp;buf) != ESP_OK) {
+    return ESP_FAIL;
+  }
+  if (httpd_query_key_value(buf, &quot;xclk&quot;, _xclk, sizeof(_xclk)) != ESP_OK) {
+    free(buf);
+    httpd_resp_send_404(req);
+    return ESP_FAIL;
+  }
+  free(buf);
+
+  int xclk = atoi(_xclk);
+  log_i(&quot;Set XCLK: %d MHz&quot;, xclk);
+
+  sensor_t *s = esp_camera_sensor_get();
+  int res = s-&gt;set_xclk(s, LEDC_TIMER_0, xclk);
+  if (res) {
+    return httpd_resp_send_500(req);
+  }
+
+  httpd_resp_set_hdr(req, &quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+  return httpd_resp_send(req, NULL, 0);
+}
+
+static esp_err_t reg_handler(httpd_req_t *req) {
+  char *buf = NULL;
+  char _reg[32];
+  char _mask[32];
+  char _val[32];
+
+  if (parse_get(req, &amp;buf) != ESP_OK) {
+    return ESP_FAIL;
+  }
+  if (httpd_query_key_value(buf, &quot;reg&quot;, _reg, sizeof(_reg)) != ESP_OK || httpd_query_key_value(buf, &quot;mask&quot;, _mask, sizeof(_mask)) != ESP_OK
+      || httpd_query_key_value(buf, &quot;val&quot;, _val, sizeof(_val)) != ESP_OK) {
+    free(buf);
+    httpd_resp_send_404(req);
+    return ESP_FAIL;
+  }
+  free(buf);
+
+  int reg = atoi(_reg);
+  int mask = atoi(_mask);
+  int val = atoi(_val);
+  log_i(&quot;Set Register: reg: 0x%02x, mask: 0x%02x, value: 0x%02x&quot;, reg, mask, val);
+
+  sensor_t *s = esp_camera_sensor_get();
+  int res = s-&gt;set_reg(s, reg, mask, val);
+  if (res) {
+    return httpd_resp_send_500(req);
+  }
+
+  httpd_resp_set_hdr(req, &quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+  return httpd_resp_send(req, NULL, 0);
+}
+
+static esp_err_t greg_handler(httpd_req_t *req) {
+  char *buf = NULL;
+  char _reg[32];
+  char _mask[32];
+
+  if (parse_get(req, &amp;buf) != ESP_OK) {
+    return ESP_FAIL;
+  }
+  if (httpd_query_key_value(buf, &quot;reg&quot;, _reg, sizeof(_reg)) != ESP_OK || httpd_query_key_value(buf, &quot;mask&quot;, _mask, sizeof(_mask)) != ESP_OK) {
+    free(buf);
+    httpd_resp_send_404(req);
+    return ESP_FAIL;
+  }
+  free(buf);
+
+  int reg = atoi(_reg);
+  int mask = atoi(_mask);
+  sensor_t *s = esp_camera_sensor_get();
+  int res = s-&gt;get_reg(s, reg, mask);
+  if (res &lt; 0) {
+    return httpd_resp_send_500(req);
+  }
+  log_i(&quot;Get Register: reg: 0x%02x, mask: 0x%02x, value: 0x%02x&quot;, reg, mask, res);
+
+  char buffer[20];
+  const char *val = itoa(res, buffer, 10);
+  httpd_resp_set_hdr(req, &quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+  return httpd_resp_send(req, val, strlen(val));
+}
+
+static int parse_get_var(char *buf, const char *key, int def) {
+  char _int[16];
+  if (httpd_query_key_value(buf, key, _int, sizeof(_int)) != ESP_OK) {
+    return def;
+  }
+  return atoi(_int);
+}
+
+static esp_err_t pll_handler(httpd_req_t *req) {
+  char *buf = NULL;
+
+  if (parse_get(req, &amp;buf) != ESP_OK) {
+    return ESP_FAIL;
+  }
+
+  int bypass = parse_get_var(buf, &quot;bypass&quot;, 0);
+  int mul = parse_get_var(buf, &quot;mul&quot;, 0);
+  int sys = parse_get_var(buf, &quot;sys&quot;, 0);
+  int root = parse_get_var(buf, &quot;root&quot;, 0);
+  int pre = parse_get_var(buf, &quot;pre&quot;, 0);
+  int seld5 = parse_get_var(buf, &quot;seld5&quot;, 0);
+  int pclken = parse_get_var(buf, &quot;pclken&quot;, 0);
+  int pclk = parse_get_var(buf, &quot;pclk&quot;, 0);
+  free(buf);
+
+  log_i(&quot;Set Pll: bypass: %d, mul: %d, sys: %d, root: %d, pre: %d, seld5: %d, pclken: %d, pclk: %d&quot;, bypass, mul, sys, root, pre, seld5, pclken, pclk);
+  sensor_t *s = esp_camera_sensor_get();
+  int res = s-&gt;set_pll(s, bypass, mul, sys, root, pre, seld5, pclken, pclk);
+  if (res) {
+    return httpd_resp_send_500(req);
+  }
+
+  httpd_resp_set_hdr(req, &quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+  return httpd_resp_send(req, NULL, 0);
+}
+
+static esp_err_t win_handler(httpd_req_t *req) {
+  char *buf = NULL;
+
+  if (parse_get(req, &amp;buf) != ESP_OK) {
+    return ESP_FAIL;
+  }
+
+  int startX = parse_get_var(buf, &quot;sx&quot;, 0);
+  int startY = parse_get_var(buf, &quot;sy&quot;, 0);
+  int endX = parse_get_var(buf, &quot;ex&quot;, 0);
+  int endY = parse_get_var(buf, &quot;ey&quot;, 0);
+  int offsetX = parse_get_var(buf, &quot;offx&quot;, 0);
+  int offsetY = parse_get_var(buf, &quot;offy&quot;, 0);
+  int totalX = parse_get_var(buf, &quot;tx&quot;, 0);
+  int totalY = parse_get_var(buf, &quot;ty&quot;, 0);  // codespell:ignore totaly
+  int outputX = parse_get_var(buf, &quot;ox&quot;, 0);
+  int outputY = parse_get_var(buf, &quot;oy&quot;, 0);
+  bool scale = parse_get_var(buf, &quot;scale&quot;, 0) == 1;
+  bool binning = parse_get_var(buf, &quot;binning&quot;, 0) == 1;
+  free(buf);
+
+  log_i(
+    &quot;Set Window: Start: %d %d, End: %d %d, Offset: %d %d, Total: %d %d, Output: %d %d, Scale: %u, Binning: %u&quot;, startX, startY, endX, endY, offsetX, offsetY,
+    totalX, totalY, outputX, outputY, scale, binning  // codespell:ignore totaly
+  );
+  sensor_t *s = esp_camera_sensor_get();
+  int res = s-&gt;set_res_raw(s, startX, startY, endX, endY, offsetX, offsetY, totalX, totalY, outputX, outputY, scale, binning);  // codespell:ignore totaly
+  if (res) {
+    return httpd_resp_send_500(req);
+  }
+
+  httpd_resp_set_hdr(req, &quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+  return httpd_resp_send(req, NULL, 0);
+}
+
+static esp_err_t index_handler(httpd_req_t *req) {
+  httpd_resp_set_type(req, &quot;text/html&quot;);
+  httpd_resp_set_hdr(req, &quot;Content-Encoding&quot;, &quot;gzip&quot;);
+  sensor_t *s = esp_camera_sensor_get();
+  if (s != NULL) {
+    if (s-&gt;id.PID == OV3660_PID) {
+      return httpd_resp_send(req, (const char *)index_ov3660_html_gz, index_ov3660_html_gz_len);
+    } else if (s-&gt;id.PID == OV5640_PID) {
+      return httpd_resp_send(req, (const char *)index_ov5640_html_gz, index_ov5640_html_gz_len);
+    } else {
+      return httpd_resp_send(req, (const char *)index_ov2640_html_gz, index_ov2640_html_gz_len);
+    }
+  } else {
+    log_e(&quot;Camera sensor not found&quot;);
+    return httpd_resp_send_500(req);
+  }
+}
+
+void startCameraServer() {
+  httpd_config_t config = HTTPD_DEFAULT_CONFIG();
+  config.max_uri_handlers = 16;
+
+  httpd_uri_t index_uri = {
+    .uri = &quot;/&quot;,
+    .method = HTTP_GET,
+    .handler = index_handler,
+    .user_ctx = NULL
+#ifdef CONFIG_HTTPD_WS_SUPPORT
+    ,
+    .is_websocket = true,
+    .handle_ws_control_frames = false,
+    .supported_subprotocol = NULL
+#endif
+  };
+
+  httpd_uri_t status_uri = {
+    .uri = &quot;/status&quot;,
+    .method = HTTP_GET,
+    .handler = status_handler,
+    .user_ctx = NULL
+#ifdef CONFIG_HTTPD_WS_SUPPORT
+    ,
+    .is_websocket = true,
+    .handle_ws_control_frames = false,
+    .supported_subprotocol = NULL
+#endif
+  };
+
+  httpd_uri_t cmd_uri = {
+    .uri = &quot;/control&quot;,
+    .method = HTTP_GET,
+    .handler = cmd_handler,
+    .user_ctx = NULL
+#ifdef CONFIG_HTTPD_WS_SUPPORT
+    ,
+    .is_websocket = true,
+    .handle_ws_control_frames = false,
+    .supported_subprotocol = NULL
+#endif
+  };
+
+  httpd_uri_t capture_uri = {
+    .uri = &quot;/capture&quot;,
+    .method = HTTP_GET,
+    .handler = capture_handler,
+    .user_ctx = NULL
+#ifdef CONFIG_HTTPD_WS_SUPPORT
+    ,
+    .is_websocket = true,
+    .handle_ws_control_frames = false,
+    .supported_subprotocol = NULL
+#endif
+  };
+
+  httpd_uri_t stream_uri = {
+    .uri = &quot;/stream&quot;,
+    .method = HTTP_GET,
+    .handler = stream_handler,
+    .user_ctx = NULL
+#ifdef CONFIG_HTTPD_WS_SUPPORT
+    ,
+    .is_websocket = true,
+    .handle_ws_control_frames = false,
+    .supported_subprotocol = NULL
+#endif
+  };
+
+  httpd_uri_t bmp_uri = {
+    .uri = &quot;/bmp&quot;,
+    .method = HTTP_GET,
+    .handler = bmp_handler,
+    .user_ctx = NULL
+#ifdef CONFIG_HTTPD_WS_SUPPORT
+    ,
+    .is_websocket = true,
+    .handle_ws_control_frames = false,
+    .supported_subprotocol = NULL
+#endif
+  };
+
+  httpd_uri_t xclk_uri = {
+    .uri = &quot;/xclk&quot;,
+    .method = HTTP_GET,
+    .handler = xclk_handler,
+    .user_ctx = NULL
+#ifdef CONFIG_HTTPD_WS_SUPPORT
+    ,
+    .is_websocket = true,
+    .handle_ws_control_frames = false,
+    .supported_subprotocol = NULL
+#endif
+  };
+
+  httpd_uri_t reg_uri = {
+    .uri = &quot;/reg&quot;,
+    .method = HTTP_GET,
+    .handler = reg_handler,
+    .user_ctx = NULL
+#ifdef CONFIG_HTTPD_WS_SUPPORT
+    ,
+    .is_websocket = true,
+    .handle_ws_control_frames = false,
+    .supported_subprotocol = NULL
+#endif
+  };
+
+  httpd_uri_t greg_uri = {
+    .uri = &quot;/greg&quot;,
+    .method = HTTP_GET,
+    .handler = greg_handler,
+    .user_ctx = NULL
+#ifdef CONFIG_HTTPD_WS_SUPPORT
+    ,
+    .is_websocket = true,
+    .handle_ws_control_frames = false,
+    .supported_subprotocol = NULL
+#endif
+  };
+
+  httpd_uri_t pll_uri = {
+    .uri = &quot;/pll&quot;,
+    .method = HTTP_GET,
+    .handler = pll_handler,
+    .user_ctx = NULL
+#ifdef CONFIG_HTTPD_WS_SUPPORT
+    ,
+    .is_websocket = true,
+    .handle_ws_control_frames = false,
+    .supported_subprotocol = NULL
+#endif
+  };
+
+  httpd_uri_t win_uri = {
+    .uri = &quot;/resolution&quot;,
+    .method = HTTP_GET,
+    .handler = win_handler,
+    .user_ctx = NULL
+#ifdef CONFIG_HTTPD_WS_SUPPORT
+    ,
+    .is_websocket = true,
+    .handle_ws_control_frames = false,
+    .supported_subprotocol = NULL
+#endif
+  };
+
+  ra_filter_init(&amp;ra_filter, 20);
+
+  log_i(&quot;Starting web server on port: &#x27;%u&#x27;&quot;, config.server_port);
+  if (httpd_start(&amp;camera_httpd, &amp;config) == ESP_OK) {
+    httpd_register_uri_handler(camera_httpd, &amp;index_uri);
+    httpd_register_uri_handler(camera_httpd, &amp;cmd_uri);
+    httpd_register_uri_handler(camera_httpd, &amp;status_uri);
+    httpd_register_uri_handler(camera_httpd, &amp;capture_uri);
+    httpd_register_uri_handler(camera_httpd, &amp;bmp_uri);
+
+    httpd_register_uri_handler(camera_httpd, &amp;xclk_uri);
+    httpd_register_uri_handler(camera_httpd, &amp;reg_uri);
+    httpd_register_uri_handler(camera_httpd, &amp;greg_uri);
+    httpd_register_uri_handler(camera_httpd, &amp;pll_uri);
+    httpd_register_uri_handler(camera_httpd, &amp;win_uri);
+  }
+
+  config.server_port += 1;
+  config.ctrl_port += 1;
+  log_i(&quot;Starting stream server on port: &#x27;%u&#x27;&quot;, config.server_port);
+  if (httpd_start(&amp;stream_httpd, &amp;config) == ESP_OK) {
+    httpd_register_uri_handler(stream_httpd, &amp;stream_uri);
+  }
+}
+
+void setupLedFlash() {
+#if defined(LED_GPIO_NUM)
+  ledcAttach(LED_GPIO_NUM, 5000, 8);
+#else
+  log_i(&quot;LED flash is disabled -&gt; LED_GPIO_NUM undefined&quot;);
+#endif
+}
+</pre></details><p><a class="text-link" href="code/vision/app_httpd.cpp">code/vision/app_httpd.cpp</a> · 0.02 MB · <a href="code/vision/app_httpd.cpp" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><details><summary>Read text</summary><pre style="white-space:pre-wrap;overflow-wrap:anywhere">#ifndef BOARD_CONFIG_H
+#define BOARD_CONFIG_H
+
+//
+// WARNING!!! PSRAM IC required for UXGA resolution and high JPEG quality
+//            Ensure ESP32 Wrover Module or other board with PSRAM is selected
+//            Partial images will be transmitted if image exceeds buffer size
+//
+//            You must select partition scheme from the board menu that has at least 3MB APP space.
+
+// ===================
+// Select camera model
+// ===================
+//#define CAMERA_MODEL_WROVER_KIT // Has PSRAM
+//#define CAMERA_MODEL_ESP_EYE  // Has PSRAM
+//#define CAMERA_MODEL_ESP32S3_EYE // Has PSRAM
+//#define CAMERA_MODEL_M5STACK_PSRAM // Has PSRAM
+//#define CAMERA_MODEL_M5STACK_V2_PSRAM // M5Camera version B Has PSRAM
+//#define CAMERA_MODEL_M5STACK_WIDE // Has PSRAM
+//#define CAMERA_MODEL_M5STACK_ESP32CAM // No PSRAM
+//#define CAMERA_MODEL_M5STACK_UNITCAM // No PSRAM
+//#define CAMERA_MODEL_M5STACK_CAMS3_UNIT  // Has PSRAM
+#define CAMERA_MODEL_AI_THINKER // Has PSRAM
+//#define CAMERA_MODEL_TTGO_T_JOURNAL // No PSRAM
+//#define CAMERA_MODEL_XIAO_ESP32S3 // Has PSRAM
+// ** Espressif Internal Boards **
+//#define CAMERA_MODEL_ESP32_CAM_BOARD
+//#define CAMERA_MODEL_ESP32S2_CAM_BOARD
+//#define CAMERA_MODEL_ESP32S3_CAM_LCD
+//#define CAMERA_MODEL_DFRobot_FireBeetle2_ESP32S3 // Has PSRAM
+//#define CAMERA_MODEL_DFRobot_Romeo_ESP32S3 // Has PSRAM
+#include &quot;camera_pins.h&quot;
+
+#endif  // BOARD_CONFIG_H
+</pre></details><p><a class="text-link" href="code/vision/board_config.h">code/vision/board_config.h</a> · 0.00 MB · <a href="code/vision/board_config.h" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><p><a class="text-link" href="code/vision/camera_index.h">code/vision/camera_index.h</a> · 0.14 MB · <a href="code/vision/camera_index.h" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><details><summary>Read text</summary><pre style="white-space:pre-wrap;overflow-wrap:anywhere">
+#if defined(CAMERA_MODEL_WROVER_KIT)
+#define PWDN_GPIO_NUM  -1
+#define RESET_GPIO_NUM -1
+#define XCLK_GPIO_NUM  21
+#define SIOD_GPIO_NUM  26
+#define SIOC_GPIO_NUM  27
+
+#define Y9_GPIO_NUM    35
+#define Y8_GPIO_NUM    34
+#define Y7_GPIO_NUM    39
+#define Y6_GPIO_NUM    36
+#define Y5_GPIO_NUM    19
+#define Y4_GPIO_NUM    18
+#define Y3_GPIO_NUM    5
+#define Y2_GPIO_NUM    4
+#define VSYNC_GPIO_NUM 25
+#define HREF_GPIO_NUM  23
+#define PCLK_GPIO_NUM  22
+
+#elif defined(CAMERA_MODEL_ESP_EYE)
+#define PWDN_GPIO_NUM  -1
+#define RESET_GPIO_NUM -1
+#define XCLK_GPIO_NUM  4
+#define SIOD_GPIO_NUM  18
+#define SIOC_GPIO_NUM  23
+
+#define Y9_GPIO_NUM    36
+#define Y8_GPIO_NUM    37
+#define Y7_GPIO_NUM    38
+#define Y6_GPIO_NUM    39
+#define Y5_GPIO_NUM    35
+#define Y4_GPIO_NUM    14
+#define Y3_GPIO_NUM    13
+#define Y2_GPIO_NUM    34
+#define VSYNC_GPIO_NUM 5
+#define HREF_GPIO_NUM  27
+#define PCLK_GPIO_NUM  25
+
+#define LED_GPIO_NUM 22
+
+#elif defined(CAMERA_MODEL_M5STACK_PSRAM)
+#define PWDN_GPIO_NUM  -1
+#define RESET_GPIO_NUM 15
+#define XCLK_GPIO_NUM  27
+#define SIOD_GPIO_NUM  25
+#define SIOC_GPIO_NUM  23
+
+#define Y9_GPIO_NUM    19
+#define Y8_GPIO_NUM    36
+#define Y7_GPIO_NUM    18
+#define Y6_GPIO_NUM    39
+#define Y5_GPIO_NUM    5
+#define Y4_GPIO_NUM    34
+#define Y3_GPIO_NUM    35
+#define Y2_GPIO_NUM    32
+#define VSYNC_GPIO_NUM 22
+#define HREF_GPIO_NUM  26
+#define PCLK_GPIO_NUM  21
+
+#elif defined(CAMERA_MODEL_M5STACK_V2_PSRAM)
+#define PWDN_GPIO_NUM  -1
+#define RESET_GPIO_NUM 15
+#define XCLK_GPIO_NUM  27
+#define SIOD_GPIO_NUM  22
+#define SIOC_GPIO_NUM  23
+
+#define Y9_GPIO_NUM    19
+#define Y8_GPIO_NUM    36
+#define Y7_GPIO_NUM    18
+#define Y6_GPIO_NUM    39
+#define Y5_GPIO_NUM    5
+#define Y4_GPIO_NUM    34
+#define Y3_GPIO_NUM    35
+#define Y2_GPIO_NUM    32
+#define VSYNC_GPIO_NUM 25
+#define HREF_GPIO_NUM  26
+#define PCLK_GPIO_NUM  21
+
+#elif defined(CAMERA_MODEL_M5STACK_WIDE)
+#define PWDN_GPIO_NUM  -1
+#define RESET_GPIO_NUM 15
+#define XCLK_GPIO_NUM  27
+#define SIOD_GPIO_NUM  22
+#define SIOC_GPIO_NUM  23
+
+#define Y9_GPIO_NUM    19
+#define Y8_GPIO_NUM    36
+#define Y7_GPIO_NUM    18
+#define Y6_GPIO_NUM    39
+#define Y5_GPIO_NUM    5
+#define Y4_GPIO_NUM    34
+#define Y3_GPIO_NUM    35
+#define Y2_GPIO_NUM    32
+#define VSYNC_GPIO_NUM 25
+#define HREF_GPIO_NUM  26
+#define PCLK_GPIO_NUM  21
+
+#define LED_GPIO_NUM 2
+
+#elif defined(CAMERA_MODEL_M5STACK_ESP32CAM)
+#define PWDN_GPIO_NUM  -1
+#define RESET_GPIO_NUM 15
+#define XCLK_GPIO_NUM  27
+#define SIOD_GPIO_NUM  25
+#define SIOC_GPIO_NUM  23
+
+#define Y9_GPIO_NUM    19
+#define Y8_GPIO_NUM    36
+#define Y7_GPIO_NUM    18
+#define Y6_GPIO_NUM    39
+#define Y5_GPIO_NUM    5
+#define Y4_GPIO_NUM    34
+#define Y3_GPIO_NUM    35
+#define Y2_GPIO_NUM    17
+#define VSYNC_GPIO_NUM 22
+#define HREF_GPIO_NUM  26
+#define PCLK_GPIO_NUM  21
+
+#elif defined(CAMERA_MODEL_M5STACK_UNITCAM)
+#define PWDN_GPIO_NUM  -1
+#define RESET_GPIO_NUM 15
+#define XCLK_GPIO_NUM  27
+#define SIOD_GPIO_NUM  25
+#define SIOC_GPIO_NUM  23
+
+#define Y9_GPIO_NUM    19
+#define Y8_GPIO_NUM    36
+#define Y7_GPIO_NUM    18
+#define Y6_GPIO_NUM    39
+#define Y5_GPIO_NUM    5
+#define Y4_GPIO_NUM    34
+#define Y3_GPIO_NUM    35
+#define Y2_GPIO_NUM    32
+#define VSYNC_GPIO_NUM 22
+#define HREF_GPIO_NUM  26
+#define PCLK_GPIO_NUM  21
+
+#elif defined(CAMERA_MODEL_M5STACK_CAMS3_UNIT)
+#define PWDN_GPIO_NUM  -1
+#define RESET_GPIO_NUM 21
+#define XCLK_GPIO_NUM  11
+#define SIOD_GPIO_NUM  17
+#define SIOC_GPIO_NUM  41
+
+#define Y9_GPIO_NUM    13
+#define Y8_GPIO_NUM    4
+#define Y7_GPIO_NUM    10
+#define Y6_GPIO_NUM    5
+#define Y5_GPIO_NUM    7
+#define Y4_GPIO_NUM    16
+#define Y3_GPIO_NUM    15
+#define Y2_GPIO_NUM    6
+#define VSYNC_GPIO_NUM 42
+#define HREF_GPIO_NUM  18
+#define PCLK_GPIO_NUM  12
+
+#define LED_GPIO_NUM 14
+
+#elif defined(CAMERA_MODEL_AI_THINKER)
+#define PWDN_GPIO_NUM  32
+#define RESET_GPIO_NUM -1
+#define XCLK_GPIO_NUM  0
+#define SIOD_GPIO_NUM  26
+#define SIOC_GPIO_NUM  27
+
+#define Y9_GPIO_NUM    35
+#define Y8_GPIO_NUM    34
+#define Y7_GPIO_NUM    39
+#define Y6_GPIO_NUM    36
+#define Y5_GPIO_NUM    21
+#define Y4_GPIO_NUM    19
+#define Y3_GPIO_NUM    18
+#define Y2_GPIO_NUM    5
+#define VSYNC_GPIO_NUM 25
+#define HREF_GPIO_NUM  23
+#define PCLK_GPIO_NUM  22
+
+// 4 for flash led or 33 for normal led
+#define LED_GPIO_NUM   4
+
+#elif defined(CAMERA_MODEL_TTGO_T_JOURNAL)
+#define PWDN_GPIO_NUM  0
+#define RESET_GPIO_NUM 15
+#define XCLK_GPIO_NUM  27
+#define SIOD_GPIO_NUM  25
+#define SIOC_GPIO_NUM  23
+
+#define Y9_GPIO_NUM    19
+#define Y8_GPIO_NUM    36
+#define Y7_GPIO_NUM    18
+#define Y6_GPIO_NUM    39
+#define Y5_GPIO_NUM    5
+#define Y4_GPIO_NUM    34
+#define Y3_GPIO_NUM    35
+#define Y2_GPIO_NUM    17
+#define VSYNC_GPIO_NUM 22
+#define HREF_GPIO_NUM  26
+#define PCLK_GPIO_NUM  21
+
+#elif defined(CAMERA_MODEL_XIAO_ESP32S3)
+#define PWDN_GPIO_NUM  -1
+#define RESET_GPIO_NUM -1
+#define XCLK_GPIO_NUM  10
+#define SIOD_GPIO_NUM  40
+#define SIOC_GPIO_NUM  39
+
+#define Y9_GPIO_NUM    48
+#define Y8_GPIO_NUM    11
+#define Y7_GPIO_NUM    12
+#define Y6_GPIO_NUM    14
+#define Y5_GPIO_NUM    16
+#define Y4_GPIO_NUM    18
+#define Y3_GPIO_NUM    17
+#define Y2_GPIO_NUM    15
+#define VSYNC_GPIO_NUM 38
+#define HREF_GPIO_NUM  47
+#define PCLK_GPIO_NUM  13
+
+#elif defined(CAMERA_MODEL_ESP32_CAM_BOARD)
+// The 18 pin header on the board has Y5 and Y3 swapped
+#define USE_BOARD_HEADER 0
+#define PWDN_GPIO_NUM    32
+#define RESET_GPIO_NUM   33
+#define XCLK_GPIO_NUM    4
+#define SIOD_GPIO_NUM    18
+#define SIOC_GPIO_NUM    23
+
+#define Y9_GPIO_NUM 36
+#define Y8_GPIO_NUM 19
+#define Y7_GPIO_NUM 21
+#define Y6_GPIO_NUM 39
+#if USE_BOARD_HEADER
+#define Y5_GPIO_NUM 13
+#else
+#define Y5_GPIO_NUM 35
+#endif
+#define Y4_GPIO_NUM 14
+#if USE_BOARD_HEADER
+#define Y3_GPIO_NUM 35
+#else
+#define Y3_GPIO_NUM 13
+#endif
+#define Y2_GPIO_NUM    34
+#define VSYNC_GPIO_NUM 5
+#define HREF_GPIO_NUM  27
+#define PCLK_GPIO_NUM  25
+
+#elif defined(CAMERA_MODEL_ESP32S3_CAM_LCD)
+#define PWDN_GPIO_NUM  -1
+#define RESET_GPIO_NUM -1
+#define XCLK_GPIO_NUM  40
+#define SIOD_GPIO_NUM  17
+#define SIOC_GPIO_NUM  18
+
+#define Y9_GPIO_NUM    39
+#define Y8_GPIO_NUM    41
+#define Y7_GPIO_NUM    42
+#define Y6_GPIO_NUM    12
+#define Y5_GPIO_NUM    3
+#define Y4_GPIO_NUM    14
+#define Y3_GPIO_NUM    47
+#define Y2_GPIO_NUM    13
+#define VSYNC_GPIO_NUM 21
+#define HREF_GPIO_NUM  38
+#define PCLK_GPIO_NUM  11
+
+#elif defined(CAMERA_MODEL_ESP32S2_CAM_BOARD)
+// The 18 pin header on the board has Y5 and Y3 swapped
+#define USE_BOARD_HEADER 0
+#define PWDN_GPIO_NUM    1
+#define RESET_GPIO_NUM   2
+#define XCLK_GPIO_NUM    42
+#define SIOD_GPIO_NUM    41
+#define SIOC_GPIO_NUM    18
+
+#define Y9_GPIO_NUM 16
+#define Y8_GPIO_NUM 39
+#define Y7_GPIO_NUM 40
+#define Y6_GPIO_NUM 15
+#if USE_BOARD_HEADER
+#define Y5_GPIO_NUM 12
+#else
+#define Y5_GPIO_NUM 13
+#endif
+#define Y4_GPIO_NUM 5
+#if USE_BOARD_HEADER
+#define Y3_GPIO_NUM 13
+#else
+#define Y3_GPIO_NUM 12
+#endif
+#define Y2_GPIO_NUM    14
+#define VSYNC_GPIO_NUM 38
+#define HREF_GPIO_NUM  4
+#define PCLK_GPIO_NUM  3
+
+#elif defined(CAMERA_MODEL_ESP32S3_EYE)
+#define PWDN_GPIO_NUM  -1
+#define RESET_GPIO_NUM -1
+#define XCLK_GPIO_NUM  15
+#define SIOD_GPIO_NUM  4
+#define SIOC_GPIO_NUM  5
+
+#define Y2_GPIO_NUM 11
+#define Y3_GPIO_NUM 9
+#define Y4_GPIO_NUM 8
+#define Y5_GPIO_NUM 10
+#define Y6_GPIO_NUM 12
+#define Y7_GPIO_NUM 18
+#define Y8_GPIO_NUM 17
+#define Y9_GPIO_NUM 16
+
+#define VSYNC_GPIO_NUM 6
+#define HREF_GPIO_NUM  7
+#define PCLK_GPIO_NUM  13
+
+#elif defined(CAMERA_MODEL_DFRobot_FireBeetle2_ESP32S3) || defined(CAMERA_MODEL_DFRobot_Romeo_ESP32S3)
+#define PWDN_GPIO_NUM  -1
+#define RESET_GPIO_NUM -1
+#define XCLK_GPIO_NUM  45
+#define SIOD_GPIO_NUM  1
+#define SIOC_GPIO_NUM  2
+
+#define Y9_GPIO_NUM    48
+#define Y8_GPIO_NUM    46
+#define Y7_GPIO_NUM    8
+#define Y6_GPIO_NUM    7
+#define Y5_GPIO_NUM    4
+#define Y4_GPIO_NUM    41
+#define Y3_GPIO_NUM    40
+#define Y2_GPIO_NUM    39
+#define VSYNC_GPIO_NUM 6
+#define HREF_GPIO_NUM  42
+#define PCLK_GPIO_NUM  5
+
+#else
+#error &quot;Camera model not selected&quot;
+#endif
+</pre></details><p><a class="text-link" href="code/vision/camera_pins.h">code/vision/camera_pins.h</a> · 0.01 MB · <a href="code/vision/camera_pins.h" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><p><a class="text-link" href="code/vision/ci.yml">code/vision/ci.yml</a> · 0.00 MB · <a href="code/vision/ci.yml" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><details><summary>Read text</summary><pre style="white-space:pre-wrap;overflow-wrap:anywhere"># Name,   Type,  SubType, Offset,   Size,    Flags
+nvs,      data,  nvs,     0x9000,   0x5000,
+otadata,  data,  ota,     0xe000,   0x2000,
+app0,     app,   ota_0,   0x10000,  0x3c0000,
+fr,       data,        ,  0x3d0000, 0x20000,
+coredump, data,  coredump,0x3f0000, 0x10000,
+</pre></details><p><a class="text-link" href="code/vision/partitions.csv">code/vision/partitions.csv</a> · 0.00 MB · <a href="code/vision/partitions.csv" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><details><summary>Read text</summary><pre style="white-space:pre-wrap;overflow-wrap:anywhere">#include &quot;esp_camera.h&quot;
+#include &lt;WiFi.h&gt;
+#include &lt;WebServer.h&gt;
+
+const char* ssid = &quot;REPLACE_WITH_YOUR_VALUE&quot;;
+const char* password = &quot;REPLACE_WITH_YOUR_VALUE&quot;;
+
+const int BRIGHTNESS_THRESHOLD = 240;
+const framesize_t FRAME_SIZE = FRAMESIZE_QQVGA;
+
+#define PWDN_GPIO_NUM     32
+#define RESET_GPIO_NUM    -1
+#define XCLK_GPIO_NUM      0
+#define SIOD_GPIO_NUM     26
+#define SIOC_GPIO_NUM     27
+
+#define Y9_GPIO_NUM       35
+#define Y8_GPIO_NUM       34
+#define Y7_GPIO_NUM       39
+#define Y6_GPIO_NUM       36
+#define Y5_GPIO_NUM       21
+#define Y4_GPIO_NUM       19
+#define Y3_GPIO_NUM       18
+#define Y2_GPIO_NUM        5
+#define VSYNC_GPIO_NUM    25
+#define HREF_GPIO_NUM     23
+#define PCLK_GPIO_NUM     22
+
+WebServer server(80);
+
+struct DetectionResult {
+  int brightest;
+  int x;
+  int y;
+  bool aboveThreshold;
+  unsigned long lastUpdateMs;
+};
+
+DetectionResult lastResult = {0, -1, -1, false, 0};
+
+DetectionResult detectBrightest(camera_fb_t* fb) {
+  DetectionResult result;
+  result.brightest = 0;
+  result.x = -1;
+  result.y = -1;
+  result.aboveThreshold = false;
+  result.lastUpdateMs = millis();
+
+  if (!fb || fb-&gt;format != PIXFORMAT_GRAYSCALE) {
+    return result;
+  }
+
+  int width = fb-&gt;width;
+  int height = fb-&gt;height;
+  uint8_t* pixels = fb-&gt;buf;
+
+  for (int y = 0; y &lt; height; y++) {
+    int row = y * width;
+    for (int x = 0; x &lt; width; x++) {
+      uint8_t b = pixels[row + x];
+      if (b &gt; result.brightest) {
+        result.brightest = b;
+        result.x = x;
+        result.y = y;
+      }
+    }
+  }
+
+  result.aboveThreshold = (result.brightest &gt;= BRIGHTNESS_THRESHOLD);
+  return result;
+}
+
+void handleRoot() {
+  String html = R&quot;rawliteral(
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;ESP32-CAM Laser Tracker&lt;/title&gt;
+  &lt;style&gt;
+    body { font-family: Arial, sans-serif; margin: 24px; background: #111; color: #eee; }
+    .box { margin-top: 15px; padding: 14px; background: #1d1d1d; border-radius: 8px; max-width: 420px; }
+    .hit { color: #00ff88; font-weight: bold; }
+    .miss { color: #ff6666; font-weight: bold; }
+    .mono { font-family: Consolas, monospace; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h2&gt;Laser Tracker&lt;/h2&gt;
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;div&gt;Brightest value: &lt;span id=&quot;val&quot; class=&quot;mono&quot;&gt;-&lt;/span&gt;&lt;/div&gt;
+    &lt;div&gt;X: &lt;span id=&quot;x&quot; class=&quot;mono&quot;&gt;-&lt;/span&gt;&lt;/div&gt;
+    &lt;div&gt;Y: &lt;span id=&quot;y&quot; class=&quot;mono&quot;&gt;-&lt;/span&gt;&lt;/div&gt;
+    &lt;div&gt;Status: &lt;span id=&quot;status&quot;&gt;-&lt;/span&gt;&lt;/div&gt;
+    &lt;div&gt;Age (ms): &lt;span id=&quot;age&quot; class=&quot;mono&quot;&gt;-&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;script&gt;
+    const val = document.getElementById(&#x27;val&#x27;);
+    const xOut = document.getElementById(&#x27;x&#x27;);
+    const yOut = document.getElementById(&#x27;y&#x27;);
+    const status = document.getElementById(&#x27;status&#x27;);
+    const age = document.getElementById(&#x27;age&#x27;);
+
+    async function refreshData() {
+      try {
+        const r = await fetch(&#x27;/brightest?ts=&#x27; + Date.now(), { cache: &#x27;no-store&#x27; });
+        const j = await r.json();
+
+        val.textContent = j.brightest;
+        xOut.textContent = j.x;
+        yOut.textContent = j.y;
+        age.textContent = j.ageMs;
+
+        if (j.aboveThreshold) {
+          status.textContent = &#x27;BRIGHT SPOT DETECTED&#x27;;
+          status.className = &#x27;hit&#x27;;
+        } else {
+          status.textContent = &#x27;below threshold&#x27;;
+          status.className = &#x27;miss&#x27;;
+        }
+      } catch (e) {
+        status.textContent = &#x27;read error&#x27;;
+        status.className = &#x27;miss&#x27;;
+      }
+    }
+
+    setInterval(refreshData, 100);
+    refreshData();
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+)rawliteral&quot;;
+
+  server.sendHeader(&quot;Cache-Control&quot;, &quot;no-cache, no-store, must-revalidate&quot;);
+  server.sendHeader(&quot;Pragma&quot;, &quot;no-cache&quot;);
+  server.sendHeader(&quot;Expires&quot;, &quot;0&quot;);
+  server.send(200, &quot;text/html&quot;, html);
+}
+
+void handleBrightest() {
+  unsigned long ageMs = millis() - lastResult.lastUpdateMs;
+
+  String json = &quot;{&quot;;
+  json += &quot;\&quot;brightest\&quot;:&quot; + String(lastResult.brightest) + &quot;,&quot;;
+  json += &quot;\&quot;x\&quot;:&quot; + String(lastResult.x) + &quot;,&quot;;
+  json += &quot;\&quot;y\&quot;:&quot; + String(lastResult.y) + &quot;,&quot;;
+  json += &quot;\&quot;aboveThreshold\&quot;:&quot; + String(lastResult.aboveThreshold ? &quot;true&quot; : &quot;false&quot;) + &quot;,&quot;;
+  json += &quot;\&quot;ageMs\&quot;:&quot; + String(ageMs);
+  json += &quot;}&quot;;
+
+  server.sendHeader(&quot;Cache-Control&quot;, &quot;no-cache, no-store, must-revalidate&quot;);
+  server.sendHeader(&quot;Pragma&quot;, &quot;no-cache&quot;);
+  server.sendHeader(&quot;Expires&quot;, &quot;0&quot;);
+  server.send(200, &quot;application/json&quot;, json);
+}
+
+bool initCamera() {
+  camera_config_t config;
+  config.ledc_channel = LEDC_CHANNEL_0;
+  config.ledc_timer = LEDC_TIMER_0;
+  config.pin_d0 = Y2_GPIO_NUM;
+  config.pin_d1 = Y3_GPIO_NUM;
+  config.pin_d2 = Y4_GPIO_NUM;
+  config.pin_d3 = Y5_GPIO_NUM;
+  config.pin_d4 = Y6_GPIO_NUM;
+  config.pin_d5 = Y7_GPIO_NUM;
+  config.pin_d6 = Y8_GPIO_NUM;
+  config.pin_d7 = Y9_GPIO_NUM;
+  config.pin_xclk = XCLK_GPIO_NUM;
+  config.pin_pclk = PCLK_GPIO_NUM;
+  config.pin_vsync = VSYNC_GPIO_NUM;
+  config.pin_href = HREF_GPIO_NUM;
+  config.pin_sccb_sda = SIOD_GPIO_NUM;
+  config.pin_sccb_scl = SIOC_GPIO_NUM;
+  config.pin_pwdn = PWDN_GPIO_NUM;
+  config.pin_reset = RESET_GPIO_NUM;
+  config.xclk_freq_hz = 10000000;
+  config.pixel_format = PIXFORMAT_GRAYSCALE;
+  config.frame_size = FRAME_SIZE;
+  config.jpeg_quality = 12;
+  config.fb_count = 1;
+  config.grab_mode = CAMERA_GRAB_LATEST;
+  config.fb_location = CAMERA_FB_IN_PSRAM;
+
+  esp_err_t err = esp_camera_init(&amp;config);
+  if (err != ESP_OK) {
+    Serial.printf(&quot;Camera init failed with error 0x%x\n&quot;, err);
+    return false;
+  }
+
+  sensor_t* s = esp_camera_sensor_get();
+  if (s) {
+    s-&gt;set_framesize(s, FRAME_SIZE);
+    s-&gt;set_brightness(s, 0);
+    s-&gt;set_contrast(s, 2);
+    s-&gt;set_saturation(s, -2);
+    s-&gt;set_special_effect(s, 2);
+    s-&gt;set_whitebal(s, 0);
+    s-&gt;set_awb_gain(s, 0);
+    s-&gt;set_exposure_ctrl(s, 0);
+    s-&gt;set_aec2(s, 0);
+    s-&gt;set_ae_level(s, -1);
+    s-&gt;set_gain_ctrl(s, 0);
+    s-&gt;set_agc_gain(s, 0);
+    s-&gt;set_hmirror(s, 0);
+    s-&gt;set_vflip(s, 0);
+  }
+
+  return true;
+}
+
+void setup() {
+  Serial.begin(115200);
+  Serial.setDebugOutput(false);
+  Serial.println();
+  Serial.println(&quot;Booting...&quot;);
+
+  if (!initCamera()) {
+    Serial.println(&quot;Camera init failed&quot;);
+    while (true) {
+      delay(1000);
+    }
+  }
+
+  WiFi.begin(ssid, password);
+  Serial.print(&quot;Connecting to WiFi&quot;);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(300);
+    Serial.print(&quot;.&quot;);
+  }
+
+  Serial.println();
+  Serial.print(&quot;Open this in your browser: http://&quot;);
+  Serial.println(WiFi.localIP());
+
+  server.on(&quot;/&quot;, HTTP_GET, handleRoot);
+  server.on(&quot;/brightest&quot;, HTTP_GET, handleBrightest);
+  server.begin();
+
+  lastResult.lastUpdateMs = millis();
+}
+
+void loop() {
+  camera_fb_t* fb = esp_camera_fb_get();
+  if (fb) {
+    lastResult = detectBrightest(fb);
+    esp_camera_fb_return(fb);
+  }
+
+  server.handleClient();
+}</pre></details><p><a class="text-link" href="code/vision/vision.ino">code/vision/vision.ino</a> · 0.01 MB · <a href="code/vision/vision.ino" download>Download</a></p></li></ul></details><details><summary>Documents (1)</summary><ul><li style="margin-block:1rem;overflow-wrap:anywhere"><p><a class="text-link" href="documents/MG996R%20Servo%20Motor.pdf">documents/MG996R Servo Motor.pdf</a> · 0.09 MB · <a href="documents/MG996R%20Servo%20Motor.pdf" download>Download</a></p></li></ul></details><details><summary>Media/Images (12)</summary><ul><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/armswingassy.png"><img src="media/images/armswingassy.png" alt="armswingassy" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/armswingassy.png">media/images/armswingassy.png</a> · 0.03 MB · <a href="media/images/armswingassy.png" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/bruhSkel.png"><img src="media/images/bruhSkel.png" alt="bruhSkel" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/bruhSkel.png">media/images/bruhSkel.png</a> · 0.01 MB · <a href="media/images/bruhSkel.png" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/catfullassy.png"><img src="media/images/catfullassy.png" alt="catfullassy" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/catfullassy.png">media/images/catfullassy.png</a> · 0.14 MB · <a href="media/images/catfullassy.png" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/chassiswithhead.jpeg"><img src="media/images/chassiswithhead.jpeg" alt="chassiswithhead" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/chassiswithhead.jpeg">media/images/chassiswithhead.jpeg</a> · 2.94 MB · <a href="media/images/chassiswithhead.jpeg" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/drivesystemassy.png"><img src="media/images/drivesystemassy.png" alt="drivesystemassy" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/drivesystemassy.png">media/images/drivesystemassy.png</a> · 0.20 MB · <a href="media/images/drivesystemassy.png" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/finalassyiso.jpeg"><img src="media/images/finalassyiso.jpeg" alt="finalassyiso" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/finalassyiso.jpeg">media/images/finalassyiso.jpeg</a> · 2.83 MB · <a href="media/images/finalassyiso.jpeg" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/finalassyside.jpeg"><img src="media/images/finalassyside.jpeg" alt="finalassyside" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/finalassyside.jpeg">media/images/finalassyside.jpeg</a> · 3.17 MB · <a href="media/images/finalassyside.jpeg" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/harminnarminSkel.png"><img src="media/images/harminnarminSkel.png" alt="harminnarminSkel" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/harminnarminSkel.png">media/images/harminnarminSkel.png</a> · 0.01 MB · <a href="media/images/harminnarminSkel.png" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/headlesschassis.jpeg"><img src="media/images/headlesschassis.jpeg" alt="headlesschassis" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/headlesschassis.jpeg">media/images/headlesschassis.jpeg</a> · 3.43 MB · <a href="media/images/headlesschassis.jpeg" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/headturnassy.png"><img src="media/images/headturnassy.png" alt="headturnassy" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/headturnassy.png">media/images/headturnassy.png</a> · 0.06 MB · <a href="media/images/headturnassy.png" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/presentation-booth.jpg"><img src="media/images/presentation-booth.jpg" alt="presentation-booth" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/presentation-booth.jpg">media/images/presentation-booth.jpg</a> · 3.82 MB · <a href="media/images/presentation-booth.jpg" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><a href="media/images/shell.jpeg"><img src="media/images/shell.jpeg" alt="shell" loading="lazy" style="max-width:240px;max-height:180px;object-fit:contain"></a><p><a class="text-link" href="media/images/shell.jpeg">media/images/shell.jpeg</a> · 2.90 MB · <a href="media/images/shell.jpeg" download>Download</a></p></li></ul></details><details><summary>Media/Videos (4)</summary><ul><li style="margin-block:1rem;overflow-wrap:anywhere"><video controls playsinline preload="none" src="media/videos/armswiping.mp4" aria-label="armswiping" style="max-width:100%;max-height:360px"></video><p><a class="text-link" href="media/videos/armswiping.mp4">media/videos/armswiping.mp4</a> · 1.50 MB · <a href="media/videos/armswiping.mp4" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><video controls playsinline preload="none" src="media/videos/fullchase.mp4" aria-label="fullchase" style="max-width:100%;max-height:360px"></video><p><a class="text-link" href="media/videos/fullchase.mp4">media/videos/fullchase.mp4</a> · 4.14 MB · <a href="media/videos/fullchase.mp4" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><video controls playsinline preload="none" src="media/videos/headturnlasertracking.mp4" aria-label="headturnlasertracking" style="max-width:100%;max-height:360px"></video><p><a class="text-link" href="media/videos/headturnlasertracking.mp4">media/videos/headturnlasertracking.mp4</a> · 1.72 MB · <a href="media/videos/headturnlasertracking.mp4" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><video controls playsinline preload="none" src="media/videos/legswing.mp4" aria-label="legswing" style="max-width:100%;max-height:360px"></video><p><a class="text-link" href="media/videos/legswing.mp4">media/videos/legswing.mp4</a> · 2.39 MB · <a href="media/videos/legswing.mp4" download>Download</a></p></li></ul></details><details><summary>Notes (1)</summary><ul><li style="margin-block:1rem;overflow-wrap:anywhere"><details><summary>Read text</summary><pre style="white-space:pre-wrap;overflow-wrap:anywhere"># Felon the Freestylin’ Feline
+
+## Purpose
+Create an interactive skateboard cat with at least two nontrivial electromechanical systems.
+
+## Requirements and constraints
+- Fit within a 10 × 10 × 10 inch envelope.
+- Work within a $70 budget.
+- Integrate electromechanical systems while supporting fast revision and assembly.
+
+## Engineering contribution
+I contributed heavily to the interactive skateboard cat, including developing a split chassis that separates aesthetic pieces from functional components. This supported easier 3D printing, revision, and assembly.
+
+## Outcome and limits
+The team demonstrated laser-responsive driving, steering, and arm motion and earned an Honorable Mention. Head retention and arm-motor attachment remained unreliable during the toy fair; the rear-leg swinging mechanism was not completed.
+
+## From separate mechanisms to an integrated toy
+
+Before: Prototype parts had interference and difficult interfaces during assembly.
+
+After: Rapid printed revisions and oversized fastening holes made assembly and disassembly easier. The final design combined front drive, rear steering, a swiping arm, and head rotation. Head retention and arm-motor attachment still needed another revision.
+</pre></details><p><a class="text-link" href="project-notes.md">project-notes.md</a> · 0.00 MB · <a href="project-notes.md" download>Download</a></p></li></ul></details><details><summary>Requirements (2)</summary><ul><li style="margin-block:1rem;overflow-wrap:anywhere"><p><a class="text-link" href="requirements/1%20Action_Toy_project_Proposal%20Guidelines.pdf">requirements/1 Action_Toy_project_Proposal Guidelines.pdf</a> · 0.21 MB · <a href="requirements/1%20Action_Toy_project_Proposal%20Guidelines.pdf" download>Download</a></p></li><li style="margin-block:1rem;overflow-wrap:anywhere"><p><a class="text-link" href="requirements/Team07_S26_proposal.docx">requirements/Team07_S26_proposal.docx</a> · 0.09 MB · <a href="requirements/Team07_S26_proposal.docx" download>Download</a></p></li></ul></details></main></body></html>

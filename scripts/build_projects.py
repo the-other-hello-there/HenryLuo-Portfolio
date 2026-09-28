@@ -1,7 +1,10 @@
 """Build static project cards and embedded case-study data from the project catalog."""
 import html
 import json
+import subprocess
+import sys
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 START = '    <!-- PROJECTS:START -->'
@@ -19,6 +22,25 @@ def build():
         tags = ''.join(f'<span>{esc(tag)}</span>' for tag in project['tags'])
         award = f'<p class="award">{esc(project["award"])}</p>' if project.get('award') else ''
         anchor = '' if highlight else f' id="project-{project["id"]}"'
+        resources = ''
+        videos = [item for item in media if item['type'] == 'video']
+        def video_markup(item):
+            url = esc(quote(item['src']))
+            return f'<figure><video controls playsinline preload="none" poster="{esc(quote(item["poster"]))}" src="{url}" aria-label="{esc(item["caption"])}"></video><figcaption>{esc(item["caption"])}</figcaption><p><a class="media-download" href="{url}">Open video file</a> &middot; <a class="media-download" href="{url}" download>Download video</a></p></figure>'
+        if videos:
+            featured = [item for item in videos if item.get('feature_on_card')] or videos[:1]
+            additional = [item for item in videos if item not in featured]
+            resources += '<div class="dialog-section dialog-gallery">' + ''.join(video_markup(item) for item in featured) + '</div>'
+            if additional:
+                resources += f'<details class="dialog-section"><summary>More demonstrations ({len(additional)})</summary><div class="dialog-gallery">{"".join(video_markup(item) for item in additional)}</div></details>'
+        if not highlight:
+            for link in project.get('external_links', []):
+                resources += f'<p><a class="text-link" href="{esc(link["url"])}" target="_blank" rel="noopener noreferrer">{esc(link["label"])}</a></p><p>{esc(link["description"])}</p>'
+            if project.get('supporting_page'):
+                resources += f'<p><a class="text-link" href="{esc(quote(project["supporting_page"]))}">Browse supporting files</a></p>'
+            if project.get('iterations'):
+                notes = ''.join(f'<h4>{esc(step["title"])}</h4><p><strong>Before:</strong> {esc(step["before"])}</p><p><strong>After:</strong> {esc(step["after"])}</p>' for step in project['iterations'])
+                resources += f'<details class="dialog-section"><summary>Design evolution</summary>{notes}</details>'
         return f'''<article class="project-card"{anchor}>
               {photo}
               <div class="project-body">
@@ -28,6 +50,7 @@ def build():
                 <p>{esc(project['summary'])}</p>
                 {award}
                 <button class="text-link project-open" data-project="{project['id']}" aria-label="View case study: {esc(project['title'])}">View case study →</button>
+                {resources}
               </div>
             </article>'''
 
@@ -59,7 +82,7 @@ def build():
           <nav class="project-year-nav" aria-label="Browse projects by year">{navigation}</nav>
           {''.join(groups)}
         </div>
-        <noscript><p>Enable JavaScript to open the detailed case studies. Project summaries and images are available above.</p></noscript>
+        <noscript><p>Enable JavaScript to open the detailed case studies. Project summaries, images, videos, and supporting files are available above.</p></noscript>
       </div>
     </section>
     <script type="application/json" id="project-data">{data}</script>
@@ -73,6 +96,7 @@ def build():
         start = content.index('    <section class="section section-alt" id="projects">')
         end = content.index('    <section class="section" id="experience">', start)
     index.write_text(content[:start] + section + '\n\n' + content[end:].lstrip('\n'), encoding='utf-8')
+    subprocess.run([sys.executable, str(ROOT / 'scripts/build_presentation.py')], check=True)
     print(f'Built {len(projects)} projects across {len(years)} years.')
 
 

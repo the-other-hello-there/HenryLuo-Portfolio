@@ -1,5 +1,6 @@
 """Generate search files from individually reviewed assets (standard library only)."""
 import argparse
+import copy
 import hashlib
 import json
 from pathlib import Path
@@ -10,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / 'scripts/search-selection.json'
 SM = 'http://www.sitemaps.org/schemas/sitemap/0.9'
 IM = 'http://www.google.com/schemas/sitemap-image/1.1'
+VI = 'http://www.google.com/schemas/sitemap-video/1.1'
 
 
 def render(config):
@@ -19,6 +21,10 @@ def render(config):
         raise ValueError('site_url must be an absolute HTTPS URL ending in /')
     catalog = json.loads((ROOT / 'assets/data/projects.json').read_text(encoding='utf-8'))
     displayed = {m['src'] for p in catalog for m in p['media'] if m['type'] == 'image'}
+    displayed.update(d['preview']['src'] for p in catalog for d in p.get('downloads', []) if d.get('preview'))
+    videos = {m['src']: m for p in catalog for m in p['media'] if m['type'] == 'video'}
+    downloads = {d['src'] for p in catalog for d in p.get('downloads', [])}
+    thumbnails = {m['poster'] for m in videos.values()}
     approved = config['approved']
     paths = set()
     for item in approved:
@@ -30,12 +36,22 @@ def render(config):
             raise ValueError(f'Asset changed or missing review; inspect it again before approving: {path}')
         if item['kind'] == 'image' and path not in displayed:
             raise ValueError(f'Sitemap image must appear in the portfolio: {path}')
-        if item['kind'] not in ('image', 'document'):
+        if item['kind'] == 'video' and path not in videos:
+            raise ValueError(f'Sitemap video must appear in the portfolio: {path}')
+        if item['kind'] == 'download' and path not in downloads:
+            raise ValueError(f'CAD download must be linked in the portfolio: {path}')
+        if item['kind'] == 'thumbnail' and path not in thumbnails:
+            raise ValueError(f'Thumbnail must belong to a displayed video: {path}')
+        if item['kind'] not in ('image', 'document', 'video', 'download', 'thumbnail'):
             raise ValueError(f'Unsupported asset kind: {item["kind"]}')
         paths.add(path)
+    for path in paths & videos.keys():
+        if videos[path]['poster'] not in paths:
+            raise ValueError(f'Video thumbnail must be approved for crawling: {path}')
 
     ET.register_namespace('', SM)
     ET.register_namespace('image', IM)
+    ET.register_namespace('video', VI)
     sitemap = ET.Element(f'{{{SM}}}urlset')
     home = ET.SubElement(sitemap, f'{{{SM}}}url')
     ET.SubElement(home, f'{{{SM}}}loc').text = base
@@ -44,11 +60,33 @@ def render(config):
         if item['kind'] == 'image':
             node = ET.SubElement(home, f'{{{IM}}}image')
             ET.SubElement(node, f'{{{IM}}}loc').text = url
-        else:
+        elif item['kind'] == 'video':
+            media = videos[item['path']]
+            node = ET.SubElement(home, f'{{{VI}}}video')
+            for tag, value in [('thumbnail_loc', base + quote(media['poster'], safe='/')),
+                               ('title', media['caption']), ('description', media['caption']),
+                               ('content_loc', url)]:
+                ET.SubElement(node, f'{{{VI}}}{tag}').text = value
+        elif item['kind'] == 'document':
             node = ET.SubElement(sitemap, f'{{{SM}}}url')
             ET.SubElement(node, f'{{{SM}}}loc').text = url
+    # Sitemap-only Easter eggs; intentionally absent from page links and robots.
+    for hidden in ('assets/project_descriptions/Introduction.txt',
+                   'assets/project_descriptions/fullportfolio.pptx'):
+        assert (ROOT / hidden).is_file()
+        node = ET.SubElement(sitemap, f'{{{SM}}}url')
+        ET.SubElement(node, f'{{{SM}}}loc').text = base + hidden
+    for project in catalog:
+        node = ET.SubElement(sitemap, f'{{{SM}}}url')
+        ET.SubElement(node, f'{{{SM}}}loc').text = base + quote(project['supporting_page'], safe='/')
     ET.indent(sitemap, space='  ')
     xml = ET.tostring(sitemap, encoding='utf-8', xml_declaration=True).decode() + '\n'
+    root_sitemap = copy.deepcopy(sitemap)
+    landing = ET.Element(f'{{{SM}}}url')
+    ET.SubElement(landing, f'{{{SM}}}loc').text = f'{parsed.scheme}://{parsed.netloc}/'
+    root_sitemap.insert(0, landing)
+    ET.indent(root_sitemap, space='  ')
+    root_xml = ET.tostring(root_sitemap, encoding='utf-8', xml_declaration=True).decode() + '\n'
 
     # Apply only to this portfolio's path; do not restrict unrelated project sites.
     prefix = parsed.path
@@ -70,11 +108,13 @@ def render(config):
         rules.append(f'User-agent: {agent}')
     rules.append(f'Disallow: {prefix}')
     allowed = ['', 'index.html', 'assets/css/styles.css', 'assets/js/script.js', 'sitemap.xml'] + sorted(paths)
+    for project in catalog:
+        allowed += [p.relative_to(ROOT).as_posix() for p in (ROOT / project['supporting_page']).parent.rglob('*') if p.is_file()]
     for path in allowed:
         # $ prevents a filename prefix from also allowing backups or descendants.
         rules.append(f'Allow: {prefix}{quote(path, safe="/")}$')
-    rules.extend(['', f'Sitemap: {base}sitemap.xml', ''])
-    return {'sitemap.xml': xml, 'robots.txt': '\n'.join(rules)}
+    rules.extend(['', f'Sitemap: {parsed.scheme}://{parsed.netloc}/sitemap.xml', f'Sitemap: {base}sitemap.xml', ''])
+    return {'sitemap.xml': xml, 'scripts/root-sitemap.xml': root_xml, 'robots.txt': '\n'.join(rules)}
 
 
 def main():

@@ -1,49 +1,27 @@
 # Search discovery and crawler policy
 
-The sitemap promotes the portfolio homepage, 46 selected project images, and the
-existing recruiting résumé. It deliberately does not enumerate the repository.
-Selection is an editorial judgment about clear evidence, not a guarantee of how
-an employer will react or independent certification of project claims.
+The portfolio sitemap includes the homepage, selected images and videos, the
+resume, and all 15 supporting-file pages. The personal-site sitemap also includes
+the personal landing page. CAD screenshots remain in the galleries; native CAD,
+model archives, the Onshape link, and the 3D viewer were removed at the owner's
+request after replacement screenshots were provided.
 
-## What was reviewed
+`scripts/search-selection.json` records approved image/video paths and hashes.
+Project dialog fragments are not separate sitemap URLs. Individual supporting files are crawlable resources linked from their project pages.
+No project-wide ZIP packages are generated. The illustrated PowerPoint is a sitemap-only Easter egg.
 
-On September 23, 2026, the review covered the catalog and project descriptions,
-contact sheets of the 99 images in project media directories (97 decoded; two
-`.jpg` files actually contain HEIC data), extracted report text, the thermal
-report page overview, résumé text/layout, and 12 sampled frames from each of the
-eight MP4 files. No original media or reports were edited.
-
-The individually approved paths, SHA-256 fingerprints, and reasons are in
-`scripts/search-selection.json`. Images are associated with the homepage using
-the image sitemap extension. Project dialogs and `#project-...` fragments are
-not separate pages, so they are not listed as invented page URLs. Some gallery
-images require opening a dialog; sitemap inclusion helps discovery but does not
-guarantee indexing. The résumé is a separate document URL.
-
-Specific exclusions:
-
-| Material | Reason |
-| --- | --- |
-| ME 315 final report | Table 2, 15% infill at 81°C: the printed resistance is 0.147 K·m²/W, while the printed conductivity is 1.35 W/(m·K). With the report's 0.0254 m thickness and `k = L / R`, the latter corresponds to approximately 0.0188 K·m²/W. This apparent inconsistency needs checking against the original data before promoting the PDF. The setup and specimen images remain selected. |
-| ME 30801 final report | The conclusion claims the objectives were met and makes practical safety claims, while the discussion documents mounting interference, incomplete similarity, inability to test gusts, and ground-clearance limitations. The existing case-study summary preserves these qualifications. The PDF is withheld from promotion pending technical revision; this is not a finding that the whole experiment lacks value. |
-| All eight videos | Sampled frames establish relevance, but all files have audio and neither audio nor uninterrupted playback was reviewed. Under the requested strict verification threshold, none is approved yet. Sampled frames alone cannot certify an entire clip. |
-| HRC stress simulation image | Missing visible numerical legend and physical validation context; selected CAD images demonstrate the design without implying tested strength. |
-| Other robots in HRC archives | Reference material, not evidence of this project's fabrication. |
-| Receipts, raw CAD, ZIP archives, code exports, Office documents and older portfolio exports | Not selected as standalone recruiting evidence; not comprehensively audited. Unknown files are excluded rather than assumed favorable. |
-| Duplicate/early/low-detail images | Prefer the selected final build, installed use, and clear CAD views. Per-file catalog decisions are in the manifest. |
-| Two construction-step JPGs | The files contain HEIC data despite their extensions; not included. |
-
-The résumé was reviewed for readable presentation and recruiting relevance;
-employment, awards, credentials, and ownership claims were not independently
-verified. Public project descriptions retain their existing attribution and
-limitations. Exclusion from this sitemap does not remove links from the portfolio
-or make a file private.
+Distinct media is preserved. Reviewed thermal and headwind notes qualify the
+experiments' limitations; their problematic full reports were removed. Explicit
+project requirements and useful documentation remain. Source-code credential
+literals and corresponding code screenshots were sanitized. Engineering claims,
+CAD image geometry, and awards are not independently certified by these checks.
 
 ## Crawler settings
 
 `robots.txt` asks unlisted compliant crawlers not to crawl this portfolio.
 Google's web/image/video crawlers, Bingbot, and LinkedInBot may fetch only the homepage,
-its CSS/JavaScript, sitemap, and the approved files. Explicit Google-Extended
+its CSS/JavaScript, sitemap, and the approved files, including individual supporting files,
+video files, and video posters. Explicit Google-Extended
 and Google-CloudVertexBot restrictions cover those product controls. LinkedInBot
 is allowed for link previews and documented recruiting integrations; this does
 not register the portfolio in LinkedIn Recruiter. No Indeed or Workday crawler
@@ -90,7 +68,7 @@ Authentication or server/CDN enforcement is needed for actual access control.
 The same files in a public GitHub repository remain available independently of
 this website's robots policy.
 
-## Hosting requirement — action still needed
+## Hosting requirement
 
 The current public URL, also printed in the résumé, was verified to return HTTP
 200: `https://the-other-hello-there.github.io/HenryLuo-Portfolio/`.
@@ -105,8 +83,9 @@ site repository (`the-other-hello-there.github.io`), or configure a custom domai
 that serves this portfolio at its root. The generated restrictions are scoped
 to `/HenryLuo-Portfolio/` to avoid changing unrelated project sites. Preserve
 existing host policies and review overlapping user-agent groups when merging.
-This workspace does not contain that user-site repository, so that host-level
-change has not been made.
+The sibling `../GithubMainRepo` contains the user-site repository. Keep its
+`robots.txt` and `sitemap.xml` synchronized with the generated portfolio copies.
+The host-root robots file was confirmed live during the sitemap investigation.
 
 For a custom domain, first change `site_url` in the manifest, update the canonical
 and Open Graph URLs in `index.html`, and regenerate.
@@ -123,12 +102,11 @@ The generator uses only Python's standard library. Replacing an approved asset
 causes verification to fail until it has been reviewed and its fingerprint
 deliberately updated. New catalog files are not automatically added.
 
-Before promoting a report, read every page, check numerical consistency and
-claims, and review annotations and personal information. Before promoting a
-video, watch and listen to the entire clip. A video sitemap entry additionally
-needs a suitable public thumbnail, truthful title/description, content URL and
-actual landing page. The current generator deliberately supports only reviewed
-images and documents; extend it for the video namespace after full review.
+Run `python scripts/build_supporting.py` and `python scripts/build_projects.py`
+before the search generator. The supporting builder links notes, requirements, extra images, data, and code individually.
+Video metadata uses the displayed caption, poster, and content URL. Inclusion
+helps discovery but does not guarantee indexing. Sitemap omissions and robots
+rules do not make publicly served files private.
 
 Primary references:
 
@@ -142,3 +120,8 @@ Primary references:
 - [LinkedIn Featured work samples](https://www.linkedin.com/help/recruiter/answer/a550399)
 - [Indeed profile visibility](https://support.indeed.com/hc/en-us/articles/204524164-Profile-Settings-Menu-Managing-Your-Privacy)
 - [Workday career-site candidate profiles and resume parsing](https://doc.workday.com/admin-guide/en-us/human-capital-management/recruiting/career-sites/san1394588983205.html)
+
+Introduction.txt and fullportfolio.pptx are listed in both sitemaps as Easter eggs.
+Neither is linked from site pages or explicitly listed in robots.txt. The existing blanket
+portfolio restrictions therefore still apply; sitemap discovery does not grant
+crawl permission or guarantee indexing.

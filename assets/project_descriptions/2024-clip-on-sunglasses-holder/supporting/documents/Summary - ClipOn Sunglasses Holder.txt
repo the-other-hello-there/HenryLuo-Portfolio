@@ -1,0 +1,18 @@
+Overview:
+Designed a modular, 3D-printed sunglasses holder for a car door pocket. A tension bracket improved retention after V1 clips occasionally slipped; the revised bracket lasted nearly two years in everyday use.
+
+Design Parameters:
+- Clip onto the car door pocket.
+- Retain clip-on sunglasses.
+- Fit printed parts on the print bed with minimal supports.
+
+Components:
+- Clip: attaches to the car door pocket.
+- Housing: stores glasses and connects to a clip or another housing.
+- V2 bracket: provides secondary retention primarily through tension.
+
+Development:
+Designed the modular clip, housing, and V2 retention bracket. V1 relied on the front-most holder’s own clips to connect to upstream components. V2 added a secondary tensile load path, reducing reliance on the clips’ limited interference engagement.
+
+Service History:
+The revised bracket lasted nearly two years before breaking in everyday use. Based on observed use and failure, I attributed increased brittleness to repeated impact, thermal, and moisture-driven expansion cycles; this assessment comes from field observations. The failure was gradual and easy to detect: the assembly became looser and the bracket came loose, without suddenly separating the mount. I considered this acceptable for this application because consequences were minor, service life was long, and replacement material cost was estimated below one cent; printing time and other costs were not included.
