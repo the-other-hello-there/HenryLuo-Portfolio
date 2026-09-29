@@ -1,7 +1,7 @@
 {
   "inputs": {
     "assets/data/projects.json": "9cb5f8c16a923c9c6951a304bc2455bd4490f49ef0730daa5381e0b0d7e1f24e",
-    "scripts/build_presentation.py": "3887b4b87e36f631507154306e31d36891a07f2b998061f7623350adbcfe9eb4",
+    "scripts/build_presentation.py": "d36567601bf45597198c72a5fff0ce7705013ab8d39a71f1e0af252572b5015d",
     "assets/project_descriptions/2026-skateboard-cat/media/images/final-build.jpg": "67f2cd804b36fa3bf63b22ac1ff00e03a1494437d7791abeb0540c356c498342",
     "assets/project_descriptions/2026-skateboard-cat/media/images/drive-system-cad.png": "b52b3b0d3c2de5e219b5515bdfbb5877bc6298d1d1a30483aba9d849d71fdee9",
     "assets/project_descriptions/2026-skateboard-cat/media/images/shell-securing-assembly.png": "fab581389a3d3b703b48e87e67e2485bad63b6b291e689fdeef9fc867d4584d3",
@@ -81,6 +81,6 @@
     "assets/project_descriptions/2023-clothes-hanger/supporting/project-notes.md": "4e365522860266ff22cfeb75240b17b23b3fd98a35b3418674d24b21ebb6b30b",
     "assets/project_descriptions/2023-desk-pencil-holder/supporting/project-notes.md": "a7c6adff3ded98c6c6fc9c663cbb78f36ac3b4deab82a3a6701d3a49c857b234"
   },
-  "output": "b6de9c4ac484511b9cf820f4380785244f806d356c2ccf983b1e8459ed7f5b91",
+  "output": "a9ffb1962cdba0ead75559e125864f9dfea0245467de347304617652b3947d9a",
   "slides": 15
 }

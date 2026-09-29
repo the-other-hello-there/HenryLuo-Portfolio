@@ -4,8 +4,8 @@
 
 Explicit user preference: the personal landing page and engineering portfolio must have identical shared visual styling. A styling change in either repository must lead to the corresponding change in the other during the same task, unless the user explicitly requests an exception.
 
-- Engineering portfolio: ../HenryLuo-Portfolio/index.html and ../HenryLuo-Portfolio/assets/css/styles.css.
-- Personal landing page: ../GithubMainRepo/index.html (currently uses inline CSS).
+- Engineering portfolio: ../EngineeringPortfolio/index.html and ../EngineeringPortfolio/assets/css/styles.css.
+- Personal landing page: ../LandingPage/index.html (currently uses inline CSS).
 - Keep shared colors, typography, branding, buttons, borders, radii, focus/hover states, and responsive styling consistent. Inspect both implementations before editing; do not update only the active repository and overlook the counterpart.
 - Preserve each page's purpose and appropriate layout. Synchronizing styling does not mean copying projects, experience, resume content, or portfolio-specific components onto the landing page.
 - Check both pages after shared styling changes. If the other repository is unavailable or a write is blocked, report that synchronization remains incomplete rather than claiming both were updated.
@@ -91,8 +91,17 @@ short. Do not reintroduce removed servo product images.
 - Verify desktop, narrow-screen, and direct-from-disk behavior when affected.
 - Keep sitemap asset hashes aligned with reviewed public media.
 - Generate the portfolio sitemap within the portfolio URL scope.
-- Copy `scripts/root-sitemap.xml` to `../GithubMainRepo/sitemap.xml`.
-- Copy generated `robots.txt` to `../GithubMainRepo/robots.txt`.
+- Copy `scripts/root-sitemap.xml` to `../LandingPage/sitemap.xml`.
+- Copy generated `robots.txt` to `../LandingPage/robots.txt`.
 - The root sitemap must include the personal landing page.
 - Keep both sites' search files synchronized in the same task.
 - Do not claim publication or indexing from local verification alone.
+
+## Local repository locations
+
+- Shared parent: `C:\Users\rrenkit\OneDrive\Github Pages`.
+- Personal landing repository: `LandingPage`.
+- Engineering portfolio repository: `EngineeringPortfolio`.
+- These replace the former folders under `OneDrive\ME`.
+- Local renaming does not change GitHub repository names or published URLs.
+- Preserve `https://the-other-hello-there.github.io/` and its `/HenryLuo-Portfolio/` website path unless separately requested.

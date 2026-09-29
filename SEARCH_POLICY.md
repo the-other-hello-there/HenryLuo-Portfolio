@@ -83,7 +83,7 @@ site repository (`the-other-hello-there.github.io`), or configure a custom domai
 that serves this portfolio at its root. The generated restrictions are scoped
 to `/HenryLuo-Portfolio/` to avoid changing unrelated project sites. Preserve
 existing host policies and review overlapping user-agent groups when merging.
-The sibling `../GithubMainRepo` contains the user-site repository. Keep its
+The sibling `../LandingPage` contains the user-site repository. Keep its
 `robots.txt` and `sitemap.xml` synchronized with the generated portfolio copies.
 The host-root robots file was confirmed live during the sitemap investigation.
 

@@ -26,7 +26,7 @@ the catalog, selected images, notes, generator, and output to detect stale conte
 The presentation is a sitemap-only Easter egg. Keep both formats synchronized, as
 required by `AGENTS.md`.
 
-Copy `scripts/root-sitemap.xml` to `../GithubMainRepo/sitemap.xml` and `robots.txt`
+Copy `scripts/root-sitemap.xml` to `../LandingPage/sitemap.xml` and `robots.txt`
 to that site's root. Approved image/video hashes live in `scripts/search-selection.json`.
 Review asset changes before refreshing them. No build step deploys the website.
 
